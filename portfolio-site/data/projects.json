@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "AI-Powered Code Review Tool",
+    "description": "A machine-learning pipeline that analyzes pull requests and provides contextual code review suggestions, reducing review time by 40%.",
+    "tags": ["Python", "Machine Learning", "NLP", "GitHub API"],
+    "link": "#",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Real-Time Object Detection Dashboard",
+    "description": "A browser-based dashboard that streams live camera feed and overlays bounding boxes using a YOLO model served from a lightweight FastAPI backend.",
+    "tags": ["Python", "FastAPI", "JavaScript", "Computer Vision"],
+    "link": "#",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "Generative Music Composer",
+    "description": "Transformer-based model trained on MIDI data to compose short musical pieces in the style of classical composers.",
+    "tags": ["Python", "PyTorch", "MIDI", "Deep Learning"],
+    "link": "#",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "title": "Natural Language SQL Query Builder",
+    "description": "Converts plain English descriptions into SQL queries using a fine-tuned language model, with an interactive web UI for querying a demo database.",
+    "tags": ["Python", "LLM", "SQL", "Streamlit"],
+    "link": "#",
+    "featured": false
+  }
+]
