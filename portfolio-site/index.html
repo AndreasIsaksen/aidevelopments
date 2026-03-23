@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Andreas Isaksen – AI & Software developer portfolio. Projects, publications, and contact." />
+  <title>Andreas Isaksen | AI Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────────────────────── -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <a href="#hero" class="nav-logo">ai<span>dev</span>.dev</a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#references">References</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-greeting">// Hello, world 👋</p>
+          <h1 class="hero-name">Andreas Isaksen</h1>
+          <h2 class="hero-tagline">AI &amp; Software Developer</h2>
+          <p class="hero-description">
+            I build intelligent systems that bridge the gap between research and production.
+            Passionate about machine learning, clean code, and impactful products.
+          </p>
+          <div class="btn-group">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-outline" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── About ─────────────────────────────────────────────────────────── -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm an AI and software developer focused on building systems that learn, adapt,
+              and deliver real value. My work spans the full stack — from data pipelines and
+              model training to performant web front-ends.
+            </p>
+            <p>
+              When I'm not coding, I'm reading research papers, contributing to open-source
+              projects, or writing about what I learn. This site is a living showcase of
+              those efforts.
+            </p>
+            <ul class="skills-list" aria-label="Core skills">
+              <li>Python</li>
+              <li>PyTorch</li>
+              <li>JavaScript / TypeScript</li>
+              <li>FastAPI</li>
+              <li>Docker</li>
+              <li>SQL</li>
+              <li>Git</li>
+              <li>NLP</li>
+              <li>Computer Vision</li>
+            </ul>
+          </div>
+          <div class="about-stats" aria-label="Key statistics">
+            <div class="stat-card">
+              <p class="stat-number">10+</p>
+              <p class="stat-label">Projects Shipped</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number">3</p>
+              <p class="stat-label">Publications</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number">5+</p>
+              <p class="stat-label">Years Experience</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number">∞</p>
+              <p class="stat-label">Curiosity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Projects ──────────────────────────────────────────────────────── -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid" id="projects-grid" aria-live="polite">
+          <!-- Cards are injected by main.js from data/projects.json -->
+          <p style="color:var(--clr-text-muted)">Loading projects…</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Achievements ───────────────────────────────────────────────────── -->
+    <section id="achievements">
+      <div class="container">
+        <h2 class="section-title">Achievements</h2>
+        <ul class="achievements-list" role="list">
+          <li class="achievement-item">
+            <span class="achievement-icon" aria-hidden="true">🏆</span>
+            <div>
+              <h3 class="achievement-title">Top-10 Finish – National AI Hackathon</h3>
+              <p class="achievement-desc">Built an AI-powered triage assistant in 48 hours; ranked in the top 10 nationally out of 200+ teams.</p>
+            </div>
+          </li>
+          <li class="achievement-item">
+            <span class="achievement-icon" aria-hidden="true">🎓</span>
+            <div>
+              <h3 class="achievement-title">MSc – Artificial Intelligence (Distinction)</h3>
+              <p class="achievement-desc">Graduated with distinction, focusing on deep learning and natural language processing.</p>
+            </div>
+          </li>
+          <li class="achievement-item">
+            <span class="achievement-icon" aria-hidden="true">⭐</span>
+            <div>
+              <h3 class="achievement-title">Open-Source Contributor</h3>
+              <p class="achievement-desc">Merged pull requests into several well-known ML libraries, improving documentation and performance.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── Publications ───────────────────────────────────────────────────── -->
+    <section id="publications">
+      <div class="container">
+        <h2 class="section-title">Publications</h2>
+        <div class="publications-list">
+          <article class="publication-card">
+            <h3 class="publication-title">Efficient Fine-Tuning of Large Language Models for Domain-Specific Tasks</h3>
+            <p class="publication-meta">MSc Thesis · 2024</p>
+            <p class="publication-abstract">
+              This thesis investigates parameter-efficient fine-tuning methods (LoRA, adapters) applied to
+              domain-specific corpora, achieving competitive performance with less than 1% of trainable parameters
+              compared to full fine-tuning.
+            </p>
+          </article>
+          <article class="publication-card">
+            <h3 class="publication-title">A Survey of Real-Time Object Detection Architectures for Edge Devices</h3>
+            <p class="publication-meta">Workshop Paper · AI &amp; Systems Conference 2023</p>
+            <p class="publication-abstract">
+              Survey comparing YOLOv8, EfficientDet, and MobileNet-SSD on constrained hardware, providing
+              latency-accuracy trade-off benchmarks and deployment guidelines.
+            </p>
+          </article>
+          <article class="publication-card">
+            <h3 class="publication-title">Retrieval-Augmented Generation for Knowledge-Intensive Tasks</h3>
+            <p class="publication-meta">Preprint · 2025</p>
+            <p class="publication-abstract">
+              Explores RAG pipeline optimisations — chunking strategies, re-ranking, and hybrid retrieval —
+              to reduce hallucinations in production LLM applications.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── References ─────────────────────────────────────────────────────── -->
+    <section id="references">
+      <div class="container">
+        <h2 class="section-title">References</h2>
+        <div class="references-grid">
+          <div class="reference-card">
+            <h3 class="reference-name">Dr. Jane Smith</h3>
+            <p class="reference-role">Professor – University of Oslo</p>
+            <p class="reference-quote">"Andreas consistently produces research of exceptional quality. His ability to translate complex theory into practical solutions is rare."</p>
+          </div>
+          <div class="reference-card">
+            <h3 class="reference-name">Erik Larsen</h3>
+            <p class="reference-role">Engineering Lead – TechCorp AS</p>
+            <p class="reference-quote">"Andreas shipped production-ready ML features independently and mentored junior developers — a genuine team multiplier."</p>
+          </div>
+          <div class="reference-card">
+            <h3 class="reference-name">Maria Nguyen</h3>
+            <p class="reference-role">CTO – StartupXYZ</p>
+            <p class="reference-quote">"His end-to-end ownership of our recommendation system directly contributed to a 25% increase in user retention."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Contact ────────────────────────────────────────────────────────── -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <p>Have a project in mind, a question, or just want to say hi? My inbox is always open.</p>
+            <div class="contact-links">
+              <a class="contact-link" href="mailto:hello@aidevelopments.dev">
+                <span class="contact-link-icon" aria-hidden="true">✉</span>
+                hello@aidevelopments.dev
+              </a>
+              <a class="contact-link" href="https://github.com/AndreasIsaksen" target="_blank" rel="noopener noreferrer">
+                <span class="contact-link-icon" aria-hidden="true">🐙</span>
+                github.com/AndreasIsaksen
+              </a>
+              <a class="contact-link" href="https://linkedin.com/in/andreasisaksen" target="_blank" rel="noopener noreferrer">
+                <span class="contact-link-icon" aria-hidden="true">💼</span>
+                linkedin.com/in/andreasisaksen
+              </a>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="What's on your mind?" required></textarea>
+            </div>
+            <div id="form-status" class="form-status" aria-live="polite"></div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ────────────────────────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <nav class="footer-social" aria-label="Social links">
+          <a href="https://github.com/AndreasIsaksen" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/andreasisaksen" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:hello@aidevelopments.dev">Email</a>
+        </nav>
+        <p class="footer-copy">&copy; <span id="footer-year"></span> Andreas Isaksen · aidevelopments.dev</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
