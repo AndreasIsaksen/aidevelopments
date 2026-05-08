@@ -1,75 +1,10 @@
-\documentclass[twocolumn]{article}
-\usepackage[utf8]{inputenc}
-\DeclareUnicodeCharacter{200B}{}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{textcomp}
-\usepackage[norsk]{babel}
-\usepackage[paperwidth=210mm,paperheight=297mm,margin=5mm]{geometry}
-\usepackage{enumitem}
-\setlist[itemize]{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt,left=1em}
-\renewcommand{\familydefault}{\sfdefault}
-\usepackage{listings}
-\usepackage{xcolor}
-\usepackage{float}
-\floatstyle{plain}
-\newfloat{Listing}{tp}{lop}
-\floatname{Listing}{Listing}
-
-\definecolor{codegreen}{rgb}{0,0.6,0}
-\definecolor{codegray}{rgb}{0.5,0.5,0.5}
-\definecolor{codepurple}{rgb}{0.58,0,0.82}
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
-
-\lstdefinestyle{javastyle}{
-    backgroundcolor=\color{backcolour},   
-    commentstyle=\color{codegreen},
-    keywordstyle=\color{blue}\bfseries,
-    numberstyle=\tiny\color{codegray},
-    stringstyle=\color{codepurple},
-    basicstyle=\ttfamily\footnotesize,
-    breakatwhitespace=false,         
-    breaklines=true,                 
-    captionpos=b,                    
-    keepspaces=true,                 
-    numbers=left,                    
-    numbersep=5pt,                  
-    showspaces=false,                
-    showstringspaces=false,
-    showtabs=false,                  
-    tabsize=2
-}
-
-\lstset{
-    style=javastyle,
-	float=Listing,
-	floatplacement=tp,   % allow page floats (p) and top (t)
-	captionpos=b,
-    frame=single,
-    basicstyle=\ttfamily\footnotesize,
-    breaklines=true,
-    showstringspaces=false,
-    numbers=left,
-    numbersep=5pt,
-    literate=
-        {å}{{\aa}}1 {Å}{{\AA}}1
-        {æ}{{\ae}}1 {Æ}{{\AE}}1
-        {ø}{{\o}}1 {Ø}{{\O}}1
-        {á}{{\'a}}1 {é}{{\'e}}1
-        {ö}{{\"o}}1 {ü}{{\"u}}1
-        {ñ}{{\~n}}1
-        {“}{{``}}1 {”}{{''}}1
-        {’}{{'}}1 {‘}{{`}}1
-		{²}{{\textsuperscript{2}}}1
-		{³}{{\textsuperscript{3}}}1
-}
-
-\begin{document}
-\fontsize{7.5}{9}\selectfont
-
-\section{Kryptering med stack og kø}
-\begin{lstlisting}[language=Java, frame=single]
-import java.util.*;
+const codeSnippets = {
+    Algorithms_and_Data_Structures: [
+        {
+            title: "Encryption with stack and queue",
+            description: "Example code snippet demonstrating the use of stack and queue data structures to implement a simple encryption algorithm.",
+            language: "Java",
+            code: `import java.util.*;
 
 public class Oblig_01 {
 
@@ -193,11 +128,13 @@ public class Oblig_01 {
         System.out.println("Dekryptert:\t" + dekrypter(T));
     }
 }
-\end{lstlisting}
-
-\section{Algoritmeanalyse}
-\begin{lstlisting}[language=Java, frame=single]
-import java.util.*;
+`
+        },
+        {
+            title: "Algorithm analysis",
+            description: "Example code snippet demonstrating the analysis of an algorithm's time complexity.",
+            language: "Java",
+            code: `import java.util.*;
 
 public class Oblig_2 {
     public static void lineær(long n)
@@ -317,11 +254,13 @@ public class Oblig_2 {
         System.out.println();
     }
 }
-\end{lstlisting}
-
-\section{Rekursjon vs. iterasjon}
-\begin{lstlisting}[language=Java, frame=single]
-import java.util.Scanner;
+`
+        },
+        {
+            title: "Recursion vs. iteration",
+            description: "Example code snippet comparing recursive and iterative approaches to solving a problem.",
+            language: "Java",
+            code: `import java.util.Scanner;
 
 public class Oppgave_1og3 {
     
@@ -395,9 +334,13 @@ public class Oppgave_1og3 {
         System.out.println(T + "ms");
     }
 }
-\end{lstlisting}
-\begin{lstlisting}[language=Java, frame=single]
-import java.util.Scanner;
+`
+        },
+        {
+            title: "Recursion vs. iteration II",
+            description: "Continuation of the previous code snippet, comparing recursive and iterative approaches to solving a problem.",
+            language: "Java",
+            code: `import java.util.Scanner;
 
 public class Oppgave_5og6 {
 
@@ -477,11 +420,13 @@ public class Oppgave_5og6 {
         System.out.println(T + "ms");
     }
 }
-\end{lstlisting}
-
-\section{Sortering - array vs. liste}
-\begin{lstlisting}[language=Java, frame=single]
-import java.util.*;
+`
+        },
+        {
+            title: "Sorting - array vs. list",
+            description: "Example code snippet comparing sorting an array and a list in Java.",
+            language: "Java",
+            code: `import java.util.*;
 
 public class SortTest1 {
 
@@ -541,9 +486,13 @@ public class SortTest1 {
 
     }
 }
-\end{lstlisting}
-\begin{lstlisting}[language=Java, frame=single]
-import java.util.*;
+`
+        },
+        {
+            title: "Sorting - array vs. list II",
+            description: "Continuation of the previous code snippet, further comparing sorting an array and a list in Java.",
+            language: "Java",
+            code: `import java.util.*;
 
 public class SortTest2 {
 
@@ -622,11 +571,13 @@ public class SortTest2 {
         System.out.println("--------------------------------------------");
     }
 }
-\end{lstlisting}
-
-\section{Binære trær og rekursjon}
-\begin{lstlisting}[language=Java, frame=single]
-import java.util.*;
+`
+        },
+        {
+            title: "Binary trees and recursion",
+            description: "Example code snippet demonstrating the use of binary trees and recursion in Java.",
+            language: "Java",
+            code: `import java.util.*;
 
 class Trenode
 {
@@ -758,11 +709,13 @@ public class Oblig_05
 	skrivUt(rot);
     }
 }
-\end{lstlisting}
-
-\section{Tekstanalyse med binært søketre}
-\begin{lstlisting}[language=Java, frame=single]
-import java.io.*;
+`
+        },
+        {
+            title: "Text analysis with binary search tree. I (BST)",
+            description: "Example code snippet demonstrating the use of a binary search tree (BST) for text analysis in Java.",
+            language: "Java",
+            code: `import java.io.*;
 import java.util.Scanner;
 
 // WordBST: Binært søketre med ord og ordfrekvenser
@@ -915,11 +868,104 @@ private WordNode insertRekursivt(WordNode node, String ord) {
 	}
     }
 }
-\end{lstlisting}
-
-\section{Balansert søketre i Java}
-\begin{lstlisting}[language=Java, frame=single]
+`
+        },
+        {
+            title: "Text analysis with binary search tree. II (Reader)",
+            description: "Continuation of the previous code snippet, demonstrating the use of a binary search tree (BST) for text analysis in Java, with a focus on the reader class.",
+            language: "Java",
+            code: `import java.io.*;
 import java.util.Scanner;
+
+// WordReader: Read a text file word-by-word
+// Author: Jan Høiberg, 2024
+// Note: All non-alphabetic characters are ignored
+
+public class WordReader
+{
+    private BufferedReader reader; // Line-by-line file reader
+    private String S[];            // All words on last read line
+    private int numWords;          // Number of words on last line
+    private int currentWord;       // Next word to be delievered
+    private boolean finished;      // True if all words on file read
+
+    // WordReader(): Constructor, opens file for reading
+    public WordReader(String fileName)
+    {
+	currentWord = numWords = 0;
+	finished = false;
+	try {reader = new BufferedReader(new FileReader(fileName));}
+	catch (IOException e) {e.printStackTrace();}
+    }
+
+    // nextWord(): Returns next word on file, null if all words read
+    public String nextWord()
+    {
+	// Finished reading all words on file?
+	if (finished)
+	    return null;
+
+	// If there are no more words left on the last line read from
+	// file, then read a new line and split it into separate words
+	if (currentWord == numWords)
+	{
+	    String line = "";
+	    // Read new line from file, skip both blank/empty lines
+	    // and lines with no alphabetical characters
+	    while (line.length() == 0)
+	    {
+		// Try reading a line of text
+		try {line = reader.readLine();}
+		catch (IOException e) {e.printStackTrace();}
+		// No more words on file?
+		if (line == null)
+		{
+		    finished = true;
+		    return null;
+		}
+		// Replace non-alphabetic characters with single space
+		line = line.replaceAll("[^\\p{IsAlphabetic}]+", " ");
+		// Trim off leading and trailing whitespace
+		line = line.trim();
+	    }
+	    // Convert line to lowercase
+	    line = line.toLowerCase();
+	    // Split line into array of words
+	    S = line.split(" ");
+	    // Set number of words on line and the index of the next
+	    // word to be returned from the method
+	    numWords = S.length;
+	    currentWord = 0;
+	}
+	// Return next word from last read line
+	String word = S[currentWord];
+	currentWord++;
+	return word;
+    }
+
+    // main(): Test program, prints all words on a given file
+    public static void main (String argv[])
+    {
+	Scanner scan = new Scanner(System.in);
+	System.out.print("File? ");
+	String fileName = scan.nextLine();
+
+	WordReader wR = new WordReader(fileName);
+	String word = wR.nextWord();
+	while (word != null)
+	{
+	    System.out.println(word);
+	    word = wR.nextWord();
+	}
+    }
+}
+`
+        },
+        {
+            title: "Balanced search tree in Java I (TreeMap)",
+            description: "Example code snippet demonstrating the implementation of a balanced search tree (TreeMap) in Java.",
+            language: "Java",
+            code: `import java.util.Scanner;
 import java.util.TreeMap;
 import java.util.Map;
 
@@ -1008,12 +1054,104 @@ public class WordBST
 	}
     }
 }
-\end{lstlisting}
+`
+        },
+        {
+            title: "Balanced search tree in Java II (Reader)",
+            description: "Continuation of the previous code snippet, demonstrating the implementation of a balanced search tree (TreeMap) in Java, with a focus on the reader class.",
+            language: "Java",
+            code: `import java.io.*;
+import java.util.Scanner;
 
-\section{Heap-ordnede binære trær}
-Node
-\begin{lstlisting}[language=Java, frame=single]
-class Node
+// WordReader: Read a text file word-by-word
+// Author: Jan Høiberg, 2024
+// Note: All non-alphabetic characters are ignored
+
+public class WordReader
+{
+    private BufferedReader reader; // Line-by-line file reader
+    private String S[];            // All words on last read line
+    private int numWords;          // Number of words on last line
+    private int currentWord;       // Next word to be delievered
+    private boolean finished;      // True if all words on file read
+
+    // WordReader(): Constructor, opens file for reading
+    public WordReader(String fileName)
+    {
+	currentWord = numWords = 0;
+	finished = false;
+	try {reader = new BufferedReader(new FileReader(fileName));}
+	catch (IOException e) {e.printStackTrace();}
+    }
+
+    // nextWord(): Returns next word on file, null if all words read
+    public String nextWord()
+    {
+	// Finished reading all words on file?
+	if (finished)
+	    return null;
+
+	// If there are no more words left on the last line read from
+	// file, then read a new line and split it into separate words
+	if (currentWord == numWords)
+	{
+	    String line = "";
+	    // Read new line from file, skip both blank/empty lines
+	    // and lines with no alphabetical characters
+	    while (line.length() == 0)
+	    {
+		// Try reading a line of text
+		try {line = reader.readLine();}
+		catch (IOException e) {e.printStackTrace();}
+		// No more words on file?
+		if (line == null)
+		{
+		    finished = true;
+		    return null;
+		}
+		// Replace non-alphabetic characters with single space
+		line = line.replaceAll("[^\\p{IsAlphabetic}]+", " ");
+		// Trim off leading and trailing whitespace
+		line = line.trim();
+	    }
+	    // Convert line to lowercase
+	    line = line.toLowerCase();
+	    // Split line into array of words
+	    S = line.split(" ");
+	    // Set number of words on line and the index of the next
+	    // word to be returned from the method
+	    numWords = S.length;
+	    currentWord = 0;
+	}
+	// Return next word from last read line
+	String word = S[currentWord];
+	currentWord++;
+	return word;
+    }
+
+    // main(): Test program, prints all words on a given file
+    public static void main (String argv[])
+    {
+	Scanner scan = new Scanner(System.in);
+	System.out.print("File? ");
+	String fileName = scan.nextLine();
+
+	WordReader wR = new WordReader(fileName);
+	String word = wR.nextWord();
+	while (word != null)
+	{
+	    System.out.println(word);
+	    word = wR.nextWord();
+	}
+    }
+}
+`
+        },
+        {
+            title: "Heap-ordered binary trees (Node class)",
+            description: "Example code snippet demonstrating the implementation of a node class for heap-ordered binary trees in Java.",
+            language: "Java",
+            code: `class Node
 {
     int verdi;    // Heltallsverdi
     Node venstre; // Venstre barn
@@ -1027,10 +1165,13 @@ class Node
 	høyre = h;
     }
 }
-\end{lstlisting}
-OppgaveA
-\begin{lstlisting}[language=Java, frame=single]
-import java.io.*;
+`
+        },
+        {
+            title: "Heap-ordered binary trees (Tree Builder)",
+            description: "Example code snippet demonstrating the implementation of a tree builder for heap-ordered binary trees in Java.",
+            language: "Java",
+            code: `import java.io.*;
 
 public class OppgaveA
 {
@@ -1071,10 +1212,13 @@ public class OppgaveA
 	System.out.println("tell(50) = " + tell(rot,50));
     }
 }
-\end{lstlisting}
-OppgaveBC
-\begin{lstlisting}[language=Java, frame=single]
-import java.util.Queue;
+`
+        },
+        {
+            title: "Heap-ordered binary trees (Balanced Tree)",
+            description: "Example code snippet demonstrating the implementation of a balanced tree in Java.",
+            language: "Java",
+            code: `import java.util.Queue;
 import java.util.LinkedList;
 import java.io.*;
 
@@ -1196,12 +1340,13 @@ public class OppgaveBC
 	print(rot);
     }
 }
-\end{lstlisting}
-
-\clearpage
-\section{Hashtabeller i Java}
-\begin{lstlisting}[language=Java, frame=single]
-import java.util.HashMap;
+`
+        },
+        {
+            title: "Hash tables in Java (HashMap)",
+            description: "Example code snippet demonstrating the implementation of a hash table using HashMap in Java.",
+            language: "Java",
+            code: `import java.util.HashMap;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -1346,12 +1491,13 @@ public class WordHash
 		scan.close();
 	}
 }
-\end{lstlisting}
-
-\clearpage
-\section{Topologisk sortering av grafer}
-\begin{lstlisting}[language=Java, frame=single]
-import java.io.*;
+`
+        },
+        {
+            title: "Topological sorting of graphs",
+            description: "Example code snippet demonstrating the implementation of topological sorting of graphs in Java.",
+            language: "Java",
+            code: `import java.io.*;
 import java.util.*;
 
 // Topologisk sortering
@@ -1464,8 +1610,145 @@ public class TopSort
 
 	new TopSort(filNavn).findAndPrint();
     }
+}`
+        }
+    ]
 }
-\end{lstlisting}
 
 
-\end{document}
+
+
+function createCodeCard(codeItem) {
+	const card = document.createElement("article");
+	card.className = "code-card";
+
+	const content = document.createElement("div");
+	content.className = "code-card-content";
+
+	const badge = document.createElement("span");
+	badge.className = "code-language-badge";
+	badge.textContent = codeItem.language || "code";
+
+	const title = document.createElement("h3");
+	title.textContent = codeItem.title;
+
+	const description = document.createElement("p");
+	description.textContent = codeItem.description;
+
+	const preview = document.createElement("pre");
+	preview.className = "code-card-preview";
+
+	const previewCode = document.createElement("code");
+	previewCode.textContent = getCodePreview(codeItem.code);
+
+	preview.appendChild(previewCode);
+
+	const openLabel = document.createElement("span");
+	openLabel.className = "code-open-label";
+	openLabel.textContent = "View snippet →";
+
+	content.appendChild(badge);
+	content.appendChild(title);
+
+	if (codeItem.description) {
+		content.appendChild(description);
+	}
+
+	content.appendChild(preview);
+	content.appendChild(openLabel);
+
+	card.appendChild(content);
+
+	card.addEventListener("click", () => {
+		openCodeViewer(codeItem);
+	});
+
+	return card;
+}
+
+function getCodePreview(code) {
+	const maxLines = 6;
+	const lines = code.split("\n");
+
+	if (lines.length <= maxLines) {
+		return code;
+	}
+
+	return lines.slice(0, maxLines).join("\n") + "\n...";
+}
+
+function openCodeViewer(codeItem) {
+	const viewerSection = document.getElementById("code-viewer-section");
+	const viewer = document.getElementById("code-viewer");
+	const viewerTitle = document.getElementById("code-viewer-title");
+	const viewerDescription = document.getElementById("code-viewer-description");
+	const viewerLanguage = document.getElementById("code-viewer-language");
+
+	viewer.textContent = codeItem.code;
+	viewerTitle.textContent = codeItem.title;
+
+	if (viewerDescription) {
+		viewerDescription.textContent = codeItem.description || "";
+	}
+
+	if (viewerLanguage) {
+		viewerLanguage.textContent = codeItem.language || "code";
+	}
+
+	viewerSection.classList.remove("hidden");
+	viewerSection.scrollIntoView({ behavior: "smooth" });
+}
+
+function closeCodeViewer() {
+	const viewerSection = document.getElementById("code-viewer-section");
+	const viewer = document.getElementById("code-viewer");
+
+	viewer.textContent = "";
+	viewerSection.classList.add("hidden");
+}
+
+function renderCodeGrid() {
+	const grid = document.getElementById("code-grid");
+
+	if (!grid) {
+		return;
+	}
+
+	const courseKey = grid.dataset.course;
+	const snippets = codeSnippets[courseKey] || [];
+
+	if (snippets.length === 0) {
+		grid.innerHTML = "<p>No code snippets have been added yet.</p>";
+		return;
+	}
+
+	snippets.forEach(codeItem => {
+		grid.appendChild(createCodeCard(codeItem));
+	});
+}
+
+function copyCurrentCodeSnippet() {
+	const viewer = document.getElementById("code-viewer");
+
+	if (!viewer || !viewer.textContent) {
+		return;
+	}
+
+	navigator.clipboard.writeText(viewer.textContent);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+	renderCodeGrid();
+
+	const closeButton = document.getElementById("close-code-viewer");
+
+	if (closeButton) {
+		closeButton.addEventListener("click", closeCodeViewer);
+	}
+
+    const copyButton = document.getElementById("copy-code-button");
+
+    if (copyButton) {
+        copyButton.addEventListener("click", copyCurrentCodeSnippet);
+    }
+});

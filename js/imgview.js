@@ -13,6 +13,14 @@ const imageDocuments = {
 			thumbnail: "../assets/thumbnails/Programming_2/uml2.png"
 		},
 	],
+	Software_Engineering_and_Testing: [
+		{
+			title: "EER Diagram: Group Project Database Design",
+			description: "EER diagram illustrating the database design for the group project in the Software Engineering and Testing course.",
+			image: "../assets/data/Software_Engineering_and_Testing/1.png",
+			thumbnail: "../assets/thumbnails/Software_Engineering_and_Testing/3.png"
+		}
+	]
 };
 
 

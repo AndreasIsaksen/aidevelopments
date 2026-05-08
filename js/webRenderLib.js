@@ -6,6 +6,49 @@ const webpageProjects = {
 			page: "../assets/data/Web_Development/eksamen/index.html",
 			thumbnail: "../assets/thumbnails/Web_Development/3.png"
 		}
+	],
+	Practical_Machine_Learning: [
+		{
+			title: "Final Project",
+			description: "A collumination of the final project for the Practical Machine Learning course, showcasing various machine learning techniques and analyses performed on different datasets.",
+			page: "../assets/data/Practical_Machine_Learning/html/final.html",
+			thumbnail: "../assets/thumbnails/Practical_Machine_Learning/final.png"
+		},
+		{
+			title: "Course Assignment: Supervised Learning II",
+			description: "Description and exploratory analysis of the 'Student Performance' dataset.",
+			page: "../assets/data/Practical_Machine_Learning/html/1.html",
+			thumbnail: "../assets/thumbnails/Practical_Machine_Learning/1_1.png"
+		},
+		{
+			title: "Course Assignment: Supervised Learning II",
+			description: "Student Performance Training Models.",
+			page: "../assets/data/Practical_Machine_Learning/html/2.html",
+			thumbnail: "../assets/thumbnails/Practical_Machine_Learning/1_2.png"
+		},
+		{
+			title: "Course Assignment: Supervised Learning II",
+			description: "Abalone Age Prediction Dataset Analysis.",
+			page: "../assets/data/Practical_Machine_Learning/html/3.html",
+			thumbnail: "../assets/thumbnails/Practical_Machine_Learning/3.png"
+		},
+		{
+			title: "Course Assignment: Supervised Learning II",
+			description: "Abalone Age Prediction Models.",
+			page: "../assets/data/Practical_Machine_Learning/html/4.html",
+			thumbnail: "../assets/thumbnails/Practical_Machine_Learning/4.png"
+		},
+		{
+			title: "Course Assignment: Supervised Learning II",
+			description: "Abalone Age Prediction Training and Tuning.",
+			page: "../assets/data/Practical_Machine_Learning/html/4_1.html",
+			thumbnail: "../assets/thumbnails/Practical_Machine_Learning/4_1.png"
+		},{
+			title: "Course Assignment: Clustering",
+			description: "Clustering methods to group the data points based on their features.",
+			page: "../assets/data/Practical_Machine_Learning/html/cluster.html",
+			thumbnail: "../assets/thumbnails/Practical_Machine_Learning/cluster.png"
+		},
 	]
 };
 

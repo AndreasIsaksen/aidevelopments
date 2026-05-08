@@ -12,12 +12,12 @@
 	<header class="page-header">
 		<a href="../index.html" class="back-link">← Back</a>
 		<h1>Algorithms and Data Structures</h1>
-		<p>Course documents, reports, and related PDF material.</p>
+		<p>This page contains course documents, reports, and related PDF material.</p>
 	</header>
 
 	<main>
-		<section 
-			id="pdf-grid" 
+		<section
+			id="pdf-grid"
 			class="pdf-grid"
 			data-course="Algorithms_and_Data_Structures">
 		</section>
@@ -28,14 +28,42 @@
 				<button id="close-pdf-viewer" type="button">Close</button>
 			</div>
 
-			<iframe 
-				id="pdf-viewer" 
+			<iframe
+				id="pdf-viewer"
 				class="pdf-viewer"
 				title="PDF preview">
 			</iframe>
 		</section>
+		<section class="code-section">
+			<h2>Code snippets</h2>
+
+			<div
+				id="code-grid"
+				class="code-grid"
+				data-course="Algorithms_and_Data_Structures">
+			</div>
+		</section>
+
+		<section id="code-viewer-section" class="code-viewer-section hidden">
+			<div class="code-viewer-header">
+				<div>
+					<h2 id="code-viewer-title"></h2>
+					<p id="code-viewer-description"></p>
+					<span id="code-viewer-language" class="code-language-badge"></span>
+				</div>
+				<button id="copy-code-button" type="button">
+					Copy Code
+				</button>
+				<button id="close-code-viewer" type="button">
+					Close
+				</button>
+			</div>
+		
+			<pre class="code-block"><code id="code-viewer"></code></pre>
+		</section>
 	</main>
 
-	<script src="../js/docs-viewer.js"></script>
+	<script src="../js/pdfview.js"></script>
+	<script src="../js/codeView.js"></script>
 </body>
 </html>

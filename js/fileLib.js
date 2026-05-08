@@ -88,6 +88,31 @@ const downloadableFiles = {
 			file: "../assets/data/Practical_Machine_Learning/Tasks+data.zip",
 			thumbnail: "../assets/thumbnails/Practical_Machine_Learning/zip.png",
 			fileType: "ZIP"
+		},
+		{
+			title: "Jupyter Notebooks Collection",
+			description: "ZIP archive containing the Jupyter notebooks created during the Practical Machine Learning course.",
+			file: "../assets/data/Practical_Machine_Learning/jupyterCollection.zip",
+			thumbnail: "../assets/thumbnails/Practical_Machine_Learning/jupyter.png",
+			fileType: "ZIP"
+		}
+	],
+	Software_Engineering_and_Testing: [
+		{
+			title: "Project Documentation and Code",
+			description: "ZIP archive containing the project documentation and code for the group project in the Software Engineering and Testing course.",
+			file: "../assets/data/Software_Engineering_and_Testing/1.zip",
+			thumbnail: "../assets/thumbnails/Software_Engineering_and_Testing/4.png",
+			fileType: "ZIP"
+		}
+	],
+	Introduction_to_Digital_Product_Design: [
+		{
+			title: "Project Documentation and Code",
+			description: "ZIP archive containing the project documentation and code for the group project in the Introduction to Digital Product Design course.",
+			file: "../assets/data/Introduction_to_Digital_Product_Design/1.zip",
+			thumbnail: "../assets/thumbnails/Introduction_to_Digital_Product_Design/zip.png",
+			fileType: "ZIP"
 		}
 	]
 };

@@ -8,16 +8,15 @@
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
 	<header class="page-header">
 		<a href="../index.html" class="back-link">← Back</a>
 		<h1>Introduction to Digital Product Design</h1>
-		<p>Course documents, reports, and related PDF material.</p>
+		<p>This page contains course documents, reports, and related PDF material.</p>
 	</header>
 
 	<main>
-		<section 
-			id="pdf-grid" 
+		<section
+			id="pdf-grid"
 			class="pdf-grid"
 			data-course="Introduction_to_Digital_Product_Design">
 		</section>
@@ -28,14 +27,36 @@
 				<button id="close-pdf-viewer" type="button">Close</button>
 			</div>
 
-			<iframe 
-				id="pdf-viewer" 
+			<iframe
+				id="pdf-viewer"
 				class="pdf-viewer"
 				title="PDF preview">
 			</iframe>
 		</section>
+		<section class="video-section">
+			<h2>Project Demo Video</h2>
+			<p class="video-description">
+				Short demonstration video showing the prototype and its intended functionality.
+			</p>
+		
+			<div class="video-wrapper">
+				<video class="project-video" controls preload="metadata">
+					<source src="../assets/data/Introduction_to_Digital_Product_Design/nettvenn_demo.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+		</section>
+		<section class="files-section">
+			<h2>Downloadable files</h2>
+			<div
+				id="file-grid"
+				class="file-grid"
+				data-course="Introduction_to_Digital_Product_Design">
+			</div>
+		</section>
 	</main>
 
-	<script src="../js/docs-viewer.js"></script>
+	<script src="../js/pdfview.js"></script>
+	<script src="../js/fileLib.js"></script>
 </body>
 </html>

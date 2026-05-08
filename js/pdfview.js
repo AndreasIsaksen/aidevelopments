@@ -267,6 +267,236 @@ const pdfDocuments = {
 			thumbnail: "../assets/thumbnails/Introduction_to_Operating_Systems/7.png"
 		},
 	],
+	Practical_Machine_Learning: [
+		{
+			title: "Course Assignment: Supervised Learning I",
+			description: "",
+			pdf: "../assets/data/Practical_Machine_Learning/pdf/1.pdf",
+			thumbnail: "../assets/thumbnails/Practical_Machine_Learning/1.png"
+		},
+		{
+			title: "Course Assignment: Clustering",
+			description: "",
+			pdf: "../assets/data/Practical_Machine_Learning/pdf/2.pdf",
+			thumbnail: "../assets/thumbnails/Practical_Machine_Learning/2.png"
+		}
+	],
+	Software_Engineering_and_Testing: [
+		{
+			title: "Project Delivery Report: 'InKomplett'",
+			description: "Delivery report for InKomplett, a Software Engineering project focused on developing a web-based incomplete task management application, covering design, implementation, testing, and future improvements. The product itself represent a web store solution.",
+			pdf: "../assets/data/Software_Engineering_and_Testing/1.pdf",
+			thumbnail: "../assets/thumbnails/Software_Engineering_and_Testing/1.png"
+		},
+		{
+			title: "Personal Reflection Note for the Project Delivery",
+			description: "Personal reflection note for the delivery of the group project.",
+			pdf: "../assets/data/Software_Engineering_and_Testing/2.pdf",
+			thumbnail: "../assets/thumbnails/Software_Engineering_and_Testing/2.png"
+		}
+	],
+	Statistics_and_Statistical_Programming: [
+		{
+			title: "Course Assignment 1",
+			description: "",
+			pdf: "../assets/data/Statistics_and_Statistical_Programming/1.pdf",
+			thumbnail: "../assets/thumbnails/Statistics_and_Statistical_Programming/1.png"
+		},
+		{
+			title: "Course Assignment 2",
+			description: "",
+			pdf: "../assets/data/Statistics_and_Statistical_Programming/2.pdf",
+			thumbnail: "../assets/thumbnails/Statistics_and_Statistical_Programming/2.png"
+		},
+		{
+			title: "Course Assignment 3",
+			description: "",
+			pdf: "../assets/data/Statistics_and_Statistical_Programming/3.pdf",
+			thumbnail: "../assets/thumbnails/Statistics_and_Statistical_Programming/3.png"
+		},
+		{
+			title: "Course Assignment 4",
+			description: "",
+			pdf: "../assets/data/Statistics_and_Statistical_Programming/4.pdf",
+			thumbnail: "../assets/thumbnails/Statistics_and_Statistical_Programming/4.png"
+		},
+		{
+			title: "Course Assignment 5",
+			description: "",
+			pdf: "../assets/data/Statistics_and_Statistical_Programming/5.pdf",
+			thumbnail: "../assets/thumbnails/Statistics_and_Statistical_Programming/5.png"
+		}
+	],
+	Algorithms_and_Data_Structures: [
+		{
+			title: "Course Assignment 2",
+			description: "",
+			pdf: "../assets/data/Algorithms_and_Data_Structures/2.pdf",
+			thumbnail: "../assets/thumbnails/Algorithms_and_Data_Structures/2.png"
+		},
+		{
+			title: "Course Assignment 3",
+			description: "",
+			pdf: "../assets/data/Algorithms_and_Data_Structures/3.pdf",
+			thumbnail: "../assets/thumbnails/Algorithms_and_Data_Structures/3.png"
+		},
+		{
+			title: "Course Assignment 4",
+			description: "",
+			pdf: "../assets/data/Algorithms_and_Data_Structures/4.pdf",
+			thumbnail: "../assets/thumbnails/Algorithms_and_Data_Structures/4.png"
+		},
+		{
+			title: "Course Assignment 8",
+			description: "",
+			pdf: "../assets/data/Algorithms_and_Data_Structures/8.pdf",
+			thumbnail: "../assets/thumbnails/Algorithms_and_Data_Structures/8.png"
+		}
+	],
+	Introduction_to_Digital_Product_Design: [
+		{
+			title: "Nettvenn: User Testing Plan",
+			description: "User testing plan for the Nettvenn prototype, outlining the test goal, target participants, test scenario, procedure, and evaluation criteria.",
+			pdf: "../assets/data/Introduction_to_Digital_Product_Design/1.pdf",
+			thumbnail: "../assets/thumbnails/Introduction_to_Digital_Product_Design/1.png"
+		},
+		{
+			title: "Nettvenn: Prototype Development Report",
+			description: "Report documenting the early prototype work for Nettvenn, including design decisions, Figma wireframes, navigation structure, app pages, and source references.",
+			pdf: "../assets/data/Introduction_to_Digital_Product_Design/2.pdf",
+			thumbnail: "../assets/thumbnails/Introduction_to_Digital_Product_Design/2.png"
+		},
+		{
+			title: "Nettvenn: User Testing Report",
+			description: "Report covering the planning, execution, results, and reflections from user testing the Nettvenn prototype with Seniornett Halden.",
+			pdf: "../assets/data/Introduction_to_Digital_Product_Design/3.pdf",
+			thumbnail: "../assets/thumbnails/Introduction_to_Digital_Product_Design/3.png"
+		},
+		{
+			title: "Python Article",
+			description: "Article explaining what Python is, why it is widely used, its common use cases, and the advantages and challenges of Python programming.",
+			pdf: "../assets/data/Introduction_to_Digital_Product_Design/4.pdf",
+			thumbnail: "../assets/thumbnails/Introduction_to_Digital_Product_Design/4.png"
+		}
+		],
+		Calculus: [
+		{
+			title: "Course Assignment 1",
+			description: "",
+			pdf: "../assets/data/Calculus/1.pdf",
+			thumbnail: "../assets/thumbnails/Calculus/1.png"
+		},
+		{
+			title: "Course Assignment 2",
+			description: "",
+			pdf: "../assets/data/Calculus/2.pdf",
+			thumbnail: "../assets/thumbnails/Calculus/1.png"
+		},
+		{
+			title: "Course Assignment 3",
+			description: "",
+			pdf: "../assets/data/Calculus/3.pdf",
+			thumbnail: "../assets/thumbnails/Calculus/1.png"
+		},
+		{
+			title: "Course Assignment 4",
+			description: "",
+			pdf: "../assets/data/Calculus/4.pdf",
+			thumbnail: "../assets/thumbnails/Calculus/1.png"
+		},
+		{
+			title: "Course Assignment 5",
+			description: "",
+			pdf: "../assets/data/Calculus/5.pdf",
+			thumbnail: "../assets/thumbnails/Calculus/1.png"
+		},
+		{
+			title: "Course Assignment 6",
+			description: "",
+			pdf: "../assets/data/Calculus/6.pdf",
+			thumbnail: "../assets/thumbnails/Calculus/1.png"
+		},
+		{
+			title: "Course Assignment 7",
+			description: "",
+			pdf: "../assets/data/Calculus/7.pdf",
+			thumbnail: "../assets/thumbnails/Calculus/1.png"
+		},
+		{
+			title: "Course Assignment 9",
+			description: "",
+			pdf: "../assets/data/Calculus/9.pdf",
+			thumbnail: "../assets/thumbnails/Calculus/1.png"
+		},
+		{
+			title: "Course Assignment 10",
+			description: "",
+			pdf: "../assets/data/Calculus/10.pdf",
+			thumbnail: "../assets/thumbnails/Calculus/1.png"
+		}
+	],
+	Discrete_Mathematics: [
+		{
+			title: "Course Assignment 1",
+			description: "",
+			pdf: "../assets/data/Discrete_Mathematics/1.pdf",
+			thumbnail: "../assets/thumbnails/Discrete_Mathematics/1.png"
+		},
+		{
+			title: "Course Assignment 2",
+			description: "",
+			pdf: "../assets/data/Discrete_Mathematics/2.pdf",
+			thumbnail: "../assets/thumbnails/Discrete_Mathematics/1.png"
+		},
+		{
+			title: "Course Assignment 3",
+			description: "",
+			pdf: "../assets/data/Discrete_Mathematics/3.pdf",
+			thumbnail: "../assets/thumbnails/Discrete_Mathematics/1.png"
+		},
+		{
+			title: "Course Assignment 4",
+			description: "",
+			pdf: "../assets/data/Discrete_Mathematics/4.pdf",
+			thumbnail: "../assets/thumbnails/Discrete_Mathematics/1.png"
+		},
+		{
+			title: "Course Assignment 5",
+			description: "",
+			pdf: "../assets/data/Discrete_Mathematics/5.pdf",
+			thumbnail: "../assets/thumbnails/Discrete_Mathematics/1.png"
+		},
+		{
+			title: "Course Assignment 6",
+			description: "",
+			pdf: "../assets/data/Discrete_Mathematics/6.pdf",
+			thumbnail: "../assets/thumbnails/Discrete_Mathematics/1.png"
+		},
+		{
+			title: "Course Assignment 7",
+			description: "",
+			pdf: "../assets/data/Discrete_Mathematics/7.pdf",
+			thumbnail: "../assets/thumbnails/Discrete_Mathematics/1.png"
+		},
+		{
+			title: "Course Assignment 9",
+			description: "",
+			pdf: "../assets/data/Discrete_Mathematics/9.pdf",
+			thumbnail: "../assets/thumbnails/Discrete_Mathematics/1.png"
+		},
+		{
+			title: "Course Assignment 10",
+			description: "",
+			pdf: "../assets/data/Discrete_Mathematics/10.pdf",
+			thumbnail: "../assets/thumbnails/Discrete_Mathematics/1.png"
+		},
+		{
+			title: "Course Assignment 11",
+			description: "",
+			pdf: "../assets/data/Discrete_Mathematics/11.pdf",
+			thumbnail: "../assets/thumbnails/Discrete_Mathematics/1.png"
+		},
+	]
 };
 
 function createPdfCard(documentItem) {
