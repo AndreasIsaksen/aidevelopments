@@ -267,7 +267,6 @@ const pdfDocuments = {
 			thumbnail: "../assets/thumbnails/Introduction_to_Operating_Systems/7.png"
 		},
 	],
-	Practical_Machine_Learning: [
 };
 
 function createPdfCard(documentItem) {
