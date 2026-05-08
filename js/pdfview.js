@@ -331,25 +331,25 @@ const pdfDocuments = {
 		{
 			title: "Course Assignment 2",
 			description: "",
-			pdf: "../assets/data/Algorithms_and_Data_Structures/2.pdf",
+			pdf: "../assets/data/Algorithms_and_Data_Structures/pdf/2.pdf",
 			thumbnail: "../assets/thumbnails/Algorithms_and_Data_Structures/2.png"
 		},
 		{
 			title: "Course Assignment 3",
 			description: "",
-			pdf: "../assets/data/Algorithms_and_Data_Structures/3.pdf",
+			pdf: "../assets/data/Algorithms_and_Data_Structures/pdf/3.pdf",
 			thumbnail: "../assets/thumbnails/Algorithms_and_Data_Structures/3.png"
 		},
 		{
 			title: "Course Assignment 4",
 			description: "",
-			pdf: "../assets/data/Algorithms_and_Data_Structures/4.pdf",
+			pdf: "../assets/data/Algorithms_and_Data_Structures/pdf/4.pdf",
 			thumbnail: "../assets/thumbnails/Algorithms_and_Data_Structures/4.png"
 		},
 		{
 			title: "Course Assignment 8",
 			description: "",
-			pdf: "../assets/data/Algorithms_and_Data_Structures/8.pdf",
+			pdf: "../assets/data/Algorithms_and_Data_Structures/pdf/8.pdf",
 			thumbnail: "../assets/thumbnails/Algorithms_and_Data_Structures/8.png"
 		}
 	],
