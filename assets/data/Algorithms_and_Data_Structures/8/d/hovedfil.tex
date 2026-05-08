@@ -1,0 +1,67 @@
+\documentclass[
+word,sans]{hiofthesis}
+
+\usepackage[style=apa, backend = biber]{biblatex}
+\usepackage{csquotes}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{ltablex}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{amsmath}  
+\usepackage{amsfonts}  
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{venndiagram}
+\usepackage{enumitem}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Oblig8-AndreasIsaksen},
+    pdfpagemode=FullScreen,
+    }
+
+
+
+\renewcommand{\arraystretch}{1.5} % Default is 1.0
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+\titlespacing*{\subsection}{0pt}{10pt}{5pt}
+\titleformat{\chapter}[display]
+    {\normalfont\huge\bfseries}{}{0pt}{\Huge}
+
+\titlespacing*{\chapter}{0pt}{-60pt}{20pt}
+\addbibresource{master.bib}
+
+\title{Oblig 8\\ % Main title
+\vspace{0.5em}
+{\small ITF20006-1 25V Algoritmer og datastrukturer}} % subtitle
+\author{\small{Andreas Isaksen}}
+
+%\input{ordliste}    % OPTIONAL, goes with \printglossaries at the end
+
+\begin{document}
+
+\maketitle          % DO NOT CHANGE 
+\frontmatter        % All stuff before Introduction: DO NOT CHANGE
+
+%\input{kapitler/forord}
+
+%\input{kapitler/sammendrag}
+\begingroup
+\hypersetup{linkcolor=black}
+\tableofcontents
+\endgroup
+  
+\mainmatter  %All stuff from Introduction and on: DO NOT CHANGE
+
+% Your chapter files
+\input{kapitler/first}
+
+
+\printbibliography[title = Referanseliste]
+
+\end{document}

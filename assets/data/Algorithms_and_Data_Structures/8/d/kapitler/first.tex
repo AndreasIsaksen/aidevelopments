@@ -1,0 +1,33 @@
+%\cleardoublepage
+\chapter{Teori}
+\label{chap:intro}
+
+\section{Oppgave D}
+
+Hvilken orden, angitt med O-notasjon, har tidsforbruket til metoden LagHeapOrdning() fra forrige oppgave, dersom treet inneholder n noder og:
+
+\begin{enumerate}[label=\alph*)]
+	\item Treet er komplett, dvs. at alle nivåer, muligens bortsett fra det dypeste nivået, er helt fylt opp med noder?
+	\begin{enumerate}[label=$\cdot$]
+		\item Metoden \textit{lagHeapOrdning()} går rekursivt gjennom alle nodene i treet og kaller på \textit{reparer()} i hver node.
+		\item \textit{reparer()} metoden vil gjennom iterasjonen behandle alle node verdier og '\textit{boble}' de lavere verdiene oppover i treet.
+		\item i et \textbf{komplett binært tre} vil høyden være $h=log_2(n)$ og i verste tilfelle vil \textit{reparer()} metoden bruke $O(log\ n)$ tid.
+		\item I hver n-te node brukes $O(log\ n)$ tid på å reparere '\textit{Heap ordningen}'.
+		\item Dette gir oss et totalt tidsforbruk på:
+		\[
+			\underline{\underline{O(n\cdot log\ n)}}
+		\]
+	\end{enumerate}
+	
+	\item Hver node (bortsett fra én) har nøyaktig ett subtre (som ikke er tomt), og den siste noden har ingen ikke-tomme subtrær?
+	\begin{enumerate}[label=$\cdot$]
+		\item Et slikt tre vil være svært ubalansert/ensidig og ligne mer på en \textit{lenket liste} (med unntak av den siste noden).
+		\item Antall noder vil fortsatt være $n$.
+		\item Metoden \textit{lagHeapOrdning()} vil forsatt gå rekursivt gjennom treet og kalle på \textit{reparer()} metoden for hver node, men grunnet treets 'fasong', så blir dette mer som å iterere gjennom en \textit{lenket liste}.
+		\item Dermed må \textit{reparer()} metoden i verste fall gå hele veien i bladet for en node ($O(n)$).
+		\item Dette gir oss et totalt tidsforbruk på:
+		\[
+			\underline{\underline{O(n\cdot n)=O(n^2)}}
+		\]
+	\end{enumerate}
+\end{enumerate}

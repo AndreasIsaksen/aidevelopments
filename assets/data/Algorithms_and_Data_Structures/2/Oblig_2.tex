@@ -1,0 +1,95 @@
+\documentclass{article}  
+
+\usepackage{listings}
+\usepackage{amsmath}  
+\usepackage{amsfonts}  
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{venndiagram}
+\usepackage{enumitem}
+
+\lstset{
+  basicstyle=\ttfamily\small, % Monospaced font
+  keywordstyle=\color{blue}\bfseries, % Keywords in blue and bold
+  commentstyle=\color{green}, % Comments in green
+  stringstyle=\color{red}, % Strings in red
+  numbers=left, % Line numbers on the left
+  numberstyle=\tiny\color{gray}, % Style for line numbers
+  frame=single, % Box around the code
+  breaklines=true, % Automatic line breaking
+  tabsize=2, % Tab size
+}
+
+\begin{document}  
+
+\title{Oblig 2\\Algoritmer og datastrukturer}
+\author{Andreas Isaksen}  
+\date{\today}  
+\maketitle  
+\pagebreak
+
+\section*{Oppgave 1}
+\begin{enumerate}[label=\alph*)]
+\item Denne oppgaven er referert til med kommentarer i Java koden(Linje 27 og 93).
+\item Her er en liste over tester på metoden \textit{superlineær(n)} med økende problemstørrelse(\underline{n}).
+\begin{enumerate}[label=-]
+\item $n = 10 \to T(n\cdot log_2) = 0ms$
+\item $n = 100 \to T(n\cdot log_2) = 0ms$
+\item $n = 1'000 \to T(n\cdot log_2) = 0ms$
+\item $n = 10'000 \to T(n\cdot log_2) = 2ms$
+\item $n = 100'000 \to T(n\cdot log_2) = 5ms$
+\item $n = 1'000'000 \to T(n\cdot log_2) = 19ms$
+\item $n = 10'000'000 \to T(n\cdot log_2) = 205ms$
+\item $n = 100'000'000 \to T(n\cdot log_2) = 2'301ms$
+\item $n = 1'000'000'000 \to T(n\cdot log_2) = 25'527ms$
+\item $n = 10'000'000'000 \to T(n\cdot log_2) = 298'345ms$
+\end{enumerate}
+Når $n = 420'000'000$ tar det omtrent $10.49$ sekunder for å fullføre iterasjonen. Så ikke veldig mye lavere enn dette.
+\end{enumerate}
+\section*{Oppgave 2}
+\begin{enumerate}[label=\alph*)]
+\item Denne oppgaven er referert til med kommentarer i Java koden(Linje 37 og 97).
+\item Her er en liste over tester på metoden \textit{kubisk(n)} med økende problemstørrelse(\underline{n}).
+\begin{enumerate}[label=-]
+\item $n = 10 \to T(n^3) = 0ms$
+\item $n = 100 \to T(n^3) = 3ms$
+\item $n = 1'000 \to T(n^3) = 493ms$
+\item $n = 2'000 \to T(n^3) = 3'851ms$
+\item $n = 2'500 \to T(n^3) = 7'647ms$
+\item $n = 2'750 \to T(n^3) = 10'107ms$
+\item $n = 3'000 \to T(n^3) = 12'978ms$
+\end{enumerate}
+Når $n = 2'750$ tar det omtrent $10.107$ sekunder for å fullføre iterasjonen. Så ikke veldig mye lavere enn dette.
+\end{enumerate}
+\section*{Oppgave 3}
+\begin{enumerate}[label=\alph*)]
+\item Denne oppgaven er referert til med kommentarer i Java koden(Linje 48 og 102).
+\item Her er en liste over tester på metoden \textit{eksponentiell(n)} med økende problemstørrelse(\underline{n}).
+\begin{enumerate}[label=-]
+\item $n = 10 \to T(2^n) = 0ms$
+\item $n = 62 \to T(2^n) = 4746ms$
+\item $n = 63 \to T(2^n) = 9536ms$
+\item $n = 100 \to T(2^n) = 9489ms$
+\item $n = 1'000 \to T(2^n) = 9488ms$
+\item $n = 10'000 \to T(2^n) = 9496ms$
+\item $n = 100'000 \to T(2^n) = 9541ms$
+\end{enumerate}
+Her ser jeg at arbeidstiden treffer taket på $2^{63}$. Jeg tror dette har med å gjøre at en \textit{long} datatype har en maks verdi på $2^{63} - 1$. Dermed klarer ikke denne metoden å ta imot \textit{n} verdier som er høyere enn $63$ og dette bruker den ca $9.5$ sekunder på å fullføre.
+\end{enumerate}
+\section*{Oppgave 4}
+\begin{enumerate}[label=\alph*)]
+\item Denne oppgaven er referert til med kommentarer i Java koden(Linje 58 og 107).
+\item Her er en liste over tester på metoden \textit{kombinatorisk(n)} med økende problemstørrelse(\underline{n}).
+\begin{enumerate}[label=-]
+\item $n = 10 \to T(n!) = 2ms$
+\item $n = 15 \to T(n!) = 3ms$
+\item $n = 20 \to T(n!) = 2'532ms$
+\item $n = 25 \to T(n!) = 7'278ms$
+\item $n = 26 \to T(n!) = 0ms$ - (Feiler)
+\end{enumerate}
+Når \textit{n!} får en høyere verdi en $25$ så feiler iterasjonsprosessen. Maks arbeidstid for denne iterasjonene blir da for $n=25!$ som tar omtrent $7.2$ sekunder.
+\end{enumerate}
+
+
+\end{document}

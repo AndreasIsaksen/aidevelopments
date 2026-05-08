@@ -1,0 +1,47 @@
+
+- treningsnivaa
+id;nivaa;beskrivelse
+
+
+
+
+- oktTyper
+id;kategori
+0;'styrke'
+1;'kondisjon'
+
+
+- kondisjonsOvelser
+kategori;ovelser;beskrivelse
+1;'Kortintervall (høy intensitet)';'10 x 2 minutter, 2 minutters pause. Du kan legge opp intervallene på en relativt flat løype. Sett en startstrek og løp (eventuelt sykle, gå på ski eller lignende) i 2 minutter. Sett en strek der du er når det har gått to minutter. Etter pause, løp så tilbake. Under intervallene kan du kontrollere om du løper like langt per drag. Dersom du kunne løpt raskere, vet du det til nese gang. Intervallene kan selvsagt også gjøres innendørs på en tredemølle.'
+1;'Alternativ kortintervall;'45 sekunder x 20 i motbakkeløp, 15 sekunder pause. Under denne type intervall kan du holde en høy intensitet over lang tid. Denne formen for intervalltrening er motiverende siden dragene ikke er så lange. Samtidig vil du ha en høy hjertefrekvens siden pausene er korte.'
+1;'Langintervall (moderat intensitet)';'5 x 8 minutter, 2 minutters pause. Finn et kupert terreng i din idrett. Intensiteten blir moderat siden dragene er lange og pausene korte. Intervallen kan selvsagt også utføres innendørs. Du kan også kjøre et sammenhengende drag på 30-40 minutter, men dette er ofte mer mentalt krevende.'
+1;'Hurtigkjøring i kupert terreng';'Løp, sykle eller gå på ski i et variert terreng i cirka 60 minutter. De første 10 minuttene bør være rolige. Under økta bruker du terrenget aktivt.'
+
+- styrkeTrening
+id;treningstyper
+1;'armer'
+2;'ben'
+3;'rygg'
+4;'overkropp'
+5;'spesialisert'
+
+
+
+- styrkeOvelser
+id;ovelse;beskrivelse
+1;'biceps';'Hold en vekt i hver hånd, senk armene og bøy albuene for å løfte vektene mot skuldrene.'
+1;'triceps';'Bruk en vekt i begge hender, senk vekten bak hodet ved å bøye albuene og strekk deretter armene.'
+1;'overarm';'Hold en vekt i hver hånd, løft vektene ut til sidene med utstrakte armer.'
+1;'underarm';'Bruk en vekt i hver hånd, bøy albuene og løft vektene mot skuldrene.'
+2;'lår';'Plasser en vekt på skuldrene, bøy knærne og senk kroppen nedover som om du setter deg på en stol.'
+2;'legger';'Stå oppreist, løft hælene slik at du står på tærne, senk hælene ned igjen.'
+2;'setemuskelen';'Ligg på ryggen, bøy knærne og løft hoftene opp mot taket.'
+2;'hofter';'Lig på ryggen, bøy knærne, og sving hoftene opp og ned.'
+3;'skuldre';'Hold en vekt i hver hånd, løft vektene rett opp fra skuldrene med utstrakte armer.'
+3;'rygghev';'Ligg på magen, løft overkroppen og bena opp fra bakken.'
+4;'bryst';'Ligg på ryggen, senk vektene ned til brystet, og press dem opp igjen.'
+4;'mage';'Ligg på ryggen, løft overkroppen opp mot knærne.'
+5;'Markløft';'Stå med rett rygg, bøy deg fremover og løft vektene fra gulvet ved å rette ut hoftene.'
+5;'roing';'Bøy deg fremover, hold vektene i hendene, og dra dem opp mot magen.'
+5;'chin-ups';'Heng på en stang med overhåndsgrep, løft kroppen opp slik at haken passerer stangen.'

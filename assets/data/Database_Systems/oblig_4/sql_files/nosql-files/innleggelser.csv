@@ -1,0 +1,568 @@
+﻿_id;pasient_id;innleggelsesdato;utskrivningsdato;diagnose;lege_id
+i1;1;06.11.2018;08.11.2018;Ovarian Dermoid-Cyct;21
+i2;1;20.09.2018;20.09.2018;Ineffective Breathin Pattern R/T Fluid Accumulatio;24
+i3;3;24.01.2019;29.01.2019;Cardiac Arrest;2
+i4;3;21.10.2018;27.10.2018;Congestive Heart Failure;8
+i5;6;13.06.2018;15.06.2018;Asthma Exacerbation;3
+i6;6;08.11.2018;09.11.2018;Uterine Fibroid;22
+i7;7;24.06.2018;03.07.2018;Cancer;8
+i8;8;18.09.2018;21.09.2018;Amigima;6
+i9;9;02.03.2019;09.03.2019;Osteoarthritis;8
+i10;9;31.12.2018;31.12.2018;Ruptured Appendicitis;19
+i11;10;30.12.2018;05.01.2019;Zenkers Diverticulitis;14
+i12;10;27.02.2019;27.02.2019;Lower Quadrant Pain;27
+i13;11;14.12.2018;16.12.2018;Prostatectomy;15
+i14;12;27.04.2019;04.05.2019;Cerebral Aneurysm Rupture;21
+i15;13;28.04.2019;01.05.2019;Renal Failure;1
+i16;15;01.10.2018;05.10.2018;Hiatal Hernia;5
+i17;16;10.01.2019;14.01.2019;Pyloric Obstruction;6
+i18;16;04.04.2019;13.04.2019;Schizophrenic Disorder;12
+i19;17;04.03.2019;04.03.2019;Diabetes Mellitus;9
+i20;17;12.12.2018;14.12.2018;Fractured Femur;2
+i21;18;02.07.2018;05.07.2018;Spinal Infection;3
+i22;18;25.04.2019;04.05.2019;40 Weeks Pregnant;10
+i23;20;30.01.2019;04.02.2019;Essential Hypertension;15
+i24;21;07.06.2018;10.06.2018;Exploratory, Orthoscopic - Knee;12
+i25;21;19.11.2018;27.11.2018;Emphysema;12
+i26;22;17.07.2018;20.07.2018;Pregnancy;8
+i27;22;04.11.2018;07.11.2018;Congestive Heart Failure;13
+i28;23;07.04.2019;15.04.2019;Ca. Of Blatter;26
+i29;23;18.01.2019;22.01.2019;Enlarged Bunion On Left Primary Metaarsal;4
+i30;24;18.03.2019;22.03.2019;Bipolar Affective Disorder;21
+i31;24;04.05.2019;10.05.2019;Anterior MI;1
+i32;27;10.09.2018;12.09.2018;Amigima;12
+i33;28;30.03.2019;30.03.2019;Cancer Of The Stomach;26
+i34;29;12.01.2019;14.01.2019;Anterior MI;4
+i35;31;26.09.2018;26.09.2018;Cardiovascular Disease;19
+i36;32;18.05.2019;23.05.2019;Stroke (CVA);22
+i37;32;02.10.2018;11.10.2018;Stomache Pain;12
+i38;33;31.05.2019;01.06.2019;Myocardial Infarction;14
+i39;34;06.12.2018;07.12.2018;Bladder Tomour;11
+i40;34;24.12.2018;26.12.2018;Fracture Right Distal Radius (Colles Fracture);17
+i41;35;29.11.2018;02.12.2018;Myocardial Infarction;7
+i42;35;05.06.2019;05.01.1971;Possible Renal Calculi;8
+i43;36;08.05.2019;12.05.2019;Lung Cancer (Rt. Lung);20
+i44;37;09.03.2019;18.03.2019;Basal Skull Fracture;27
+i45;37;08.11.2018;10.11.2018;Rt. Nephrectomy;3
+i46;38;25.11.2018;27.11.2018;Chronic Obstructive Pulmonary Disease;6
+i47;39;13.03.2019;22.03.2019;Fibroids;12
+i48;39;17.01.2019;18.01.2019;Peptic Ulcer;12
+i49;40;03.12.2018;04.12.2018;Appendicitis;13
+i50;40;04.09.2018;12.09.2018;Spinal Compresion;5
+i51;41;13.06.2018;21.06.2018;Chest Pain;20
+i52;45;15.11.2018;23.11.2018;Post Partum Hemmorage;6
+i53;46;01.01.2019;06.01.2019;Caeserian Section;15
+i54;46;08.06.2018;16.06.2018;Severe Substernal Pain Radiating To Left Shoulder;22
+i55;47;02.02.2019;08.02.2019;Appendicitis;3
+i56;48;15.08.2018;18.08.2018;Pneumonia;11
+i57;49;24.06.2018;30.06.2018;Unable To Void.;7
+i58;51;16.07.2018;18.07.2018;Undiagnosed Chest Pain;1
+i59;51;05.11.2018;11.11.2018;Hysterectomy;14
+i60;52;10.05.2019;14.05.2019;Prostatectomy;14
+i61;53;24.10.2018;24.10.2018;Urinary Tract Infection;8
+i62;53;17.11.2018;22.11.2018;Pyelonephritis;2
+i63;54;31.10.2018;03.11.2018;Diabetes;21
+i64;54;07.04.2019;07.04.2019;Hypertension;21
+i65;56;11.12.2018;13.12.2018;Abdominal Perineal Resection;25
+i66;56;07.10.2018;16.10.2018;Cardiovascular Disease;26
+i67;58;12.11.2018;15.11.2018;Cardiovascular Disease;14
+i68;59;08.11.2018;15.11.2018;Birth By Caeserian Section;18
+i69;60;12.09.2018;13.09.2018;Impaired Gas Exchange;2
+i70;60;17.03.2019;18.03.2019;Kock Pouch Urinary Diversion;25
+i71;61;02.09.2018;05.09.2018;Cva (Left) - Cerebral Vascular Accident (Stroke);20
+i72;61;16.11.2018;19.11.2018;Chronic Bronchitis;16
+i73;62;15.10.2018;19.10.2018;Manic Depression;14
+i74;62;11.12.2018;16.12.2018;Rheumataoid Arthritis;2
+i75;63;28.08.2018;31.08.2018;Really Sick;21
+i76;64;05.05.2019;14.05.2019;Unable To Void.;17
+i77;66;10.05.2019;14.05.2019;Diabetes Mellitus;17
+i78;67;20.10.2018;29.10.2018;Pregnancy;15
+i79;67;09.02.2019;15.02.2019;Ovarian Cancer;21
+i80;68;02.12.2018;07.12.2018;Diabetes Mellitus;12
+i81;68;05.11.2018;09.11.2018;Pregnancy;11
+i82;69;02.05.2019;08.05.2019;Asthma;12
+i83;70;17.07.2018;17.07.2018;Migraine;20
+i84;71;07.08.2018;11.08.2018;Post Partum Hemmorage;10
+i85;71;21.11.2018;27.11.2018;Bronchiolitis;20
+i86;73;24.01.2019;27.01.2019;Ovarian Cancer;6
+i87;73;09.03.2019;15.03.2019;Lung Cancer;17
+i88;74;04.11.2018;06.11.2018;Fractured Right Femur (Compound);25
+i89;75;13.10.2018;22.10.2018;Headache;7
+i90;76;25.09.2018;03.10.2018;Appendicitis;11
+i91;76;12.01.2019;20.01.2019;Pain In Abdomen Left Side;23
+i92;77;18.06.2018;26.06.2018;Head Injury M.V.A.;18
+i93;77;25.10.2018;02.11.2018;Asthma;2
+i94;78;17.06.2018;17.06.2018;Hypertension;17
+i95;79;19.02.2019;22.02.2019;Hypertension;10
+i96;79;28.02.2019;05.03.2019;3rd Degree Burn;27
+i97;81;07.12.2018;11.12.2018;Angina Pectoris;27
+i98;81;27.04.2019;03.05.2019;Repair Stab Wound;22
+i99;82;06.01.2019;07.01.2019;L4-Lf Spinal Fusion;9
+i100;83;13.05.2019;17.05.2019;Enlarged Bunion On Left Primary Metaarsal;26
+i101;84;12.01.2019;14.01.2019;Endometriosis;18
+i102;84;02.01.2019;07.01.2019;Anterior Myocardial Infraction;2
+i103;86;21.05.2019;27.05.2019;Pregnancy;14
+i104;87;05.02.2019;07.02.2019;Uterine Fibroid;11
+i105;87;11.04.2019;15.04.2019;Pneumonia;15
+i106;88;04.07.2018;06.07.2018;Enlarged Bunion On Left Primary Metaarsal;26
+i107;88;07.02.2019;16.02.2019;Emphysema;15
+i108;90;27.06.2018;01.07.2018;Cancer;11
+i109;91;30.08.2018;30.08.2018;Congestive Heart Failure;3
+i110;91;15.03.2019;18.03.2019;Emphysema;13
+i111;92;05.08.2018;13.08.2018;Fractured Femur;7
+i112;92;03.01.2019;03.01.2019;Osteo Arthtitis Knee;5
+i113;93;18.11.2018;27.11.2018;Crohns Disease;11
+i114;93;20.05.2019;20.05.2019;Left Creebral Vascular Accident;12
+i115;94;16.06.2018;18.06.2018;Left Shoulder Rotator Cuff Repair;22
+i116;97;07.07.2018;16.07.2018;Ovarian Cancer;24
+i117;98;10.04.2019;17.04.2019;Pregnancy;25
+i118;98;15.12.2018;22.12.2018;Birth By Caeserian Section;5
+i119;100;04.12.2018;13.12.2018;Depression, Dementia;22
+i120;100;06.11.2018;14.11.2018;Respiratory Failure;21
+i121;101;17.05.2019;26.05.2019;Stroke (CVA);8
+i122;102;28.10.2018;02.11.2018;Melanoma, Cancer;3
+i123;103;13.02.2019;22.02.2019;Ovarian Cyst;22
+i124;103;04.11.2018;10.11.2018;Basal Skull Fracture;2
+i125;104;02.01.2019;10.01.2019;Abdominal Pain;25
+i126;105;04.10.2018;06.10.2018;Pneumonia;6
+i127;106;26.06.2018;29.06.2018;Dislocated R/Shoulder Broke L/Leg R/T Car Acc;2
+i128;108;20.05.2019;28.05.2019;Decubitus Ulcer;15
+i129;108;17.03.2019;19.03.2019;Unstable Angina;12
+i130;110;18.02.2019;18.02.2019;Biliary Colic;14
+i131;110;08.04.2019;17.04.2019;Lumbar Disc Protrusion;23
+i132;111;18.02.2019;22.02.2019;Total Hysterectomy;1
+i133;111;25.08.2018;25.08.2018;Subdural Hematoma;27
+i134;112;25.09.2018;03.10.2018;Amyotopic Lateral Scletosis;5
+i135;112;11.07.2018;13.07.2018;Obsessive - Compulsive Order;23
+i136;113;21.10.2018;21.10.2018;2nd & 3rd Degree Burns To Right Arm / Both Legs;13
+i137;114;11.02.2019;11.02.2019;MVA HI;26
+i138;115;06.01.2019;13.01.2019;Myocardial Infarction;11
+i139;115;21.08.2018;29.08.2018;CHF;12
+i140;117;10.07.2018;15.07.2018;Myocardial Infarction;17
+i141;118;27.08.2018;04.09.2018;Anterior MI;25
+i142;119;09.08.2018;10.08.2018;Renal Failure;12
+i143;119;05.08.2018;14.08.2018;Colorectal Cancer;18
+i144;120;05.04.2019;13.04.2019;Migraine;7
+i145;120;04.10.2018;04.10.2018;Uterine Fibroid;26
+i146;121;05.09.2018;13.09.2018;Anterior Myocardial Infraction;10
+i147;122;26.06.2018;28.06.2018;Cerebrovascular Accident (Stroke);9
+i148;123;30.03.2019;30.03.2019;Pregnancy;6
+i149;123;09.07.2018;11.07.2018;Back Injury;21
+i150;124;26.02.2019;06.03.2019;Zenkers Diverticulitis;13
+i151;125;16.05.2019;24.05.2019;Labour;20
+i152;125;30.10.2018;03.11.2018;Myocardial Infarction (MI);13
+i153;126;20.08.2018;24.08.2018;Rheumataoid Arthritis;4
+i154;126;06.12.2018;15.12.2018;Paranoid Schizophrenic;5
+i155;127;01.05.2019;07.05.2019;Chest Infection;19
+i156;128;03.08.2018;12.08.2018;Prostatectomy;5
+i157;128;31.07.2018;07.08.2018;Hunting Disease;16
+i158;129;06.02.2019;08.02.2019;Pain In Abdomen Left Side;7
+i159;129;02.04.2019;07.04.2019;Pregnant;11
+i160;130;19.05.2019;28.05.2019;Cancer;19
+i161;131;04.03.2019;12.03.2019;Hypoglycemia;13
+i162;131;07.06.2018;07.06.2018;Amyotopic Lateral Scletosis;20
+i163;132;03.07.2018;03.07.2018;Appendicitis;2
+i164;133;03.04.2019;12.04.2019;Ovarian Dermoid-Cyct;2
+i165;133;20.07.2018;21.07.2018;Congestive Heart Failure;26
+i166;135;06.04.2019;12.04.2019;Caeserian Section;21
+i167;137;26.10.2018;27.10.2018;Pregnancy;23
+i168;137;30.04.2019;06.05.2019;Pregnancy;13
+i169;139;25.10.2018;28.10.2018;Pyclonephritis;18
+i170;143;13.09.2018;15.09.2018;Ca R Breast;26
+i171;145;12.09.2018;21.09.2018;Pregnant;25
+i172;145;30.10.2018;30.10.2018;Rll Pneumonia;20
+i173;147;14.06.2018;21.06.2018;Congestive Heart Failure;19
+i174;147;09.03.2019;13.03.2019;Pregnancy;18
+i175;148;03.10.2018;12.10.2018;Myocardial Infarction;15
+i176;148;07.12.2018;11.12.2018;Fractured L. Tibia;17
+i177;150;01.12.2018;03.12.2018;Osteomyslitis - Right Hip;14
+i178;150;31.07.2018;02.08.2018;Manic Depression;12
+i179;151;18.05.2019;26.05.2019;Fractured Left Hip;14
+i180;151;23.01.2019;23.01.2019;Broken Hip;27
+i181;152;10.11.2018;11.11.2018;Fractured Hip;6
+i182;154;17.04.2019;24.04.2019;Pain In Abdomen Left Side;24
+i183;154;22.12.2018;27.12.2018;Latent Phase Of First Stage Labour;4
+i184;155;25.07.2018;27.07.2018;Multiple Sclerosis;2
+i185;156;11.09.2018;11.09.2018;Scatica;11
+i186;156;04.01.2019;06.01.2019;Cva-Right-Sided-Weakness;20
+i187;158;22.09.2018;24.09.2018;Fractured Right Humeral Head;21
+i188;159;06.10.2018;14.10.2018;Cleft Palate And Complete Unilateral Cleft Up;9
+i189;159;16.11.2018;16.11.2018;Fractured Left Leg;13
+i190;160;09.06.2018;18.06.2018;Dementia;24
+i191;161;02.08.2018;10.08.2018;Asthma;12
+i192;162;03.11.2018;06.11.2018;Unstable Angina;15
+i193;163;11.06.2018;14.06.2018;Ulcerative Colitis;27
+i194;164;30.06.2018;04.07.2018;Cervical Spinal Tumor;9
+i195;164;17.12.2018;21.12.2018;40 Weeks Pregnant;2
+i196;165;03.08.2018;10.08.2018;3rd Degree Burn To Face;6
+i197;166;04.08.2018;10.08.2018;Immobility R/T Pain And Swelling R Ankle;2
+i198;168;08.10.2018;17.10.2018;Birth By Caeserian Section;15
+i199;168;11.07.2018;17.07.2018;Congestive Heart Failure;5
+i200;170;08.11.2018;11.11.2018;Bladder Cancer;21
+i201;170;12.10.2018;20.10.2018;Asthma;13
+i202;171;11.03.2019;16.03.2019;Cancer Of The Stomach;2
+i203;171;05.03.2019;11.03.2019;Angina;18
+i204;172;26.01.2019;31.01.2019;Appendicitis;11
+i205;172;07.05.2019;10.05.2019;Osteoarthritis;1
+i206;173;19.10.2018;24.10.2018;Interstitial, Pulmonary Edema;4
+i207;174;15.03.2019;19.03.2019;Spinal Infection;20
+i208;176;25.08.2018;26.08.2018;Labour;17
+i209;177;09.08.2018;12.08.2018;Amigima;19
+i210;177;15.03.2019;23.03.2019;Paranoid Schizophrenia;4
+i211;178;30.10.2018;03.11.2018;Dementia;17
+i212;179;07.07.2018;11.07.2018;Myocardial Infarction;27
+i213;179;27.12.2018;03.01.2019;Pregnancy;7
+i214;180;13.01.2019;20.01.2019;Dehydradion, Vomiting;25
+i215;182;31.10.2018;09.11.2018;Crohns Disease;20
+i216;183;01.02.2019;10.02.2019;Pneumonia;6
+i217;185;28.02.2019;02.03.2019;Pregnant;21
+i218;186;13.02.2019;21.02.2019;Pregnancy;18
+i219;191;15.01.2019;21.01.2019;Cerebrovascular Accident (Stroke);7
+i220;191;24.05.2019;31.05.2019;Severe Pain + Tenderness In Left Calf;20
+i221;193;04.05.2019;09.05.2019;Alt. In Emotional Integrity - Anxiety;10
+i222;194;12.02.2019;18.02.2019;Fractured L. Tibia;23
+i223;197;01.09.2018;03.09.2018;Fractured Right Humeral Head;14
+i224;197;16.02.2019;20.02.2019;Appendicitis;10
+i225;199;25.12.2018;01.01.2019;CHF;14
+i226;200;23.04.2019;30.04.2019;Diabetes Mellitus;7
+i227;201;08.11.2018;17.11.2018;Anorexia Nervosa;16
+i228;201;15.03.2019;23.03.2019;Stress Incotinence;15
+i229;202;15.12.2018;15.12.2018;Headache;1
+i230;202;08.08.2018;08.08.2018;Chest Pain;19
+i231;205;31.01.2019;07.02.2019;3rd Degree Burn;5
+i232;206;03.09.2018;08.09.2018;Stomach Ulcer;25
+i233;207;18.06.2018;25.06.2018;Dementia;10
+i234;207;04.09.2018;10.09.2018;Atrial Fibrillation R/O MI;4
+i235;208;03.11.2018;03.11.2018;Turp;22
+i236;208;26.09.2018;01.10.2018;Head Injury M.V.A.;4
+i237;209;11.06.2018;14.06.2018;Atrial Fibrillation R/O MI;22
+i238;209;24.02.2019;24.02.2019;Injury Lt Patella Inferior;22
+i239;210;08.10.2018;09.10.2018;Multiple Fractures Of R Scapula. Insertion Of Pins;22
+i240;210;16.12.2018;19.12.2018;Fractured Femur;9
+i241;211;24.01.2019;26.01.2019;MI;12
+i242;212;20.06.2018;21.06.2018;Myocardial Infarction;7
+i243;212;29.04.2019;03.05.2019;Cardiovascular Disease;14
+i244;213;23.10.2018;31.10.2018;Appendicitis;4
+i245;213;20.04.2019;21.04.2019;Coronary Artery Disease;8
+i246;215;14.01.2019;17.01.2019;2nd & 3rd Degree Burns To Right Arm / Both Legs;23
+i247;215;12.09.2018;14.09.2018;Osteoarthritis Right Knee;20
+i248;216;02.07.2018;04.07.2018;Rul Pneumonia;3
+i249;216;30.05.2019;01.06.2019;Fractured Skull;24
+i250;221;10.08.2018;16.08.2018;Fractured Left Leg;27
+i251;222;04.01.2019;07.01.2019;Basal Skull Fracture;24
+i252;223;24.06.2018;02.07.2018;Subarachroid Hemorrhage;13
+i253;223;14.10.2018;18.10.2018;Congestive Heart Failure;23
+i254;224;14.06.2018;14.06.2018;Bronchiolitis;11
+i255;224;20.04.2019;23.04.2019;Left Lobar Pneumonia;26
+i256;226;03.01.2019;03.01.2019;Hypertension;13
+i257;227;26.10.2018;27.10.2018;Crohns Disease;19
+i258;227;11.07.2018;18.07.2018;Breast Cancer;23
+i259;228;18.12.2018;18.12.2018;Fibromyalgia;1
+i260;228;09.09.2018;14.09.2018;Fractured Left Hip;9
+i261;229;30.12.2018;02.01.2019;2nd Degree Burn Of Face;8
+i262;230;31.05.2019;05.01.1971;Rul Pneumonia;2
+i263;230;03.10.2018;09.10.2018;Congestive Heart Failure;2
+i264;231;12.03.2019;14.03.2019;Fracture Of Left Femur;24
+i265;232;22.02.2019;25.02.2019;Chest Pain;15
+i266;232;26.03.2019;26.03.2019;Chronic Obstructive Pulmonary Disease;23
+i267;234;04.03.2019;08.03.2019;Dislocated R/Shoulder Broke L/Leg R/T Car Acc;17
+i268;234;19.08.2018;22.08.2018;Broken Hip;20
+i269;235;25.02.2019;28.02.2019;Congestive Heart Failure;7
+i270;236;02.06.2019;05.01.1971;Pneumonia;6
+i271;236;15.05.2019;24.05.2019;Schizophrenic Disorder;27
+i272;237;17.04.2019;26.04.2019;Diabetes Mellitus;5
+i273;237;24.11.2018;29.11.2018;Chronic Caugh Disease;22
+i274;240;07.04.2019;16.04.2019;Hallecinations;3
+i275;240;27.09.2018;06.10.2018;Parkinsons Disease;2
+i276;241;21.10.2018;21.10.2018;Pain In Abdomen Left Side;25
+i277;241;23.12.2018;01.01.2019;Dehydration;24
+i278;242;10.07.2018;18.07.2018;Congestive Heart Failure;24
+i279;242;24.11.2018;30.11.2018;Pregnancy;8
+i280;243;12.01.2019;16.01.2019;Diabetes Mellitus;21
+i281;243;03.03.2019;11.03.2019;Congestive Heart Failure;10
+i282;244;17.09.2018;25.09.2018;Fracture Right Distal Radius (Colles Fracture);16
+i283;245;09.02.2019;12.02.2019;Spinal Infection;20
+i284;245;04.09.2018;08.09.2018;Prostate Cancer;17
+i285;246;31.03.2019;07.04.2019;Breast Cancer;10
+i286;247;01.01.2019;04.01.2019;Ruptured Appendicitis;11
+i287;247;10.06.2018;14.06.2018;Paranoid Schizophrenic;8
+i288;248;19.11.2018;25.11.2018;Atrial Arrhythmias;19
+i289;248;16.09.2018;20.09.2018;Biliary Colic;24
+i290;249;01.01.2019;05.01.2019;Acute Lower Abdominal Right-Sided Pain;8
+i291;249;23.10.2018;01.11.2018;Pyclonephritis;18
+i292;250;11.06.2018;20.06.2018;Profound Depression;15
+i293;251;26.01.2019;30.01.2019;Child Birth;23
+i294;251;18.01.2019;26.01.2019;Acute Lower Abdominal Right-Sided Pain;5
+i295;252;28.08.2018;31.08.2018;Abdominal Pain;10
+i296;253;13.12.2018;14.12.2018;Abdominal Perineal Resection;23
+i297;253;09.03.2019;15.03.2019;Ovarian Cancer;16
+i298;254;26.01.2019;31.01.2019;Coronary Artary Disease / Lt Sided Weakness;17
+i299;254;09.07.2018;17.07.2018;Lung Cancer;19
+i300;256;24.07.2018;27.07.2018;Cystocele/Stress Incontinence;19
+i301;256;25.06.2018;28.06.2018;Pneumonia;26
+i302;257;01.09.2018;07.09.2018;Angina;12
+i303;257;01.08.2018;05.08.2018;Rll Pneumonia;7
+i304;258;10.04.2019;14.04.2019;Obstructive Nephropathy;9
+i305;258;07.07.2018;11.07.2018;Gall Stones;12
+i306;259;15.03.2019;18.03.2019;Severed Spine At C3;18
+i307;260;24.03.2019;26.03.2019;Cva Right Side;11
+i308;261;14.10.2018;22.10.2018;Congestive Heart Failure;25
+i309;261;09.09.2018;14.09.2018;Active Labour;1
+i310;262;18.06.2018;25.06.2018;Congestive Heart Failure;21
+i311;264;25.03.2019;01.04.2019;Laceration On Right Leg;25
+i312;265;12.08.2018;19.08.2018;Scatica;1
+i313;265;09.06.2018;11.06.2018;Head Injury M.V.A.;25
+i314;267;22.03.2019;25.03.2019;Hypertrophy Of Prostate Gland;3
+i315;269;15.01.2019;17.01.2019;M.I.;22
+i316;269;09.05.2019;12.05.2019;Fractured Femur;13
+i317;270;21.03.2019;23.03.2019;Cancer Of The Descending Colon;26
+i318;271;22.01.2019;29.01.2019;Chlymidia;1
+i319;273;01.03.2019;01.03.2019;Acute Lower Abdominal Right-Sided Pain;24
+i320;274;29.12.2018;01.01.2019;Pneumonia;18
+i321;275;02.08.2018;03.08.2018;Immobility R/T Pain And Swelling R Ankle;11
+i322;277;10.11.2018;10.11.2018;Dislocated R/Shoulder Broke L/Leg R/T Car Acc;8
+i323;277;02.02.2019;04.02.2019;Prostate Cancer;9
+i324;278;21.03.2019;26.03.2019;Cancer Of The Stomach;16
+i325;280;02.12.2018;07.12.2018;Asthma;2
+i326;280;24.03.2019;28.03.2019;Chronic Obstructive Pulmonary Disease;8
+i327;281;31.05.2019;01.06.2019;Pulmonary Edema;26
+i328;282;09.10.2018;12.10.2018;Schizophrenic Disorder;25
+i329;282;01.07.2018;03.07.2018;Cardiac Arrest;20
+i330;283;08.08.2018;17.08.2018;Intestinal Obstruction Hirschsprungs Disease;25
+i331;283;28.10.2018;28.10.2018;Labour;27
+i332;284;26.04.2019;02.05.2019;Cervical Spinal Tumor;1
+i333;284;18.10.2018;22.10.2018;Stress Incotinence;17
+i334;285;02.08.2018;08.08.2018;Cerebral Vascular Aneurys,;6
+i335;285;27.07.2018;28.07.2018;Hysterectomy;21
+i336;287;19.04.2019;19.04.2019;Chlymidia;4
+i337;287;29.09.2018;03.10.2018;Child Birth;27
+i338;288;08.11.2018;15.11.2018;Crohns Disease;2
+i339;289;02.04.2019;06.04.2019;Cerebral Vascular Aneurys,;10
+i340;291;10.10.2018;17.10.2018;Alzheimers;27
+i341;291;14.05.2019;14.05.2019;Fractured Femur;20
+i342;292;31.08.2018;06.09.2018;Cardiac Catheterization;14
+i343;292;10.01.2019;12.01.2019;Anorexia Nervosa;7
+i344;295;27.02.2019;01.03.2019;Cholecystectomy;8
+i345;296;02.11.2018;09.11.2018;Diabetes Mellitus;27
+i346;296;06.08.2018;10.08.2018;Pneumonia;4
+i347;297;06.09.2018;14.09.2018;Schizophrenia Paranoid Delusions;19
+i348;298;12.01.2019;15.01.2019;Rll Pneumonia;8
+i349;298;16.08.2018;17.08.2018;Pneumonia;25
+i350;300;07.12.2018;10.12.2018;Fractured Left Leg;17
+i351;301;02.07.2018;03.07.2018;Broken Rt Femur;15
+i352;301;27.11.2018;28.11.2018;Congestive Heart Failure;17
+i353;302;13.03.2019;18.03.2019;Osteoarthritis;2
+i354;303;12.10.2018;17.10.2018;Hysterectomy;7
+i355;304;29.08.2018;05.09.2018;Osteoarthritis;11
+i356;304;16.09.2018;18.09.2018;3rd Degree Burn;15
+i357;306;06.06.2018;08.06.2018;Appendicitis;20
+i358;307;01.07.2018;10.07.2018;Hunting Disease;14
+i359;308;14.07.2018;18.07.2018;Fractured Left Hip;3
+i360;310;10.06.2018;17.06.2018;Ectopic Pregnancy;3
+i361;310;20.06.2018;27.06.2018;Pain In Abdomen Left Side;1
+i362;311;27.08.2018;01.09.2018;CHF;13
+i363;312;19.07.2018;25.07.2018;Knee Replacement;21
+i364;316;09.06.2018;15.06.2018;Pyloric Obstruction;25
+i365;317;16.12.2018;22.12.2018;Total Hysterectomy;19
+i366;317;06.02.2019;08.02.2019;Severe Pain + Tenderness In Left Calf;11
+i367;318;15.08.2018;17.08.2018;Fractured Fib And Tib;23
+i368;320;12.07.2018;15.07.2018;Pneumonia;13
+i369;320;02.06.2019;05.01.1971;Pneumonia;2
+i370;321;20.08.2018;26.08.2018;Pulmonary Edema;11
+i371;322;13.08.2018;14.08.2018;Congestive Heart Failure;11
+i372;322;20.09.2018;23.09.2018;Angina Pectoris;7
+i373;324;29.08.2018;03.09.2018;Hypertension;21
+i374;324;25.11.2018;03.12.2018;Manic Depression;22
+i375;326;15.06.2018;22.06.2018;Spinal Compresion;4
+i376;326;19.11.2018;27.11.2018;Appendicitis;19
+i377;328;20.03.2019;20.03.2019;Ca R Breast;26
+i378;330;27.02.2019;01.03.2019;Congestive Heart Failure;8
+i379;332;11.07.2018;13.07.2018;Pneumothorax;11
+i380;332;10.02.2019;16.02.2019;Pregnancy;27
+i381;333;28.04.2019;03.05.2019;Chronic Caugh Disease;18
+i382;334;22.11.2018;29.11.2018;Abdominal Pain;26
+i383;334;28.01.2019;28.01.2019;Tonsillitis;4
+i384;335;18.11.2018;18.11.2018;Coronary Artary Disease / Lt Sided Weakness;3
+i385;335;29.05.2019;03.06.2019;Breast Cancer;18
+i386;336;20.01.2019;29.01.2019;Bladder Cancer;22
+i387;336;07.09.2018;09.09.2018;Tonsillitis;5
+i388;338;25.08.2018;28.08.2018;Emphysema;9
+i389;339;09.06.2018;18.06.2018;Caeserian Section;21
+i390;340;01.12.2018;04.12.2018;Zenkers Diverticulitis;22
+i391;341;21.12.2018;21.12.2018;Gunshot Wound To Head;19
+i392;342;28.06.2018;03.07.2018;Complete Unilateral Cleft Lip & Cleft Palate;5
+i393;343;06.05.2019;14.05.2019;Gastoric Ulcer;5
+i394;343;27.03.2019;28.03.2019;Unstable Angina;17
+i395;346;17.07.2018;21.07.2018;Lwr Right Quad Pain That Radiates Through Abdomen;22
+i396;346;13.10.2018;18.10.2018;Ovarian Dermoid-Cyct;13
+i397;347;18.01.2019;25.01.2019;Back Injury;19
+i398;349;31.10.2018;03.11.2018;Amyotopic Lateral Scletosis;18
+i399;349;17.07.2018;22.07.2018;Congestive Heart Failure;26
+i400;350;14.07.2018;17.07.2018;Post Partum Hemmorage;11
+i401;350;30.06.2018;06.07.2018;Pneumonia;24
+i402;351;17.01.2019;20.01.2019;Malnutrition;7
+i403;351;10.04.2019;11.04.2019;Sinus Tachcardia,;2
+i404;353;10.11.2018;16.11.2018;Pregnancy;21
+i405;354;01.06.2019;05.01.1971;Pre-Eclampsia;26
+i406;354;06.01.2019;09.01.2019;Upper Respetory Infection;25
+i407;355;04.11.2018;12.11.2018;Cholelithiasis;7
+i408;356;28.06.2018;05.07.2018;Prostatectomy;4
+i409;358;16.10.2018;17.10.2018;Asthma;10
+i410;360;14.03.2019;17.03.2019;Bronchitis;27
+i411;362;16.07.2018;18.07.2018;Gall Stones;8
+i412;362;20.04.2019;29.04.2019;Alzheimers;26
+i413;363;04.10.2018;07.10.2018;Bronchitis;23
+i414;363;06.02.2019;10.02.2019;2nd Degree Burn Of Face;7
+i415;364;23.05.2019;23.05.2019;Vsa Cardiac Arrest;25
+i416;366;19.11.2018;25.11.2018;Full Term Delivery;26
+i417;366;20.01.2019;22.01.2019;C. O. P. D.;6
+i418;367;29.06.2018;02.07.2018;Fractured Right Tibia;24
+i419;367;18.07.2018;24.07.2018;Asthma;17
+i420;368;29.08.2018;03.09.2018;Open Reduction Fracture Rt Humerus;21
+i421;369;15.10.2018;19.10.2018;Dilation + Evacuation;11
+i422;369;12.10.2018;16.10.2018;Congestive Heart Failure;12
+i423;370;20.02.2019;26.02.2019;Cva-Leftside;23
+i424;371;18.01.2019;18.01.2019;Congestive Heart Failure;7
+i425;373;12.01.2019;19.01.2019;Cerebral Aneurysm;7
+i426;373;02.07.2018;03.07.2018;Fractured Hip;23
+i427;374;08.11.2018;16.11.2018;Bronchiolitis;21
+i428;375;19.07.2018;25.07.2018;Unable To Void.;13
+i429;375;05.04.2019;09.04.2019;Acute Appendicitis, Diabetes Type II;1
+i430;376;24.11.2018;30.11.2018;Broken Rt Femur;19
+i431;376;20.03.2019;26.03.2019;Angina;1
+i432;377;29.09.2018;05.10.2018;Pregnant;17
+i433;377;08.06.2018;11.06.2018;Fracture Of Fibula And Tibia;3
+i434;378;28.10.2018;06.11.2018;Osteomyslitis - Right Hip;25
+i435;378;20.05.2019;21.05.2019;Quarian Cyst;21
+i436;380;09.07.2018;11.07.2018;Fractured Femur;27
+i437;380;12.12.2018;17.12.2018;Dehydration;11
+i438;381;28.02.2019;06.03.2019;Appendicitis;18
+i439;382;14.01.2019;21.01.2019;Cerebral Vascular Aneurys,;19
+i440;384;18.06.2018;24.06.2018;Pregnancy;26
+i441;386;14.01.2019;14.01.2019;Chest Pain;5
+i442;387;04.01.2019;10.01.2019;Unable To Void.;10
+i443;387;26.12.2018;28.12.2018;Uterine Fibroid;9
+i444;388;28.10.2018;28.10.2018;Lung Cancer (Rt. Lung);3
+i445;389;11.07.2018;12.07.2018;MI;26
+i446;390;20.10.2018;20.10.2018;Essential Hypertension;24
+i447;392;13.03.2019;20.03.2019;Lower Quadrant Pain;12
+i448;392;17.01.2019;17.01.2019;Fibroids;6
+i449;393;21.09.2018;27.09.2018;Pregnant;3
+i450;393;23.08.2018;25.08.2018;Left Creebral Vascular Accident;25
+i451;394;06.02.2019;15.02.2019;Coronary Artery Disease;19
+i452;395;14.03.2019;15.03.2019;Pregnant;23
+i453;396;29.01.2019;30.01.2019;Total Lt Hip Replacement Because Of Osteoarthritis;26
+i454;396;10.09.2018;16.09.2018;Femoral Shaft Fracture;7
+i455;397;13.01.2019;21.01.2019;Endometriosis;6
+i456;398;27.01.2019;31.01.2019;Myocardial Infarction;24
+i457;399;21.07.2018;27.07.2018;Pregnant;10
+i458;401;30.10.2018;05.11.2018;Stress Incotinence;1
+i459;402;31.07.2018;01.08.2018;Left Side CVA;4
+i460;403;17.03.2019;17.03.2019;Unstable Angina;17
+i461;405;11.10.2018;19.10.2018;Acute Bronchitis;4
+i462;406;09.04.2019;11.04.2019;Unstable Angina;20
+i463;406;08.03.2019;15.03.2019;Chest Pain With Sob;1
+i464;407;25.08.2018;29.08.2018;Cva Right Side;26
+i465;407;16.05.2019;19.05.2019;Lung Cancer;15
+i466;408;20.03.2019;22.03.2019;Head Injury M.V.A.;23
+i467;408;18.12.2018;21.12.2018;Ruptured Appendicitis;11
+i468;411;20.04.2019;27.04.2019;Fractured Femur;2
+i469;411;22.03.2019;28.03.2019;Cholenithiasis;6
+i470;412;17.02.2019;19.02.2019;Migraine;22
+i471;413;08.06.2018;15.06.2018;Major Burn To The Anterior Thoracic Region;16
+i472;413;28.07.2018;29.07.2018;Glomerulonephritis;7
+i473;414;23.11.2018;28.11.2018;Basal Skull Fracture;17
+i474;414;23.12.2018;28.12.2018;Congestive Heart Failure;25
+i475;415;23.08.2018;28.08.2018;Unstable Angina;22
+i476;415;16.06.2018;22.06.2018;Fractured Left Leg;21
+i477;418;10.01.2019;17.01.2019;Cancer Of The Stomach;21
+i478;418;11.11.2018;18.11.2018;Pregnancy;4
+i479;419;13.06.2018;16.06.2018;Pregnancy;16
+i480;419;04.04.2019;07.04.2019;Asthma;8
+i481;420;26.02.2019;04.03.2019;Fractured Right Humeral Head;4
+i482;420;07.01.2019;08.01.2019;Unstable Angina;3
+i483;421;06.12.2018;14.12.2018;Pneumonia;10
+i484;422;24.07.2018;25.07.2018;Congestive Heart Failure;11
+i485;422;19.04.2019;26.04.2019;Cholenithiasis;15
+i486;423;12.02.2019;15.02.2019;Cancer;19
+i487;423;14.07.2018;14.07.2018;Myocardial Infarction;5
+i488;424;28.03.2019;05.04.2019;Acute Otitis Media;12
+i489;427;03.05.2019;05.05.2019;Pain In Abdomen Left Side;12
+i490;427;17.07.2018;18.07.2018;Congestive Heart Failure;26
+i491;428;19.04.2019;23.04.2019;Hallecinations;17
+i492;428;21.04.2019;24.04.2019;Anterior Myocardial Infraction;27
+i493;429;26.05.2019;02.06.2019;Cystocele/Stress Incontinence;13
+i494;430;05.11.2018;09.11.2018;Osteoarthritis Right Knee;12
+i495;431;15.04.2019;20.04.2019;Pneumonia;25
+i496;431;20.01.2019;26.01.2019;Increased Intr-Cranial Pressure;13
+i497;433;12.10.2018;18.10.2018;Myocardial Infarction;2
+i498;434;07.04.2019;13.04.2019;Anemia;24
+i499;436;13.08.2018;13.08.2018;Myasthen Gravis;1
+i500;436;02.04.2019;11.04.2019;Pregnant;19
+i501;437;15.09.2018;17.09.2018;Depression, Dementia;5
+i502;442;07.06.2018;16.06.2018;Congestive Heart Failure;25
+i503;443;05.11.2018;10.11.2018;Spinal Cord Injury;19
+i504;443;24.02.2019;27.02.2019;Chronic Obstructive Pulmonary Disease;22
+i505;444;15.01.2019;23.01.2019;Fractured Hip;14
+i506;445;06.05.2019;15.05.2019;Respiratory Failure;4
+i507;447;14.10.2018;23.10.2018;Glomerulonephritis;22
+i508;448;12.01.2019;18.01.2019;Abdominal Pain;12
+i509;449;25.04.2019;25.04.2019;Total Hysterectomy;8
+i510;449;14.11.2018;18.11.2018;Multiple Myeloma;3
+i511;450;10.09.2018;15.09.2018;Peptic Ulcer Disease;27
+i512;450;21.05.2019;22.05.2019;Asthma;26
+i513;451;03.10.2018;09.10.2018;Acute Leukemia;9
+i514;451;30.11.2018;06.12.2018;Renal Calculi;5
+i515;453;09.06.2018;17.06.2018;Cancer;3
+i516;454;30.03.2019;03.04.2019;Pyelonephritis;6
+i517;454;21.02.2019;28.02.2019;Fractured Femur;2
+i518;455;08.10.2018;10.10.2018;Anterior MI;27
+i519;456;12.07.2018;21.07.2018;Hysterectomy;20
+i520;456;26.11.2018;04.12.2018;Schizophrenic Disorder;25
+i521;457;09.06.2018;12.06.2018;Rll Pneumonia;10
+i522;460;14.07.2018;16.07.2018;Alzheimers;1
+i523;461;12.03.2019;14.03.2019;Fractured Skull;11
+i524;461;29.08.2018;04.09.2018;Decubitus Ulcer;12
+i525;462;15.12.2018;18.12.2018;Cerebral Aneurysm;14
+i526;463;12.08.2018;18.08.2018;Hypertension;8
+i527;463;10.02.2019;14.02.2019;Severe Substernal Pain Radiating To Left Shoulder;5
+i528;465;25.05.2019;01.06.2019;Enlarged Bunion On Left Primary Metaarsal;17
+i529;465;21.11.2018;23.11.2018;Pregnancy;23
+i530;468;23.10.2018;28.10.2018;Epilepsy;21
+i531;469;05.01.2019;09.01.2019;Epigastric Pain;10
+i532;469;11.02.2019;20.02.2019;CHF;18
+i533;471;28.02.2019;02.03.2019;Fever N.Y.D.;4
+i534;471;18.06.2018;23.06.2018;Cva Right Side;19
+i535;472;17.03.2019;22.03.2019;COPD;19
+i536;473;23.07.2018;27.07.2018;Pneumonia;21
+i537;474;23.07.2018;01.08.2018;Angina;7
+i538;475;28.12.2018;03.01.2019;Chronic Obtrusive Pulmonary Disease;4
+i539;475;15.03.2019;17.03.2019;Cva Right Side;7
+i540;476;23.05.2019;01.06.2019;Bipolar Disorder;21
+i541;477;21.11.2018;26.11.2018;Subdural Hematoma;25
+i542;479;20.12.2018;20.12.2018;Rheumataoid Arthritis;7
+i543;479;03.05.2019;06.05.2019;Aortic Stenosis;7
+i544;481;26.04.2019;03.05.2019;Congestive Heart Failure;23
+i545;481;16.01.2019;23.01.2019;Pneumonia;20
+i546;482;07.03.2019;13.03.2019;Complete Unilateral Cleft Lip 7 Cleft Palate;14
+i547;483;07.09.2018;13.09.2018;Pregnancy;12
+i548;483;30.11.2018;07.12.2018;Cervical Spinal Tumor;23
+i549;485;08.11.2018;10.11.2018;Injury Lt Patella Inferior;17
+i550;486;27.07.2018;03.08.2018;Severe Pain + Tenderness In Left Calf;7
+i551;487;19.02.2019;25.02.2019;Cholelithiasis;3
+i552;487;20.07.2018;27.07.2018;Pyelonephritis;24
+i553;488;21.04.2019;22.04.2019;Chronic Bronchitis;22
+i554;489;21.08.2018;24.08.2018;Depression, Dementia;15
+i555;490;27.12.2018;28.12.2018;Really Sick;16
+i556;490;30.03.2019;04.04.2019;Chest Pain With Sob;27
+i557;491;15.11.2018;18.11.2018;Multiple Sclerosis;16
+i558;491;25.08.2018;28.08.2018;Appendicitis;13
+i559;492;06.03.2019;14.03.2019;Pregnancy;14
+i560;492;16.04.2019;18.04.2019;Spinal Infection;20
+i561;496;22.07.2018;23.07.2018;Fractured Tibia;7
+i562;497;08.01.2019;14.01.2019;Pulmonary Edema;18
+i563;498;05.04.2019;09.04.2019;Broken Rt Femur;15
+i564;499;18.04.2019;20.04.2019;"Fractured \""L\"" Femur";18
+i565;499;09.05.2019;13.05.2019;Congestive Heart Failure;21
+i566;500;11.10.2018;17.10.2018;Parkinsons, Rheumatoid Arthritis, Total Hip Replac;4
+i567;500;07.03.2019;12.03.2019;Stomach Ulcer;20

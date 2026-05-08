@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Software Engineering and Testing</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+	<header class="page-header">
+		<a href="../index.html" class="back-link">← Back</a>
+		<h1>Software Engineering and Testing</h1>
+		<p>Course documents, reports, and related PDF material.</p>
+	</header>
+
+	<main>
+		<section 
+			id="pdf-grid" 
+			class="pdf-grid"
+			data-course="Software_Engineering_and_Testing">
+		</section>
+
+		<section id="pdf-viewer-section" class="pdf-viewer-section hidden">
+			<div class="pdf-viewer-header">
+				<h2 id="pdf-viewer-title">Document preview</h2>
+				<button id="close-pdf-viewer" type="button">Close</button>
+			</div>
+
+			<iframe 
+				id="pdf-viewer" 
+				class="pdf-viewer"
+				title="PDF preview">
+			</iframe>
+		</section>
+	</main>
+
+	<script src="../js/docs-viewer.js"></script>
+</body>
+</html>

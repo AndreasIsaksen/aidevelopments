@@ -1,0 +1,77 @@
+\documentclass{article}  
+
+\usepackage{listings}
+\usepackage{amsmath}  
+\usepackage{amsfonts}  
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{venndiagram}
+\usepackage{enumitem}
+\usepackage{csquotes}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{ltablex}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{xcolor}
+
+
+
+\lstset{
+  basicstyle=\ttfamily\small, % Monospaced font
+  keywordstyle=\color{blue}\bfseries, % Keywords in blue and bold
+  commentstyle=\color{green}, % Comments in green
+  stringstyle=\color{red}, % Strings in red
+  numbers=left, % Line numbers on the left
+  numberstyle=\tiny\color{gray}, % Style for line numbers
+  frame=single, % Box around the code
+  breaklines=true, % Automatic line breaking
+  tabsize=2, % Tab size
+  numberbychapter=false,
+}
+
+\lstdefinestyle{flexhighlight}{
+    language=bash,
+    escapeinside={@}{@}, % Enables LaTeX code inside listings
+    basicstyle=\ttfamily
+}
+
+\renewcommand{\lstlistingname}{}
+\newcommand{\highlight}[1]{\textbf{\textcolor{red}{#1}}}
+
+
+\begin{document}  
+
+\title{ITF20006-1 25V Algoritmer og datastrukturer\\Oblig 4}
+\author{Andreas Isaksen}  
+\date{\today}  
+\maketitle  
+\pagebreak
+
+\section*{Oppgave 3}
+Utskrift fra oppgave 2:
+\begin{lstlisting}[language=bash, caption={Utskrift fra oppgave 2}]
+n? 1000000
+max? 10000000
+n               tA      tL      tL/tA
+--------------------------------------------
+1000000         99      217     2,2  
+2000000         55      250     4,5  
+3000000         51      199     3,9  
+4000000         57      214     3,8  
+5000000         55      226     4,1  
+6000000         54      239     4,4  
+7000000         59      299     5,1  
+8000000         60      300     5,0  
+9000000         80      407     5,1  
+10000000        59      293     5,0  
+--------------------------------------------
+\end{lstlisting}
+Sorteringen i oppgave 2 går vesentlig mye raskere i forhold til sorteringen til oppgave 1. Dette er grunnet \textit{Timsort} som brukes internt av \textit{Arrays.sort()} og \textit{Collections.sort}\\\\
+Når vi har en delvis sortert liste, vil denne bruke betraktelig kortere tid på å sortere den. Dette er grunnet at \textit{Timsort} kan gjenkjenne forhåndssorterte sekvenser i en liste, og videre slår disse sammen.\\
+Om vi har en totalt tilfeldig liste, vil ikke løsningen være like effektiv til å dele opp listen og sortere den, da den må gå gjennom hele listen rekursivt.\\
+Forskjellene i effektiviteten på sorteringen er derfor veldig avhengige av listens struktur før sorteringen starter.
+
+
+\end{document}
