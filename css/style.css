@@ -665,7 +665,7 @@ a {
 	height: 80vh;
 	border: 1px solid var(--border);
 	border-radius: 12px;
-	background: var(--surface);
+	background: #ffffff;
 }
 
 .webpage-section {
