@@ -511,6 +511,45 @@ const pdfDocuments = {
 			thumbnail: "../assets/thumbnails/grades/high.png"
 		}
 	],
+	Work_references: [
+		{
+			title: "Academy Work (ATEA)",
+			description: "Worked with OS image management and customer logistics for ATEA through Academy Work.",
+			pdf: "./assets/data/work/Academy_Works_ATEA_Signed.pdf",
+			thumbnail: "./assets/thumbnails/work/aw.png"
+		},
+		{
+			title: "Visma Collectors AS",
+			description: "Worked with IT operations of invoicing and collection systems for Visma Collectors AS.",
+			pdf: "./assets/data/work/Attest_Visma_signed.pdf",
+			thumbnail: "./assets/thumbnails/work/visma.png"
+		},
+		{
+			title: "Datametrix AS",
+			description: "Worked with IT sevice management and support for Datametrix AS through Centric.",
+			pdf: "./assets/data/work/Centric_Datametrix_signed.pdf",
+			thumbnail: "./assets/thumbnails/work/dmx.png"
+		},
+		{
+			title: "IBM",
+			description: "Worked with IT operations as User Administrator for one of IBM's clients, handling user access management and support.",
+			pdf: "./assets/data/work/ibm.pdf",
+			thumbnail: "./assets/thumbnails/work/ibm.png"
+		},
+		{
+			title: "Eureka møbler Engros AS",
+			description: "Worked as a warehouse worker for Eureka møbler Engros AS, handling order picking, packing, and logistics support.",
+			pdf: "./assets/data/work/Eureka.pdf",
+			thumbnail: "./assets/thumbnails/work/eureka.png"
+		},
+		{
+			title: "Frisenius Kabi AS",
+			description: "Worked on the production line for the manufacturing of medical products at Fresenius Kabi AS, handling quality control, packaging, and logistics support.",
+			pdf: "./assets/data/work/kabi.pdf",
+			thumbnail: "./assets/thumbnails/work/kabi.png"
+		}
+
+	]
 };
 
 function createPdfCard(documentItem) {

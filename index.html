@@ -17,10 +17,14 @@
     <body>
         <header class="site-header">
             <div class="container header-inner">
-                <a href="#hero" class="logo">Andreas Isaksen</a>
+                <a href="#hero" class="brand">
+                    <img src="assets/logo/AI0.png" alt="Logo" class="logo-icon">
+                    <span class="logo">Andreas Isaksen</span>
+                </a>
 
                 <nav class="nav">
                     <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
                     <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a>
                     <a href="#docs">Documentation</a>
@@ -55,15 +59,34 @@
                 </div>
             </section>
 
-            <section id="about" class="section">
+            <section id="about" class="section section-alt">
                 <div class="container">
-                    <h2>About me</h2>
-                    <p>
-                        I’m building my profile around software development, data-oriented systems,
-                        and machine learning. My background includes both technical studies and hands-on
-                        experience from IT operations and production environments, which has given me a
-                        practical understanding of how systems behave outside the classroom.
-                    </p>
+                    <h2>About Me</h2>
+                    <div id="about-grid" class="card-grid"></div>
+                </div>
+            </section>
+
+            <section id="experience" class="section">
+                <div class="container">
+                    <h2>Work Experience</h2>
+                    <section
+			            id="pdf-grid"
+			            class="pdf-grid"
+			            data-course="Work_references">
+		            </section>
+
+		        <section id="pdf-viewer-section" class="pdf-viewer-section hidden">
+			        <div class="pdf-viewer-header">
+				        <h2 id="pdf-viewer-title">Document preview</h2>
+				        <button id="close-pdf-viewer" type="button">Close</button>
+			        </div>
+
+			        <iframe
+				        id="pdf-viewer"
+				        class="pdf-viewer"
+				        title="PDF preview">
+        			</iframe>
+		        </section>
                 </div>
             </section>
 
@@ -112,6 +135,7 @@
         
         <script src="js/main.js"></script>
         <script src="js/front.js"></script>
+        <script src="js/pdfview.js"></script>
         <!-- <script src="js/overlay.js"></script> -->
         <script src="js/back_to_top.js"></script>
     </body>

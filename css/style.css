@@ -62,10 +62,21 @@ p a {
 	min-height: 72px;
 }
 
+.brand {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
 .logo {
 	font-weight: bold;
 	font-size: 1.1rem;
 	color: var(--accent);
+}
+
+.header-inner .logo-icon {
+	width: 50px;
+	height: 50px;
+	margin-left: 0.5rem;
 }
 
 .nav {
@@ -405,6 +416,10 @@ p a {
 	align-items: center;
 	gap: 1rem;
 	margin-bottom: 1rem;
+}
+
+.pdf-viewer-section.hidden {
+	display: none;
 }
 
 .pdf-viewer {

@@ -1,3 +1,20 @@
+const about = [
+	{
+		title: "Who am I?",
+		description: "IT professional with experience in IT operations at companies including IBM, Visma, Datametrix, and Atea. Currently completing a Bachelor's degree in Computer Science with a specialization in Machine Learning, expected to graduate in Spring 2026."
+	},
+	{
+		title: "What's my drive?",
+		description: "Family life with my partner, three children, and our dog are the reasons I get up in the morning to give it all I've got. I also have a strong interest in technology and programming and regularly spend time exploring new technical topics."
+	},
+	{
+		title: "Summary of spare time activities",
+		description: "In recent years, my interests have shifted from gaming, fantasy literature, and music toward developing technological solutions and reading professional literature on IT and programming. I have built a personal library of technical books that I continue to use for ongoing learning beyond my studies",
+		description2: "My passion for technology and programming is fueled by the constant evolution of the field, which offers endless opportunities for learning and growth. I enjoy the challenge of solving complex problems and creating innovative solutions that can make a real difference in people's lives. Whether it's developing software, analyzing data, or exploring new technologies, I am always eager to expand my knowledge and skills in the world of technology."
+
+	}
+];
+
 const skills = [
 	{
 		title: "Programming",
@@ -228,6 +245,7 @@ function renderCards(items, containerId) {
 	});
 }
 
+renderCards(about, "about-grid");
 renderCards(skills, "skills-grid");
 renderCards(projects, "projects-grid");
 renderCards(docs, "docs-grid");
