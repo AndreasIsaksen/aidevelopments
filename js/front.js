@@ -66,6 +66,11 @@ const projects = [
 
 const docs = [
 	{
+		title: "Grades and Credits",
+		description: "Official transcript of grades from my studies.",
+		link: "pages/gradeDocs.html"
+	},
+	{
 		title: "Frameworks and .NET",
 		grade: "A",
 		description: "description",

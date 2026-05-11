@@ -496,7 +496,21 @@ const pdfDocuments = {
 			pdf: "../assets/data/Discrete_Mathematics/11.pdf",
 			thumbnail: "../assets/thumbnails/Discrete_Mathematics/1.png"
 		},
-	]
+	],
+	Grades_and_Credits: [
+		{
+			title: "Bachelor Information Technology (HIOF)",
+			description: "Official transcript of grades from my studies at HIOF.",
+			pdf: "../assets/data/grades/bachelor.pdf",
+			thumbnail: "../assets/thumbnails/grades/hiof.png"
+		},
+		{
+			title: "Transcript of Grades – General Studies",
+			description: "Official transcript of grades from my general studies.",
+			pdf: "../assets/data/grades/high.pdf",
+			thumbnail: "../assets/thumbnails/grades/high.png"
+		}
+	],
 };
 
 function createPdfCard(documentItem) {
@@ -581,4 +595,5 @@ document.addEventListener("DOMContentLoaded", () => {
 	if (closeButton) {
 		closeButton.addEventListener("click", closePdfViewer);
 	}
-});
+	}
+);

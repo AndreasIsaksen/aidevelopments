@@ -1,34 +1,27 @@
 [
   {
     "id": 1,
-    "title": "AI-Powered Code Review Tool",
-    "description": "A machine-learning pipeline that analyzes pull requests and provides contextual code review suggestions, reducing review time by 40%.",
-    "tags": ["Python", "Machine Learning", "NLP", "GitHub API"],
+    "title": "(Bachelor's Thesis) Data Extractor & Context Parser for Product Orders",
+    "description": "A deterministic data extractor that parses unstructured product order descriptions into structured class objects using a combination of regex and personalized filtering rules. The system is designed to handle a wide variety of input formats and extract key information per the clients specifications. The project also includes a context parser that identifies and extracts relevant contextual information from the input data, such as product categories, quantities, and special instructions. The system is built in a .Net environment and is designed to be easily integrated into existing order processing workflows.",
+    "tags": [".Net", "C#", "Data Extraction", "Context Parsing", "Regex", "PostgreSQL", "Docker", "GitHub Actions", "Unit Testing", "Integration Testing", "Software Architecture", "Design Patterns", "User-Centered Design", "Software Engineering Best Practices"],
     "link": "#",
-    "featured": true
+    "featured": 0
   },
   {
     "id": 2,
-    "title": "Real-Time Object Detection Dashboard",
-    "description": "A browser-based dashboard that streams live camera feed and overlays bounding boxes using a YOLO model served from a lightweight FastAPI backend.",
-    "tags": ["Python", "FastAPI", "JavaScript", "Computer Vision"],
+    "title": "(Course Project) Object Detection",
+    "description": "Image analytics course project exploring object detection through computer vision and machine learning. The   project focuses on preparing image data, applying detection techniques, training and evaluating models, and analyzing detection   performance on a selected dataset.",
+    "tags": [
+      "Python",
+      "Computer Vision",
+      "Machine Learning",
+      "Object Detection",
+      "Image Processing",
+      "OpenCV",
+      "Model Training",
+      "Performance Analysis"
+    ],
     "link": "#",
-    "featured": true
-  },
-  {
-    "id": 3,
-    "title": "Generative Music Composer",
-    "description": "Transformer-based model trained on MIDI data to compose short musical pieces in the style of classical composers.",
-    "tags": ["Python", "PyTorch", "MIDI", "Deep Learning"],
-    "link": "#",
-    "featured": false
-  },
-  {
-    "id": 4,
-    "title": "Natural Language SQL Query Builder",
-    "description": "Converts plain English descriptions into SQL queries using a fine-tuned language model, with an interactive web UI for querying a demo database.",
-    "tags": ["Python", "LLM", "SQL", "Streamlit"],
-    "link": "#",
-    "featured": false
+    "featured": 0
   }
 ]

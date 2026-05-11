@@ -59,25 +59,29 @@ async function loadProjects() {
 }
 
 function buildProjectCard(project) {
-  const tagsHtml = project.tags
-    .map(tag => `<span class="project-tag">${escapeHtml(tag)}</span>`)
-    .join('');
+  let tagsHtml = "";
+
+  for (let i = 0; i < project.tags.length; i++) {
+    tagsHtml += `<span class="tag">${escapeHtml(project.tags[i])}</span>`;
+  }
 
   const featuredBadge = project.featured
     ? `<span class="project-featured-badge">★ Featured</span>`
-    : '';
+    : "";
 
   return `
-    <article class="project-card${project.featured ? ' featured' : ''}">
+    <article class="card${project.featured ? " featured" : ""}">
       <div class="project-card-header">
         <h3 class="project-card-title">${escapeHtml(project.title)}</h3>
         ${featuredBadge}
       </div>
-      <p class="project-card-description">${escapeHtml(project.description)}</p>
-      <div class="project-tags">${tagsHtml}</div>
-      <a class="project-card-link" href="${escapeHtml(project.link)}" target="_blank" rel="noopener noreferrer">
-        View Project →
-      </a>
+
+      <p >${escapeHtml(project.description)}</p>
+
+      <div class="tags">
+        ${tagsHtml}
+      </div>
+
     </article>
   `;
 }

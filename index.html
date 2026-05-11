@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>Andreas Isaksen Developments</title>
+        <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon">
         <meta name="description" content="Explore my personal portfolio and discover how I can help you. I'm a passionate developer with experience in web development, software engineering, machine learning, data science, and more.">
         <meta name="keywords" content="Andreas Isaksen, portfolio, web development, software engineering, machine learning, data science">
         <meta charset="UTF-8">
@@ -21,7 +22,7 @@
                 <nav class="nav">
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
-                    <a href="#projects">Work</a>
+                    <a href="#projects">Projects</a>
                     <a href="#docs">Documentation</a>
                     <a href="#contact">Contact</a>
                 </nav>
@@ -29,7 +30,16 @@
         </header>
         
         <main>
+            <button class="back-to-top hidden" aria-label="Back to Top">
+                <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+                </svg>
+            </button>
             <section id="hero" class="hero">
+                <video autoplay muted loop id="background-video">
+                    <source src="assets/vid/background.mp4" type="video/mp4">
+                    Your browser does not support this video.
+                </video>
                 <div class="container hero-content">
                     <p class="eyenrow">Software • Data • Machine Learning</p>
                     <h1>Building practical technical solutions with a focus on systems, data, and real-world use.</h1>
@@ -38,7 +48,7 @@
                         software development, and technical problem solving.
                     </p>
                     <div class="hero-buttons">
-                        <a class="btn btn-primary" href="#projects">View my work</a>
+                        <a class="btn btn-primary" href="#projects">Current Projects</a>
                         <a class="btn btn-primary" href="#docs">Education</a>
                         <a class="btn btn-secondary" href="#contact">Contact me</a>
                     </div>
@@ -64,9 +74,9 @@
                 </div>
             </section>
 
-            <section id="projects" class="section">
+            <section id="projects" class="section section-alt">
                 <div class="container">
-                    <h2>Work & Projects</h2>
+                    <h2>My Current Projects</h2>
                     <div id="projects-grid" class="card-grid"></div>
                 </div>
             </section>
@@ -74,6 +84,7 @@
             <section id="docs" class="section section-alt">
                 <div class="container">
                     <h2>School Reports and Documentation</h2>
+                    <p>My studies in Informatics is from <a href="https://www.hiof.no/english/">Østfold University College</a> in Norway, and thereby a lot of the work is documented in Norwegian. Eventual requests for translations can be requested <a href="mailto:andreis2639@outlook.com">here</a> </p>
                     <div id="docs-grid" class="card-grid"></div>
                 </div>
             </section>
@@ -100,7 +111,8 @@
         </footer>
         
         <script src="js/main.js"></script>
-        <script src="js/script.js"></script>
-        <script src="js/overlay.js"></script>
+        <script src="js/front.js"></script>
+        <!-- <script src="js/overlay.js"></script> -->
+        <script src="js/back_to_top.js"></script>
     </body>
     </html>
