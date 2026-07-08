@@ -1,0 +1,103 @@
+[
+  {
+    "title": "Grades and Credits",
+    "description": "Official transcript of grades from my studies.",
+    "link": "pages/gradeDocs.html"
+  },
+  {
+    "title": "Frameworks and .NET",
+    "grade": "A",
+    "description": "description",
+    "link": "pages/Frameworks_and_dotNET.html"
+  },
+  {
+    "title": "Big Data: Storage and Processing",
+    "grade": "B",
+    "description": "description",
+    "link": "pages/Big_Data_Storage_and_Processing.html"
+  },
+  {
+    "title": "Database Systems",
+    "grade": "B",
+    "description": "description",
+    "link": "pages/Database_Systems.html"
+  },
+  {
+    "title": "Introduction to Computer Security",
+    "grade": "B",
+    "description": "description",
+    "link": "pages/Introduction_to_Computer_Security.html"
+  },
+  {
+    "title": "Programming 2 (basic Java)",
+    "grade": "B",
+    "description": "description",
+    "link": "pages/Programming_2.html"
+  },
+  {
+    "title": "Web Development",
+    "grade": "B",
+    "description": "description",
+    "link": "pages/Web_Development.html"
+  },
+  {
+    "title": "Computer Networks",
+    "grade": "C",
+    "description": "description",
+    "link": "pages/Computer_Networks.html"
+  },
+  {
+    "title": "Introduction to Operating Systems",
+    "grade": "C",
+    "description": "description",
+    "link": "pages/Introduction_to_Operating_Systems.html"
+  },
+  {
+    "title": "Practical Machine Learning",
+    "grade": "C",
+    "description": "description",
+    "link": "pages/Practical_Machine_Learning.html"
+  },
+  {
+    "title": "Programming 1 (basic Python)",
+    "grade": "C",
+    "description": "description",
+    "link": "pages/Programming_1.html"
+  },
+  {
+    "title": "Software Engineering and Testing",
+    "grade": "C",
+    "description": "description",
+    "link": "pages/Software_Engineering_and_Testing.html"
+  },
+  {
+    "title": "Statistics and Statistical Programming",
+    "grade": "C",
+    "description": "description",
+    "link": "pages/Statistics_and_Statistical_Programming.html"
+  },
+  {
+    "title": "Algorithms and Data Structures",
+    "grade": "D",
+    "description": "description",
+    "link": "pages/Algorithms_and_Data_Structures.html"
+  },
+  {
+    "title": "Introduction to Digital Product Design",
+    "grade": "Approved",
+    "description": "description",
+    "link": "pages/Introduction_to_Digital_Product_Design.html"
+  },
+  {
+    "title": "Calculus",
+    "grade": "E",
+    "description": "description",
+    "link": "pages/Calculus.html"
+  },
+  {
+    "title": "Discrete Mathematics",
+    "grade": "E",
+    "description": "description",
+    "link": "pages/Discrete_Mathematics.html"
+  }
+]

@@ -1,14 +1,48 @@
 [
   {
-    "id": 1,
-    "title": "(Bachelor's Thesis) Data Extractor & Context Parser for Product Orders",
-    "description": "A deterministic data extractor that parses unstructured product order descriptions into structured class objects using a combination of regex and personalized filtering rules. The system is designed to handle a wide variety of input formats and extract key information per the clients specifications. The project also includes a context parser that identifies and extracts relevant contextual information from the input data, such as product categories, quantities, and special instructions. The system is built in a .Net environment and is designed to be easily integrated into existing order processing workflows.",
-    "tags": [".Net", "C#", "Data Extraction", "Context Parsing", "Regex", "PostgreSQL", "Docker", "GitHub Actions", "Unit Testing", "Integration Testing", "Software Architecture", "Design Patterns", "User-Centered Design", "Software Engineering Best Practices"],
-    "link": "#",
-    "featured": 0
+    "title": "Workflow Automation & Process Optimization",
+    "description": "Summer internship project focused on automating and optimizing business workflows, by implementing LLM oriented solutions to streamline processes, reduce manual effort, and enhance overall efficiency. The project involved analyzing existing workflows, identifying bottlenecks, and designing automated solutions that leverage LLM capabilities to improve productivity and decision-making.",
+    "tags": [
+      "Workflow Automation",
+      "Process Optimization",
+      "LLM",
+      "Business Process Management",
+      "Efficiency Improvement",
+      "Automation Tools",
+      "Data Analysis",
+      "Problem Solving",
+      "Project Management"
+    ],
+    "link": null,
+    "status": "ongoing",
+    "featured": 1,
+    "hidden": 0
   },
   {
-    "id": 2,
+    "title": "(Bachelor's Thesis) Data Extractor & Context Parser for Product Orders",
+    "description": "A deterministic data extractor that parses unstructured product order descriptions into structured class objects using a combination of regex and personalized filtering rules. The system is designed to handle a wide variety of input formats and extract key information per the clients specifications. The project also includes a context parser that identifies and extracts relevant contextual information from the input data, such as product categories, quantities, and special instructions. The system is built in a .Net environment and is designed to be easily integrated into existing order processing workflows.",
+    "tags": [
+      ".Net",
+      "C#",
+      "Data Extraction",
+      "Context Parsing",
+      "Regex",
+      "PostgreSQL",
+      "Docker",
+      "GitHub Actions",
+      "Unit Testing",
+      "Integration Testing",
+      "Software Architecture",
+      "Design Patterns",
+      "User-Centered Design",
+      "Software Engineering Best Practices"
+    ],
+    "link": "pages/Bachelor_Thesis.html",
+    "status": "completed",
+    "featured": 1,
+    "hidden": 0
+  },
+  {
     "title": "(Course Project) Object Detection",
     "description": "Image analytics course project exploring object detection through computer vision and machine learning. The   project focuses on preparing image data, applying detection techniques, training and evaluating models, and analyzing detection   performance on a selected dataset.",
     "tags": [
@@ -21,7 +55,69 @@
       "Model Training",
       "Performance Analysis"
     ],
-    "link": "#",
-    "featured": 0
+    "link": null,
+    "status": "completed",
+    "featured": 0,
+    "hidden": 0
+  },
+  {
+    "title": "Machine Learning Work",
+    "description": "Practical experimentation with machine learning concepts, model training, and data-oriented workflows.",
+    "tags": [
+      "ML",
+      "Python",
+      "Training",
+      "Analysis"
+    ],
+    "link": null,
+    "status": "completed",
+    "featured": 0,
+    "hidden": 1
+  },
+  {
+    "title": "Image Analysis & Computer Vision",
+    "description": "Research and development work in image processing, computer vision algorithms, and practical applications.",
+    "tags": [
+      "Computer Vision",
+      "Image Processing",
+      "Keras",
+      "OpenCV",
+      "Python",
+      "TensorFlow",
+      "Training",
+      "Tuning"
+    ],
+    "link": null,
+    "status": "completed",
+    "featured": 0,
+    "hidden": 1
+  },
+  {
+    "title": "System Development Projects",
+    "description": "Development work involving backend logic, databases, structured models, and technical implementations.",
+    "tags": [
+      "Java",
+      "C#",
+      "MySQL",
+      "PostgreSQL"
+    ],
+    "link": null,
+    "status": "completed",
+    "featured": 0,
+    "hidden": 1
+  },
+  {
+    "title": "Web Design & Development",
+    "description": "Design and development of websites with focus on clean structure, responsive design, and technical implementation.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Web Design"
+    ],
+    "link": null,
+    "status": "ongoing",
+    "featured": 0,
+    "hidden": 1
   }
 ]

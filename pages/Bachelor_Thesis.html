@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bachelor Thesis | Digital Compliance Assessment</title>
+	<meta name="description" content="Portfolio page for Andreas Isaksen's bachelor thesis: Digital solution for compliance assessment between customer and internal requirements.">
+
+	<link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+	<header class="thesis-header">
+		<a href="../index.html" class="back-link">← Back</a>
+		<p class="thesis-kicker">Bachelor Thesis · ITF32012 · Spring 2026</p>
+		<h1>Digital Solution for Compliance Assessment Between Customer and Internal Requirements</h1>
+		<p>
+			A portfolio case page for a bachelor project carried out with Seal Engineering AS. The project explored how a web application can reduce manual document comparison by importing customer order documentation, extracting key values, validating document sets, and presenting structured compliance results.
+		</p>
+	</header>
+
+	<main>
+		<section class="thesis-visuals" aria-label="Project visuals">
+			<figure class="thesis-figure thesis-logo-figure">
+				<img src="../assets/data/bachelor/seal-engineering-logo.jpg" alt="Seal Engineering AS logo">
+			</figure>
+
+			<figure class="thesis-figure thesis-group-figure">
+				<img src="../assets/data/bachelor/group_promote.png" alt="Bachelor project group photo placeholder">
+			</figure>
+		</section>
+
+		<section class="thesis-section section-alt">
+			<h2>Project overview</h2>
+			<p>
+				Seal Engineering receives complex customer order documentation where requirements, references, and internal documentation must be checked carefully. The thesis solution was designed as a deterministic MVP that supports the order office by making document import, validation, mapping, and compliance checking more structured and less dependent on manual comparison.
+			</p>
+
+			<div class="thesis-meta-grid">
+				<div class="thesis-meta-item">
+					<span class="thesis-meta-label">Contractor</span>
+					<span class="thesis-meta-value">Seal Engineering AS</span>
+				</div>
+				<div class="thesis-meta-item">
+					<span class="thesis-meta-label">Study programme</span>
+					<span class="thesis-meta-value">Bachelor in Informatics</span>
+				</div>
+				<div class="thesis-meta-item">
+					<span class="thesis-meta-label">Group</span>
+					<span class="thesis-meta-value">4 students</span>
+				</div>
+				<div class="thesis-meta-item">
+					<span class="thesis-meta-label">My role</span>
+					<span class="thesis-meta-value">Documentation, Data analysis, value mapping, pdf handling, domain knowledge</span>
+				</div>
+			</div>
+
+			<div class="thesis-card-grid">
+				<article class="thesis-card">
+					<h3>Problem</h3>
+					<p>Customer orders arrive as several documents with detailed requirements and cross references. Changes are not always clearly marked, which makes manual checking time consuming and error-prone.</p>
+				</article>
+				<article class="thesis-card">
+					<h3>Goal</h3>
+					<p>Build a web application that can import PDF and Excel documentation, extract key information, identify relevant document types, and support compliance assessment between customer and internal requirements.</p>
+				</article>
+				<article class="thesis-card">
+					<h3>Result</h3>
+					<p>The delivered MVP demonstrates a workflow from file import and validation through document mapping and compliance check presentation. The prototype is tailored to a selected customer document set.</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="video-section" aria-labelledby="solution-video-heading">
+			<h2 id="solution-video-heading">Solution demonstration</h2>
+			<p class="video-description">
+				Reserved space for a short muted video that demonstrates the document import, validation, and compliance check workflow. Replace the placeholder source with the final demo recording when it is ready.
+			</p>
+			<div class="video-wrapper">
+				<video
+					class="project-video"
+					muted
+					loop
+					playsinline
+					preload="metadata"
+					poster="../assets/images/bachelor-thesis/demo-video-poster.svg"
+					aria-label="Bachelor thesis solution demonstration video">
+					<source src="../assets/data/bachelor/promotering_expo.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+		</section>
+
+		<section class="thesis-section">
+			<h2>Solution workflow</h2>
+			<p>
+				The implementation follows the user journey from uploading documentation to receiving structured feedback about extracted data and possible mismatches.
+			</p>
+
+			<div class="thesis-card-grid thesis-flow">
+				<article class="thesis-card">
+					<h3>Import files</h3>
+					<p>The user uploads a document set containing order and requirement documentation, including PDF and Excel files.</p>
+				</article>
+				<article class="thesis-card">
+					<h3>Validate document set</h3>
+					<p>The solution checks whether the expected file types are present and gives the user immediate feedback before the compliance flow continues.</p>
+				</article>
+				<article class="thesis-card">
+					<h3>Extract and route data</h3>
+					<p>Text and values are extracted from the uploaded files and routed to document-specific mappers for Purchase Order, Material Documentation Package, MDRL, and Administrative Requirements data.</p>
+				</article>
+				<article class="thesis-card">
+					<h3>Map to domain objects</h3>
+					<p>The raw content is transformed into structured objects so the comparison logic can operate on values instead of unstructured document text.</p>
+				</article>
+				<article class="thesis-card">
+					<h3>Persistent storage of structured data</h3>
+					<p>The structured objects are stored in a database for future reference, versioning, and analysis.</p>
+				</article>
+				<article class="thesis-card">
+					<h3>Run compliance check</h3>
+					<p>The system compares central values such as order numbers, material numbers, dates, revisions, and document references.</p>
+				</article>
+				<article class="thesis-card">
+					<h3>Present results</h3>
+					<p>The result is returned to the user interface as understandable tables, checklists, status markers, and detailed document values.</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="thesis-section section-alt">
+			<h2>Technical implementation</h2>
+			<p>
+				The source archive is structured as a .NET solution with separate Web, Application, Domain, Infrastructure, and test projects. The implementation combines a Blazor-based user interface with API endpoints, MediatR-driven application flows, document extraction adapters, database persistence, and Docker-based deployment support.
+			</p>
+
+			<div class="thesis-card-grid">
+				<article class="thesis-card">
+					<h3>Frontend and user flow</h3>
+					<ul>
+						<li>Blazor/Razor UI components</li>
+						<li>Dashboard for file upload and validation</li>
+						<li>Compliance check views with status-oriented feedback</li>
+					</ul>
+				</article>
+				<article class="thesis-card">
+					<h3>Application layer</h3>
+					<ul>
+						<li>MediatR commands and queries</li>
+						<li>Document type decision and routing</li>
+						<li>Document-specific mapping services</li>
+					</ul>
+				</article>
+				<article class="thesis-card">
+					<h3>Infrastructure</h3>
+					<ul>
+						<li>PDF extraction with PdfPig</li>
+						<li>Excel extraction with ExcelDataReader</li>
+						<li>EF Core and PostgreSQL persistence</li>
+					</ul>
+				</article>
+				<article class="thesis-card">
+					<h3>Quality focus</h3>
+					<ul>
+						<li>Controlled error responses</li>
+						<li>Validation before compliance checking</li>
+						<li>Unit and integration test projects</li>
+					</ul>
+				</article>
+			</div>
+
+			<div class="thesis-tags" aria-label="Technologies used">
+				<span class="tag">C#</span>
+				<span class="tag">.NET</span>
+				<span class="tag">Blazor</span>
+				<span class="tag">ASP.NET Core</span>
+				<span class="tag">MediatR</span>
+				<span class="tag">MudBlazor</span>
+				<span class="tag">PostgreSQL</span>
+				<span class="tag">EF Core</span>
+				<span class="tag">PdfPig</span>
+				<span class="tag">ExcelDataReader</span>
+				<span class="tag">Docker Compose</span>
+				<span class="tag">Testing</span>
+			</div>
+		</section>
+
+		<section class="files-section thesis-report-section" aria-labelledby="report-heading">
+			<h2 id="report-heading">Thesis report</h2>
+			<p>
+				Preview the full bachelor thesis report directly on this page. The preview card uses the same PDF card and iframe viewer structure as the rest of the portfolio documentation pages.
+			</p>
+
+			<section
+				id="pdf-grid"
+				class="pdf-grid"
+				data-course="Bachelor_Thesis">
+			</section>
+
+			<section id="pdf-viewer-section" class="pdf-viewer-section hidden">
+				<div class="pdf-viewer-header">
+					<h2 id="pdf-viewer-title">Document preview</h2>
+					<button id="close-pdf-viewer" type="button">Close</button>
+				</div>
+
+				<iframe
+					id="pdf-viewer"
+					class="pdf-viewer"
+					title="PDF preview">
+				</iframe>
+			</section>
+		</section>
+	</main>
+
+	<script src="../js/pdfview.js"></script>
+	<script src="../js/setupScrollStartVideo.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const report = {
+				title: "Bachelor thesis report",
+				description: "Digital løsning for samsvarsvurdering mellom kunde- og interne krav",
+				pdfPath: "../assets/data/bachelor/B26-ITK12-Rapport.pdf",
+				thumbnailPath: "../assets/data/bachelor/report-cover.jpg"
+			};
+
+			window.setTimeout(() => {
+				const pdfGrid = document.getElementById("pdf-grid");
+				if (!pdfGrid || pdfGrid.querySelector(".pdf-card")) return;
+
+				const card = document.createElement("article");
+				card.className = "pdf-card";
+				card.tabIndex = 0;
+				card.setAttribute("role", "button");
+				card.setAttribute("aria-label", `Open ${report.title}`);
+				card.innerHTML = `
+					<img class="pdf-thumbnail" src="${report.thumbnailPath}" alt="Cover thumbnail for ${report.title}">
+					<div class="pdf-card-content">
+						<h3>${report.title}</h3>
+						<p>${report.description}</p>
+						<span class="card-link">Open preview →</span>
+					</div>
+				`;
+
+				const openReport = () => {
+					const viewerSection = document.getElementById("pdf-viewer-section");
+					const viewer = document.getElementById("pdf-viewer");
+					const viewerTitle = document.getElementById("pdf-viewer-title");
+
+					if (!viewerSection || !viewer || !viewerTitle) return;
+
+					viewer.src = report.pdfPath;
+					viewerTitle.textContent = report.title;
+					viewerSection.classList.remove("hidden");
+					viewerSection.scrollIntoView({ behavior: "smooth", block: "start" });
+				};
+
+				card.addEventListener("click", openReport);
+				card.addEventListener("keydown", event => {
+					if (event.key === "Enter" || event.key === " ") {
+						event.preventDefault();
+						openReport();
+					}
+				});
+
+				pdfGrid.appendChild(card);
+			}, 250);
+
+			const closeButton = document.getElementById("close-pdf-viewer");
+			closeButton?.addEventListener("click", () => {
+				const viewerSection = document.getElementById("pdf-viewer-section");
+				const viewer = document.getElementById("pdf-viewer");
+
+				if (viewer) viewer.src = "";
+				viewerSection?.classList.add("hidden");
+			});
+		});
+	</script>
+</body>
+</html>

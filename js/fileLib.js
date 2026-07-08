@@ -1,4 +1,12 @@
 const downloadableFiles = {
+	Bachelor_Thesis: [
+		{
+			title: "Bachelor thesis report",
+			description: "Digital løsning for samsvarsvurdering mellom kunde- og interne krav",
+			pdfPath: "../assets/data/bachelor/B26-ITK12-Rapport.pdf",
+			thumbnailPath: "../assets/images/bachelor-thesis/report-cover.jpg"
+		}
+	],
 	Frameworks_and_dotNET: [
 		{
 			title: "TaskyFy Source Code",

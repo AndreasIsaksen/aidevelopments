@@ -190,6 +190,12 @@ p a {
 	gap: 1.25rem;
 }
 
+.card-grid-projects {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(47%, 1fr));
+	gap: 1.25rem;
+}
+
 .card-link {
 	color: var(--accent);
 	font-weight: bold;
@@ -880,47 +886,6 @@ p a {
 	background: #000;
 }
 
-@media only screen and (max-width: 970px) {
-	.pdf-grid {
-		max-width: 1100px;
-		margin: 0 auto;
-		padding: 1.25rem;
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-		gap: 1.25rem;
-	}
-
-	.file-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-		gap: 1.5rem;
-		margin: 2rem 2rem;
-	}
-
-	.image-grid {
-		max-width: 1100px;
-		margin: 0 auto;
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(220px, 0.5fr));
-		gap: 1.5rem;
-		margin-top: 2rem;
-	}
-
-	.webpage-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-		gap: 1.5rem;
-		margin-top: 2rem;
-	}
-
-	.code-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-		gap: 1.5rem;
-		margin-top: 2rem;
-	}
-}
-
 /*Tilbake til toppen knapp*/
 .back-to-top {
 	pointer-events: auto;
@@ -974,4 +939,309 @@ p a {
 	height: 100%;
 	width: 0%;
 	background-color: var(--accent-color);
+}
+
+/*START Project status badges */
+.project-card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 0.75rem;
+}
+
+.project-card-badges {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: 0.4rem;
+}
+
+.project-featured-badge,
+.project-status-badge {
+	display: inline-block;
+	font-size: 0.75rem;
+	font-weight: 700;
+	padding: 0.25rem 0.55rem;
+	border-radius: 999px;
+	white-space: nowrap;
+}
+
+.project-featured-badge {
+	background: var(--accent);
+	color: #082f49;
+}
+
+.project-status-badge {
+	border: 1px solid var(--border);
+	background: var(--surface-light);
+	color: var(--text);
+}
+
+.project-status-badge.ongoing {
+	color: var(--accent);
+}
+
+.project-status-badge.completed {
+	color: #86efac;
+}
+
+.empty-msg,
+.error-msg {
+	color: var(--text-muted);
+	grid-column: 1 / -1;
+}
+/*END Project status badges */
+
+/*START Bachelor thesis page styles */
+.thesis-header {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 2rem 1.25rem 1rem;
+}
+
+.thesis-header h1 {
+	max-width: 980px;
+	font-size: clamp(2rem, 5vw, 3.75rem);
+	line-height: 1.1;
+	margin-bottom: 1rem;
+}
+
+.thesis-header p {
+	max-width: 800px;
+	color: var(--text-muted);
+	font-size: 1.05rem;
+}
+
+.thesis-kicker {
+	color: var(--accent);
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	margin-bottom: 0.75rem;
+}
+
+.thesis-visuals {
+	max-width: 1100px;
+	margin: 1.5rem auto 3rem;
+	padding: 0 1.25rem;
+	display: grid;
+	grid-template-columns: minmax(240px, 0.35fr) minmax(320px, 1fr);
+	gap: 1.25rem;
+	align-items: stretch;
+}
+
+.thesis-figure {
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow);
+	overflow: hidden;
+}
+
+.thesis-figure img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.thesis-logo-figure {
+	padding: 1rem;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 280px;
+}
+
+.thesis-logo-figure img {
+	object-fit: contain;
+	max-height: 240px;
+}
+
+.thesis-group-figure {
+	min-height: 380px;
+}
+
+.thesis-section {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 4rem 1.25rem;
+}
+
+.thesis-section h2 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.thesis-section > p {
+	color: var(--text-muted);
+	max-width: 850px;
+	margin-bottom: 1.5rem;
+}
+
+.thesis-card-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 1.25rem;
+	margin-top: 1.5rem;
+}
+
+.thesis-card {
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	padding: 1.25rem;
+	box-shadow: var(--shadow);
+}
+
+.thesis-card h3 {
+	font-size: 1.1rem;
+	margin-bottom: 0.5rem;
+}
+
+.thesis-card p,
+.thesis-card li {
+	color: var(--text-muted);
+}
+
+.thesis-card ul {
+	padding-left: 1.1rem;
+}
+
+.thesis-meta-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 1rem;
+	margin-top: 2rem;
+}
+
+.thesis-meta-item {
+	background: var(--surface-light);
+	border: 1px solid var(--border);
+	border-radius: 14px;
+	padding: 1rem;
+}
+
+.thesis-meta-label {
+	display: block;
+	color: var(--text-muted);
+	font-size: 0.85rem;
+	margin-bottom: 0.25rem;
+}
+
+.thesis-meta-value {
+	font-weight: 700;
+	color: var(--text);
+}
+
+.thesis-flow {
+	counter-reset: flow;
+}
+
+.thesis-flow .thesis-card h3::before {
+	counter-increment: flow;
+	content: counter(flow, decimal-leading-zero) " · ";
+	color: var(--accent);
+}
+
+.thesis-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-top: 1.5rem;
+}
+
+.thesis-report-section {
+	max-width: 1100px;
+}
+
+.thesis-report-section > p,
+.video-section .video-description {
+	color: var(--text-muted);
+}
+
+.video-section {
+	max-width: 1100px;
+	margin: 3rem auto;
+	padding: 1.5rem;
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow);
+}
+
+.video-wrapper {
+	aspect-ratio: 16 / 9;
+}
+
+.project-video {
+	height: 100%;
+	object-fit: cover;
+}
+
+.pdf-card-content .card-link {
+	display: inline-block;
+	margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+	.thesis-visuals {
+	grid-template-columns: 1fr;
+	}
+
+	.thesis-logo-figure,
+	.thesis-group-figure {
+	min-height: 240px;
+	}
+}
+/*END Bachelor thesis page styles */
+
+
+/*START Responsive adjustments for smaller screens */
+@media only screen and (max-width: 970px) {
+	.pdf-grid {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 1.25rem;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 1.25rem;
+	}
+
+	.file-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 1.5rem;
+		margin: 2rem 2rem;
+	}
+
+	.image-grid {
+		max-width: 1100px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 0.5fr));
+		gap: 1.5rem;
+		margin-top: 2rem;
+	}
+
+	.webpage-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		gap: 1.5rem;
+		margin-top: 2rem;
+	}
+
+	.code-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 1.5rem;
+		margin-top: 2rem;
+	}
+
+	.card-grid-projects {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+		gap: 1.25rem;
+	}
 }
