@@ -12,7 +12,12 @@
 	--max-width: 1100px;
 	--radius: 16px;
 	--shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+	/* New background fade variables */
+	--bg-bright: #1e293b;
+	--scroll-bg-opacity: 0.05;
 }
+
 
 * {
 	box-sizing: border-box;
@@ -29,6 +34,27 @@ body {
 	background: var(--bg);
 	color: var(--text);
 	line-height: 1.6;
+	min-height: 100vh;
+}
+
+body::before {
+	content: "";
+	position: fixed;
+	inset: 0;
+	z-index: -1;
+	pointer-events: none;
+
+	background:
+		radial-gradient(
+			circle at bottom right,
+			rgba(56, 189, 248, calc(var(--scroll-bg-opacity) * 0.25)),
+			transparent 45%
+		),
+		linear-gradient(
+			to bottom,
+			rgba(30, 41, 59, calc(var(--scroll-bg-opacity) * 0.25)),
+			rgba(30, 41, 59, var(--scroll-bg-opacity))
+		);
 }
 
 a {
@@ -1059,6 +1085,59 @@ p a {
 	max-height: 240px;
 }
 
+.thesis-outcome-figure {
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.thesis-logo-wrap {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+}
+
+.thesis-logo-wrap img {
+	object-fit: contain;
+	max-height: 170px;
+}
+
+.thesis-grade-card {
+	width: 100%;
+	padding: 1rem;
+	border-radius: 14px;
+	background: linear-gradient(135deg, #0f172a, #1e293b);
+	border: 1px solid rgba(56, 189, 248, 0.35);
+	text-align: center;
+	color: var(--text);
+	margin-bottom: 10rem;
+}
+
+.thesis-grade-label {
+	display: block;
+	color: var(--text-muted);
+	font-size: 0.8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}
+
+.thesis-grade-value {
+	display: block;
+	margin: 0.25rem 0;
+	color: var(--accent);
+	font-size: clamp(3rem, 8vw, 5rem);
+	font-weight: 800;
+	line-height: 1;
+}
+
+.thesis-grade-note {
+	display: block;
+	color: var(--text-muted);
+	font-size: 0.9rem;
+}
+
 .thesis-group-figure {
 	min-height: 380px;
 }
@@ -1193,6 +1272,10 @@ p a {
 	.thesis-logo-figure,
 	.thesis-group-figure {
 	min-height: 240px;
+	}
+
+	.thesis-grade-card {
+		margin-bottom: 0;
 	}
 }
 /*END Bachelor thesis page styles */

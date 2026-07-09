@@ -5,99 +5,111 @@
     "link": "pages/gradeDocs.html"
   },
   {
+    "title": "Bachelor Thesis",
+    "grade": "A",
+    "description": "A .NET web application case project with Seal Engineering AS for importing PDF and Excel order documentation, extracting structured values, and supporting compliance assessment between customer and internal requirements.",
+    "link": "pages/Bachelor_Thesis.html"
+  },
+  {
+    "title": "Image Analysis",
+    "grade": "A",
+    "description": "Deep learning project comparing custom CNN and MobileNetV2 models for flower image classification using preprocessing, augmentation, and model evaluation workflows.",
+    "link": "pages/Image_Analysis.html"
+  },
+  {
     "title": "Frameworks and .NET",
     "grade": "A",
-    "description": "description",
+    "description": "Development of TaskyFy, a reusable .NET scheduling library with builder-based job definitions, timed and event triggers, priority handling, and supporting documentation.",
     "link": "pages/Frameworks_and_dotNET.html"
   },
   {
     "title": "Big Data: Storage and Processing",
     "grade": "B",
-    "description": "description",
+    "description": "Group project focused on distributed data storage and processing workflows using big data tooling, Docker-based infrastructure, notebooks, and analytical reporting.",
     "link": "pages/Big_Data_Storage_and_Processing.html"
   },
   {
     "title": "Database Systems",
     "grade": "B",
-    "description": "description",
+    "description": "Course work focused on relational database design, SQL querying, normalization, and structured data modelling through practical database assignments and projects.",
     "link": "pages/Database_Systems.html"
   },
   {
     "title": "Introduction to Computer Security",
     "grade": "B",
-    "description": "description",
+    "description": "Course work covering core security concepts, risk awareness, vulnerabilities, defensive measures, and practical reasoning about secure digital systems.",
     "link": "pages/Introduction_to_Computer_Security.html"
   },
   {
     "title": "Programming 2 (basic Java)",
     "grade": "B",
-    "description": "description",
+    "description": "Java programming course work covering object-oriented design, classes, collections, control flow, and practical application development exercises.",
     "link": "pages/Programming_2.html"
   },
   {
     "title": "Web Development",
     "grade": "B",
-    "description": "description",
+    "description": "Web development course work focused on building structured, responsive websites with HTML, CSS, JavaScript, and user-oriented page design.",
     "link": "pages/Web_Development.html"
   },
   {
     "title": "Computer Networks",
     "grade": "C",
-    "description": "description",
+    "description": "Networking course work covering network design, addressing, routing concepts, and practical Cisco Packet Tracer-based configuration exercises.",
     "link": "pages/Computer_Networks.html"
   },
   {
     "title": "Introduction to Operating Systems",
     "grade": "C",
-    "description": "description",
+    "description": "Operating systems course work covering processes, memory, file systems, concurrency, and low-level programming concepts through practical C-based assignments.",
     "link": "pages/Introduction_to_Operating_Systems.html"
   },
   {
     "title": "Practical Machine Learning",
     "grade": "C",
-    "description": "description",
+    "description": "Machine learning course work exploring supervised learning, clustering, model training, evaluation, and data-driven experimentation in Python and Jupyter.",
     "link": "pages/Practical_Machine_Learning.html"
   },
   {
     "title": "Programming 1 (basic Python)",
     "grade": "C",
-    "description": "description",
+    "description": "Introductory Python course work covering programming fundamentals, control flow, data structures, functions, and practical problem-solving exercises.",
     "link": "pages/Programming_1.html"
   },
   {
     "title": "Software Engineering and Testing",
     "grade": "C",
-    "description": "description",
+    "description": "Group project focused on developing and testing a web-based system while applying software engineering practices, documentation, and quality assurance workflows.",
     "link": "pages/Software_Engineering_and_Testing.html"
   },
   {
     "title": "Statistics and Statistical Programming",
     "grade": "C",
-    "description": "description",
+    "description": "Course work combining statistical theory and programming for data analysis, probability, inference, visualization, and practical statistical problem solving.",
     "link": "pages/Statistics_and_Statistical_Programming.html"
   },
   {
     "title": "Algorithms and Data Structures",
     "grade": "D",
-    "description": "description",
+    "description": "Course work covering algorithmic thinking, data structures, complexity, recursion, sorting, searching, and implementation-focused problem solving.",
     "link": "pages/Algorithms_and_Data_Structures.html"
   },
   {
     "title": "Introduction to Digital Product Design",
     "grade": "Approved",
-    "description": "description",
+    "description": "Product design course work focused on user testing, prototyping, design documentation, and iterative development of a user-oriented digital concept.",
     "link": "pages/Introduction_to_Digital_Product_Design.html"
   },
   {
     "title": "Calculus",
     "grade": "E",
-    "description": "description",
+    "description": "Mathematics course work covering functions, limits, differentiation, integration, and analytical problem solving for technical studies.",
     "link": "pages/Calculus.html"
   },
   {
     "title": "Discrete Mathematics",
     "grade": "E",
-    "description": "description",
+    "description": "Mathematics course work covering logic, sets, relations, combinatorics, graphs, proofs, and discrete structures used in computer science.",
     "link": "pages/Discrete_Mathematics.html"
   }
 ]

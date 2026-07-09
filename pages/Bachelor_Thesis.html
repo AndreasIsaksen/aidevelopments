@@ -20,11 +20,23 @@
 	</header>
 
 	<main>
+        <button class="back-to-top hidden" aria-label="Back to Top">
+            <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+            </svg>
+        </button>
 		<section class="thesis-visuals" aria-label="Project visuals">
-			<figure class="thesis-figure thesis-logo-figure">
-				<img src="../assets/data/bachelor/seal-engineering-logo.jpg" alt="Seal Engineering AS logo">
+			<figure class="thesis-figure thesis-logo-figure thesis-outcome-figure">
+				<div class="thesis-logo-wrap">
+					<img src="../assets/data/bachelor/seal-engineering-logo.jpg" alt="Seal Engineering AS logo">
+				</div>
+			
+				<figcaption class="thesis-grade-card" aria-label="Bachelor thesis final grade">
+					<span class="thesis-grade-label">Final project grade</span>
+					<span class="thesis-grade-value">A</span>
+					<span class="thesis-grade-note">Bachelor thesis · Spring 2026</span>
+				</figcaption>
 			</figure>
-
 			<figure class="thesis-figure thesis-group-figure">
 				<img src="../assets/data/bachelor/group_promote.png" alt="Bachelor project group photo placeholder">
 			</figure>
@@ -189,7 +201,7 @@
 		<section class="files-section thesis-report-section" aria-labelledby="report-heading">
 			<h2 id="report-heading">Thesis report</h2>
 			<p>
-				Preview the full bachelor thesis report directly on this page. The preview card uses the same PDF card and iframe viewer structure as the rest of the portfolio documentation pages.
+				Preview the full bachelor thesis report directly on this page.
 			</p>
 
 			<section
@@ -213,68 +225,9 @@
 		</section>
 	</main>
 
+	<script src="../js/back_to_top.js"></script>
+	<script src="../js/fileLib.js"></script>
 	<script src="../js/pdfview.js"></script>
 	<script src="../js/setupScrollStartVideo.js"></script>
-	<script>
-		document.addEventListener("DOMContentLoaded", () => {
-			const report = {
-				title: "Bachelor thesis report",
-				description: "Digital løsning for samsvarsvurdering mellom kunde- og interne krav",
-				pdfPath: "../assets/data/bachelor/B26-ITK12-Rapport.pdf",
-				thumbnailPath: "../assets/data/bachelor/report-cover.jpg"
-			};
-
-			window.setTimeout(() => {
-				const pdfGrid = document.getElementById("pdf-grid");
-				if (!pdfGrid || pdfGrid.querySelector(".pdf-card")) return;
-
-				const card = document.createElement("article");
-				card.className = "pdf-card";
-				card.tabIndex = 0;
-				card.setAttribute("role", "button");
-				card.setAttribute("aria-label", `Open ${report.title}`);
-				card.innerHTML = `
-					<img class="pdf-thumbnail" src="${report.thumbnailPath}" alt="Cover thumbnail for ${report.title}">
-					<div class="pdf-card-content">
-						<h3>${report.title}</h3>
-						<p>${report.description}</p>
-						<span class="card-link">Open preview →</span>
-					</div>
-				`;
-
-				const openReport = () => {
-					const viewerSection = document.getElementById("pdf-viewer-section");
-					const viewer = document.getElementById("pdf-viewer");
-					const viewerTitle = document.getElementById("pdf-viewer-title");
-
-					if (!viewerSection || !viewer || !viewerTitle) return;
-
-					viewer.src = report.pdfPath;
-					viewerTitle.textContent = report.title;
-					viewerSection.classList.remove("hidden");
-					viewerSection.scrollIntoView({ behavior: "smooth", block: "start" });
-				};
-
-				card.addEventListener("click", openReport);
-				card.addEventListener("keydown", event => {
-					if (event.key === "Enter" || event.key === " ") {
-						event.preventDefault();
-						openReport();
-					}
-				});
-
-				pdfGrid.appendChild(card);
-			}, 250);
-
-			const closeButton = document.getElementById("close-pdf-viewer");
-			closeButton?.addEventListener("click", () => {
-				const viewerSection = document.getElementById("pdf-viewer-section");
-				const viewer = document.getElementById("pdf-viewer");
-
-				if (viewer) viewer.src = "";
-				viewerSection?.classList.add("hidden");
-			});
-		});
-	</script>
 </body>
 </html>
