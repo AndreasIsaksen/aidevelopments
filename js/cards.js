@@ -28,6 +28,8 @@
   document.addEventListener("DOMContentLoaded", () => {
     loadCards().catch(error => {
       console.error("Failed to load cards:", error);
+    }).finally(() => {
+      document.dispatchEvent(new Event("portfolio:content-rendered"));
     });
   });
 
