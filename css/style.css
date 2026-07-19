@@ -552,6 +552,15 @@ section[id] {
 	gap: 1.25rem;
 }
 
+.reference-grid {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 1.25rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 0.3fr));
+	gap: 1.25rem;
+}
+
 .pdf-card {
 	background: var(--surface);
 	border: 1px solid var(--border);
@@ -562,9 +571,36 @@ section[id] {
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.pdf-card:hover {
+.pdf-card:not(.reference-card):hover {
 	transform: translateY(-4px);
 	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.reference-card {
+	cursor: default;
+}
+
+.reference-preview-button {
+	display: block;
+	min-width: 10rem;
+	margin: 1rem auto 0;
+	padding: 0.65rem 1.25rem;
+	border: 1px solid var(--accent);
+	border-radius: calc(var(--radius) * 0.65);
+	background: transparent;
+	color: var(--accent);
+	cursor: pointer;
+	font: inherit;
+	font-weight: 700;
+	text-align: center;
+	transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.reference-preview-button:hover,
+.reference-preview-button:focus-visible {
+	background: var(--accent);
+	color: #082f49;
+	transform: translateY(-1px);
 }
 
 .pdf-thumbnail {
@@ -577,7 +613,7 @@ section[id] {
 	background: #f6f6f6;
 }
 
-.pdf-card:hover .pdf-thumbnail {
+.pdf-card:not(.reference-card):hover .pdf-thumbnail {
 	transform: scale(1.06);
 }
 
@@ -1446,6 +1482,15 @@ section[id] {
 /*START Responsive adjustments for smaller screens */
 @media only screen and (max-width: 970px) {
 	.pdf-grid {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 1.25rem;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 1.25rem;
+	}
+
+	.reference-grid {
 		max-width: 1100px;
 		margin: 0 auto;
 		padding: 1.25rem;

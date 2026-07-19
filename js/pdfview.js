@@ -10,12 +10,18 @@ function getPdfThumbnail(documentItem) {
 	return documentItem.thumbnail || documentItem.thumbnailPath || "";
 }
 
-function createPdfCard(documentItem) {
+function createPdfCard(documentItem, variant = "default") {
+	const isReference = variant === "reference";
 	const card = document.createElement("article");
 	card.className = "pdf-card";
-	card.tabIndex = 0;
-	card.setAttribute("role", "button");
-	card.setAttribute("aria-label", `Open ${documentItem.title}`);
+
+	if (isReference) {
+		card.classList.add("reference-card");
+	} else {
+		card.tabIndex = 0;
+		card.setAttribute("role", "button");
+		card.setAttribute("aria-label", `Open ${documentItem.title}`);
+	}
 
 	const preview = document.createElement("img");
 	preview.src = getPdfThumbnail(documentItem);
@@ -31,31 +37,44 @@ function createPdfCard(documentItem) {
 	const description = document.createElement("p");
 	description.textContent = documentItem.description || "";
 
-	const openLabel = document.createElement("span");
-	openLabel.className = "card-link";
-	openLabel.textContent = "Open preview →";
-
 	content.appendChild(title);
 
 	if (documentItem.description) {
 		content.appendChild(description);
 	}
 
-	content.appendChild(openLabel);
+	if (isReference) {
+		const referenceButton = document.createElement("button");
+		referenceButton.type = "button";
+		referenceButton.className = "reference-preview-button";
+		referenceButton.textContent = "Show Refrence";
+		referenceButton.setAttribute("aria-label", `Show reference for ${documentItem.title}`);
+		referenceButton.addEventListener("click", () => {
+			openPdfViewer(documentItem);
+		});
+		content.appendChild(referenceButton);
+	} else {
+		const openLabel = document.createElement("span");
+		openLabel.className = "card-link";
+		openLabel.textContent = "Open preview →";
+		content.appendChild(openLabel);
+	}
 
 	card.appendChild(preview);
 	card.appendChild(content);
 
-	card.addEventListener("click", () => {
-		openPdfViewer(documentItem);
-	});
-
-	card.addEventListener("keydown", event => {
-		if (event.key === "Enter" || event.key === " ") {
-			event.preventDefault();
+	if (!isReference) {
+		card.addEventListener("click", () => {
 			openPdfViewer(documentItem);
-		}
-	});
+		});
+
+		card.addEventListener("keydown", event => {
+			if (event.key === "Enter" || event.key === " ") {
+				event.preventDefault();
+				openPdfViewer(documentItem);
+			}
+		});
+	}
 
 	return card;
 }
@@ -88,14 +107,9 @@ function closePdfViewer() {
 	viewerSection?.classList.add("hidden");
 }
 
-function renderPdfGrid() {
-	const grid = document.getElementById("pdf-grid");
-
-	if (!grid) {
-		return;
-	}
-
+function renderPdfGrid(grid) {
 	const courseKey = grid.dataset.course;
+	const variant = grid.dataset.cardVariant || "default";
 	const documents = getPdfDocuments()[courseKey] || [];
 
 	grid.replaceChildren();
@@ -109,12 +123,17 @@ function renderPdfGrid() {
 	}
 
 	documents.forEach(documentItem => {
-		grid.appendChild(createPdfCard(documentItem));
+		grid.appendChild(createPdfCard(documentItem, variant));
 	});
 }
 
 function initPdfViewer() {
-	renderPdfGrid();
+	const grids = [
+		document.getElementById("pdf-grid"),
+		document.getElementById("reference-grid")
+	].filter(Boolean);
+
+	grids.forEach(renderPdfGrid);
 
 	const closeButton = document.getElementById("close-pdf-viewer");
 
