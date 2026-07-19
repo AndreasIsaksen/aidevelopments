@@ -1,40 +1,210 @@
 [
   {
     "title": "Who am I?",
-    "description": "IT professional with experience in IT operations at companies including IBM, Visma, Datametrix, and Atea. Currently completing a Bachelor's degree in Computer Science with a specialization in Machine Learning, expected to graduate in Spring 2026."
+    "image": {
+      "src": "assets/img/about/who/who.png",
+      "alt": "Illustration of work experience and education, including a graduation cap, a laptop, and a briefcase",
+      "objectFit": "fit",
+      "objectPosition": "center"
+    },
+    "description": "IT professional with experience in IT operations at companies including IBM, Visma, Datametrix, and Atea. Bachelor's degree in Computer Science with a specialization in Machine Learning, graduated in Spring 2026."
   },
-  {
-    "title": "What's my drive?",
-    "description": "Family life with my partner, three children, and our dog are the reasons I get up in the morning to give it all I've got. I also have a strong interest in technology and programming and regularly spend time exploring new technical topics.",
-    "carousel": {
-      "enabled": true,
-      "curveSegments": 12,
-      "images": [
-        {
-          "src": "assets/img/about/drive/dear.png",
-          "alt": "Black-and-white portrait of a woman"
-        },
-        {
-          "src": "assets/img/about/drive/einarGettingBig.jpeg",
-          "alt": "A smiling child wearing a yellow shirt and backpack"
-        },
-        {
-          "src": "assets/img/about/drive/heroes.jpeg",
-          "alt": "Family members dressed as superheroes at a celebration"
-        },
-        {
-          "src": "assets/img/about/drive/KaOs.jpg",
-          "alt": "KaOS, my dog."
-        },
-        {
-          "src": "assets/img/about/drive/OlsClan.jpeg",
-          "alt": "Family members resting together during a sunny woodland walk"
-        }
-      ]
-    }
-  },
+{
+  "title": "What's my drive?",
+  "description": "Family life with my partner, three children, and our dog are the reasons I get up in the morning to give it all I've got. I also have a strong interest in technology and programming and regularly spend time exploring new technical topics.",
+  "carousel": {
+    "enabled": true,
+    "curveSegments": 12,
+    "images": [
+      {
+        "src": "assets/img/about/drive/20240203_153108.jpg",
+        "alt": "A woman and toddler smiling together for an indoor selfie"
+      },
+      {
+        "src": "assets/img/about/drive/20240203_153117.jpg",
+        "alt": "A woman smiling at a toddler as they play together indoors"
+      },
+      {
+        "src": "assets/img/about/drive/20240203_153122.jpg",
+        "alt": "A woman holding a toddler while they smile at each other"
+      },
+      {
+        "src": "assets/img/about/drive/20240219_145312.jpg",
+        "alt": "A woman and two children posing together beneath a wooden loft bed"
+      },
+      {
+        "src": "assets/img/about/drive/20240422_082235.jpg",
+        "alt": "A toddler sitting in a high chair with both hands raised"
+      },
+      {
+        "src": "assets/img/about/drive/20240813_153159.jpg",
+        "alt": "A child riding a pedal tractor while a toddler sits in the trailer"
+      },
+      {
+        "src": "assets/img/about/drive/20240827_155044.jpg",
+        "alt": "A toddler eating pasta from a bowl while sitting in a high chair"
+      },
+      {
+        "src": "assets/img/about/drive/20241123_121442.jpg",
+        "alt": "A young person and toddler relaxing together on a sofa"
+      },
+      {
+        "src": "assets/img/about/drive/20241205_170530.jpg",
+        "alt": "Two family members decorating a gingerbread house with colorful sweets"
+      },
+      {
+        "src": "assets/img/about/drive/20250202_113827.jpg",
+        "alt": "A black dog exploring the snow beside a child sitting on a sled"
+      },
+      {
+        "src": "assets/img/about/drive/20250209_101455.jpg",
+        "alt": "An adult walking a black dog beside a child on a snowy road"
+      },
+      {
+        "src": "assets/img/about/drive/20250217_070245.jpg",
+        "alt": "A child sitting on a sofa beside a black dog"
+      },
+      {
+        "src": "assets/img/about/drive/20250516_080133.jpg",
+        "alt": "A child dressed in formal clothes waving a Norwegian flag"
+      },
+      {
+        "src": "assets/img/about/drive/20250517_092726.jpg",
+        "alt": "Four children standing outside and holding Norwegian flags"
+      },
+      {
+        "src": "assets/img/about/drive/20250519_172122.jpg",
+        "alt": "Two older children helping a toddler play with a bubble machine outdoors"
+      },
+      {
+        "src": "assets/img/about/drive/20250917_183459.jpg",
+        "alt": "A woman and toddler sitting together outside a red wooden building"
+      },
+      {
+        "src": "assets/img/about/drive/20250917_191321.jpg",
+        "alt": "Three children wearing playful costumes made from diapers and blue gloves"
+      },
+      {
+        "src": "assets/img/about/drive/20251231_194908.jpg",
+        "alt": "A woman holding a bundled-up child outside on a snowy evening"
+      },
+      {
+        "src": "assets/img/about/drive/20260118_193118.jpg",
+        "alt": "A child wearing headphones seated beside an adult at a computer, reflected in a mirror"
+      },
+      {
+        "src": "assets/img/about/drive/20260318_193544.jpg",
+        "alt": "A woman and child lying together while the child makes a peace sign"
+      },
+      {
+        "src": "assets/img/about/drive/20260404_111733.jpg",
+        "alt": "An adult holding a child wrapped snugly in a blanket on a sofa"
+      },
+      {
+        "src": "assets/img/about/drive/20260524_114935.jpg",
+        "alt": "A person walking a black dog across a grassy area near an apartment building"
+      },
+      {
+        "src": "assets/img/about/drive/20260616_184412.jpg",
+        "alt": "A child wearing a black swim cap and red shirt outdoors"
+      },
+      {
+        "src": "assets/img/about/drive/20260617_195338.jpg",
+        "alt": "A woman posing playfully in a black top and flowing white skirt on a balcony"
+      },
+      {
+        "src": "assets/img/about/drive/20260621_190259.jpg",
+        "alt": "A woman holding a smiling toddler indoors"
+      },
+      {
+        "src": "assets/img/about/drive/20260719_161813.jpg",
+        "alt": "A toddler wearing a hood and pink pacifier while strapped into a car seat"
+      },
+      {
+        "src": "assets/img/about/drive/ChatGPT Image 19. juni 2026, 10_10_21.png",
+        "alt": "A stylized digital portrait of a young woman in a graduation cap making a peace sign"
+      },
+      {
+        "src": "assets/img/about/drive/einarGettingBig.jpeg",
+        "alt": "A smiling child wearing a yellow shirt and backpack"
+      },
+      {
+        "src": "assets/img/about/drive/heroes.jpeg",
+        "alt": "Two adults in superhero costumes entertaining a child indoors"
+      },
+      {
+        "src": "assets/img/about/drive/IMG_20230611_205427.jpg",
+        "alt": "A toddler reaching toward the camera against a bright blue sky"
+      },
+      {
+        "src": "assets/img/about/drive/IMG_20231008_213909.jpg",
+        "alt": "An adult balancing on a rock while a child sits below in a woodland setting"
+      },
+      {
+        "src": "assets/img/about/drive/IMG_20241225_003705.jpg",
+        "alt": "Four children posing beside a decorated Christmas tree"
+      },
+      {
+        "src": "assets/img/about/drive/IMG_20260101_023554.jpg",
+        "alt": "A couple smiling together indoors beside children's artwork"
+      },
+      {
+        "src": "assets/img/about/drive/KaOs.jpg",
+        "alt": "KaOS, a black dog wearing a pink harness"
+      },
+      {
+        "src": "assets/img/about/drive/Messenger_creation_640C2702-A604-4C0B-9246-2BEB747CCFAD.jpeg",
+        "alt": "A family posing outdoors in formal clothes while the children hold Norwegian flags"
+      },
+      {
+        "src": "assets/img/about/drive/Messenger_creation_A584603D-12A0-48FE-9800-0E3F51C5ACDC.jpeg",
+        "alt": "A family posing outdoors with Norwegian flags beside a gray fence"
+      },
+      {
+        "src": "assets/img/about/drive/OlsClan.jpeg",
+        "alt": "Family members resting together during a sunny woodland outing"
+      },
+      {
+        "src": "assets/img/about/drive/received_341023274953948.jpeg",
+        "alt": "An adult balancing on a rock while a child sits nearby in a sunlit forest"
+      },
+      {
+        "src": "assets/img/about/drive/received_1354018718585532.jpeg",
+        "alt": "Two adults and three children posing together on a sunny balcony"
+      },
+      {
+        "src": "assets/img/about/drive/Screenshot_20241210_201955_Video Player.jpg",
+        "alt": "A laughing toddler sitting in a high chair"
+      },
+      {
+        "src": "assets/img/about/drive/Screenshot_20251120_181600_Gallery.jpg",
+        "alt": "An adult helping a small child walk through a green woodland area"
+      },
+      {
+        "src": "assets/img/about/drive/Screenshot_20251120_182816_Gallery.jpg",
+        "alt": "An adult lying on the floor beside two children wrapped in a blanket"
+      },
+      {
+        "src": "assets/img/about/drive/Screenshot_20251120_184612_Gallery.jpg",
+        "alt": "A young person sitting on a sofa with a toddler resting beside them"
+      },
+      {
+        "src": "assets/img/about/drive/Snapchat-1678795624.jpg",
+        "alt": "Two women smiling together in a dimly lit room"
+      }
+    ]
+  }
+},
   {
     "title": "Summary of spare time activities",
+    "image": {
+      "src": "assets/img/about/summary/change.png",
+      "alt": "Illustration of a person shifting from gaming, fantasy literature, and music toward programming, data analysis, and building technology solutions",
+      "width": 1432,
+      "height": 888,
+      "objectFit": "contain",
+      "objectPosition": "center"
+    },
     "description": "In recent years, my interests have shifted from gaming, fantasy literature, and music toward developing technological solutions and reading professional literature on IT and programming. I have built a personal library of technical books that I continue to use for ongoing learning beyond my studies",
     "description2": "My passion for technology and programming is fueled by the constant evolution of the field, which offers endless opportunities for learning and growth. I enjoy the challenge of solving complex problems and creating innovative solutions that can make a real difference in people's lives. Whether it's developing software, analyzing data, or exploring new technologies, I am always eager to expand my knowledge and skills in the world of technology."
   }

@@ -149,6 +149,11 @@
 
     card.appendChild(header);
 
+    const image = createCardImage(item.image, item.title);
+    if (image) {
+      card.appendChild(image);
+    }
+
     const carousel = createCarousel(item.carousel, item.title);
     if (carousel) {
       card.appendChild(carousel);
@@ -186,6 +191,79 @@
     return card;
   }
 
+  function createCardImage(config, cardTitle) {
+    const image = normalizeCardImage(config, cardTitle);
+    if (!image) return null;
+
+    const figure = document.createElement("figure");
+    figure.className = "card-image";
+    figure.style.setProperty("--card-image-fit", image.objectFit);
+    figure.style.setProperty("--card-image-position", image.objectPosition);
+
+    const element = document.createElement("img");
+    element.src = image.src;
+    element.alt = image.alt;
+    element.loading = image.loading;
+    element.decoding = "async";
+
+    if (image.width) element.width = image.width;
+    if (image.height) element.height = image.height;
+
+    figure.appendChild(element);
+
+    if (image.caption) {
+      const caption = document.createElement("figcaption");
+      caption.textContent = image.caption;
+      figure.appendChild(caption);
+    }
+
+    return figure;
+  }
+
+  function normalizeCardImage(image, cardTitle) {
+    if (typeof image === "string" && image.trim()) {
+      return {
+        src: image.trim(),
+        alt: `${cardTitle || "Card"} illustration`,
+        caption: "",
+        loading: "lazy",
+        objectFit: "cover",
+        objectPosition: "center",
+        width: null,
+        height: null
+      };
+    }
+
+    if (!image || typeof image.src !== "string" || !image.src.trim()) {
+      return null;
+    }
+
+    const allowedObjectFits = ["contain", "cover", "fill", "none", "scale-down"];
+    const objectFit = allowedObjectFits.includes(image.objectFit) ? image.objectFit : "cover";
+    const width = normalizeImageDimension(image.width);
+    const height = normalizeImageDimension(image.height);
+
+    return {
+      src: image.src.trim(),
+      alt: typeof image.alt === "string"
+        ? image.alt.trim()
+        : `${cardTitle || "Card"} illustration`,
+      caption: typeof image.caption === "string" ? image.caption.trim() : "",
+      loading: image.loading === "eager" ? "eager" : "lazy",
+      objectFit,
+      objectPosition: typeof image.objectPosition === "string" && image.objectPosition.trim()
+        ? image.objectPosition.trim()
+        : "center",
+      width,
+      height
+    };
+  }
+
+  function normalizeImageDimension(value) {
+    const dimension = Number(value);
+    return Number.isInteger(dimension) && dimension > 0 ? dimension : null;
+  }
+
   function createCarousel(config, cardTitle) {
     if (!config || config.enabled === false) return null;
 
@@ -215,13 +293,21 @@
     const segmentsPerImage = Number.isInteger(configuredSegments)
       ? Math.min(24, Math.max(8, configuredSegments))
       : 12;
-    const radius = 136;
+    const baseRadius = 136;
+    const baselineImageCapacity = 5;
+    const minimumImageSurfaceWidth = (2 * Math.PI * baseRadius) / baselineImageCapacity;
+    const radius = Math.max(
+      baseRadius,
+      (images.length * minimumImageSurfaceWidth) / (2 * Math.PI)
+    );
+    const depthOffset = baseRadius - radius;
     const totalSegments = images.length * segmentsPerImage;
     const angleStep = 360 / totalSegments;
     const segmentArcWidth = (2 * Math.PI * radius) / totalSegments;
     const segmentWidth = segmentArcWidth + 1;
     const imageSurfaceWidth = segmentArcWidth * segmentsPerImage;
     carousel.style.setProperty("--carousel-radius", `${radius}px`);
+    carousel.style.setProperty("--carousel-depth-offset", `${depthOffset}px`);
 
     const scene = document.createElement("div");
     scene.className = "card-carousel-scene";
