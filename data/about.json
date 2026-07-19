@@ -5,7 +5,33 @@
   },
   {
     "title": "What's my drive?",
-    "description": "Family life with my partner, three children, and our dog are the reasons I get up in the morning to give it all I've got. I also have a strong interest in technology and programming and regularly spend time exploring new technical topics."
+    "description": "Family life with my partner, three children, and our dog are the reasons I get up in the morning to give it all I've got. I also have a strong interest in technology and programming and regularly spend time exploring new technical topics.",
+    "carousel": {
+      "enabled": true,
+      "curveSegments": 12,
+      "images": [
+        {
+          "src": "assets/img/about/drive/dear.png",
+          "alt": "Black-and-white portrait of a woman"
+        },
+        {
+          "src": "assets/img/about/drive/einarGettingBig.jpeg",
+          "alt": "A smiling child wearing a yellow shirt and backpack"
+        },
+        {
+          "src": "assets/img/about/drive/heroes.jpeg",
+          "alt": "Family members dressed as superheroes at a celebration"
+        },
+        {
+          "src": "assets/img/about/drive/KaOs.jpg",
+          "alt": "KaOS, my dog."
+        },
+        {
+          "src": "assets/img/about/drive/OlsClan.jpeg",
+          "alt": "Family members resting together during a sunny woodland walk"
+        }
+      ]
+    }
   },
   {
     "title": "Summary of spare time activities",
