@@ -28,6 +28,8 @@
   document.addEventListener("DOMContentLoaded", () => {
     loadCards().catch(error => {
       console.error("Failed to load cards:", error);
+    }).finally(() => {
+      document.dispatchEvent(new Event("portfolio:content-rendered"));
     });
   });
 
@@ -147,6 +149,16 @@
 
     card.appendChild(header);
 
+    const image = createCardImage(item.image, item.title);
+    if (image) {
+      card.appendChild(image);
+    }
+
+    const carousel = createCarousel(item.carousel, item.title);
+    if (carousel) {
+      card.appendChild(carousel);
+    }
+
     if (item.grade) {
       const grade = document.createElement("p");
       grade.className = "card-grade";
@@ -177,6 +189,210 @@
     }
 
     return card;
+  }
+
+  function createCardImage(config, cardTitle) {
+    const image = normalizeCardImage(config, cardTitle);
+    if (!image) return null;
+
+    const figure = document.createElement("figure");
+    figure.className = "card-image";
+    figure.style.setProperty("--card-image-fit", image.objectFit);
+    figure.style.setProperty("--card-image-position", image.objectPosition);
+
+    const element = document.createElement("img");
+    element.src = image.src;
+    element.alt = image.alt;
+    element.loading = image.loading;
+    element.decoding = "async";
+
+    if (image.width) element.width = image.width;
+    if (image.height) element.height = image.height;
+
+    figure.appendChild(element);
+
+    if (image.caption) {
+      const caption = document.createElement("figcaption");
+      caption.textContent = image.caption;
+      figure.appendChild(caption);
+    }
+
+    return figure;
+  }
+
+  function normalizeCardImage(image, cardTitle) {
+    if (typeof image === "string" && image.trim()) {
+      return {
+        src: image.trim(),
+        alt: `${cardTitle || "Card"} illustration`,
+        caption: "",
+        loading: "lazy",
+        objectFit: "cover",
+        objectPosition: "center",
+        width: null,
+        height: null
+      };
+    }
+
+    if (!image || typeof image.src !== "string" || !image.src.trim()) {
+      return null;
+    }
+
+    const allowedObjectFits = ["contain", "cover", "fill", "none", "scale-down"];
+    const objectFit = allowedObjectFits.includes(image.objectFit) ? image.objectFit : "cover";
+    const width = normalizeImageDimension(image.width);
+    const height = normalizeImageDimension(image.height);
+
+    return {
+      src: image.src.trim(),
+      alt: typeof image.alt === "string"
+        ? image.alt.trim()
+        : `${cardTitle || "Card"} illustration`,
+      caption: typeof image.caption === "string" ? image.caption.trim() : "",
+      loading: image.loading === "eager" ? "eager" : "lazy",
+      objectFit,
+      objectPosition: typeof image.objectPosition === "string" && image.objectPosition.trim()
+        ? image.objectPosition.trim()
+        : "center",
+      width,
+      height
+    };
+  }
+
+  function normalizeImageDimension(value) {
+    const dimension = Number(value);
+    return Number.isInteger(dimension) && dimension > 0 ? dimension : null;
+  }
+
+  function createCarousel(config, cardTitle) {
+    if (!config || config.enabled === false) return null;
+
+    const rawImages = Array.isArray(config) ? config : config.images;
+    if (!Array.isArray(rawImages)) return null;
+
+    const images = rawImages
+      .map((image, index) => normalizeCarouselImage(image, index, cardTitle))
+      .filter(Boolean);
+
+    if (images.length === 0) return null;
+
+    const carousel = document.createElement("div");
+    carousel.className = "card-carousel";
+    carousel.setAttribute("role", "region");
+    carousel.setAttribute("aria-roledescription", "carousel");
+    carousel.setAttribute("aria-label", `${cardTitle || "Card"} image gallery`);
+    carousel.setAttribute("aria-live", "off");
+
+    const configuredDuration = Array.isArray(config) ? NaN : Number(config.duration);
+    const duration = Number.isFinite(configuredDuration) && configuredDuration >= 4
+      ? configuredDuration
+      : Math.max(20, images.length * 5);
+    carousel.style.setProperty("--carousel-duration", `${duration}s`);
+
+    const configuredSegments = Array.isArray(config) ? NaN : Number(config.curveSegments);
+    const segmentsPerImage = Number.isInteger(configuredSegments)
+      ? Math.min(24, Math.max(8, configuredSegments))
+      : 12;
+    const baseRadius = 136;
+    const baselineImageCapacity = 5;
+    const minimumImageSurfaceWidth = (2 * Math.PI * baseRadius) / baselineImageCapacity;
+    const radius = Math.max(
+      baseRadius,
+      (images.length * minimumImageSurfaceWidth) / (2 * Math.PI)
+    );
+    const depthOffset = baseRadius - radius;
+    const totalSegments = images.length * segmentsPerImage;
+    const angleStep = 360 / totalSegments;
+    const segmentArcWidth = (2 * Math.PI * radius) / totalSegments;
+    const segmentWidth = segmentArcWidth + 1;
+    const imageSurfaceWidth = segmentArcWidth * segmentsPerImage;
+    carousel.style.setProperty("--carousel-radius", `${radius}px`);
+    carousel.style.setProperty("--carousel-depth-offset", `${depthOffset}px`);
+
+    const scene = document.createElement("div");
+    scene.className = "card-carousel-scene";
+    scene.setAttribute("aria-hidden", "true");
+
+    const track = document.createElement("div");
+    track.className = "card-carousel-track";
+
+    if (images.length === 1) {
+      const element = createCarouselImageElement(images[0].src);
+      element.className = "card-carousel-single-image";
+      track.appendChild(element);
+    } else {
+      images.forEach((image, imageIndex) => {
+        for (let segmentIndex = 0; segmentIndex < segmentsPerImage; segmentIndex += 1) {
+          const segment = document.createElement("div");
+          const globalIndex = (imageIndex * segmentsPerImage) + segmentIndex;
+          const angle = ((globalIndex + 0.5) * angleStep) - ((segmentsPerImage * angleStep) / 2);
+
+          segment.className = "card-carousel-segment";
+          segment.style.width = `${segmentWidth}px`;
+          segment.style.marginLeft = `${segmentWidth / -2}px`;
+          segment.style.setProperty("--carousel-angle", `${angle}deg`);
+
+          const element = createCarouselImageElement(image.src);
+          element.style.width = `${imageSurfaceWidth}px`;
+          element.style.left = `${((segmentWidth - segmentArcWidth) / 2) - (segmentIndex * segmentArcWidth)}px`;
+
+          segment.appendChild(element);
+          track.appendChild(segment);
+        }
+      });
+    }
+
+    scene.appendChild(track);
+    carousel.appendChild(scene);
+
+    if (images.length === 1) {
+      carousel.classList.add("card-carousel-static");
+    }
+
+    const accessibleList = document.createElement("div");
+    accessibleList.className = "sr-only";
+    accessibleList.textContent = images
+      .map((image, index) => {
+        const caption = image.caption ? `. ${image.caption}` : "";
+        return `Image ${index + 1} of ${images.length}: ${image.alt}${caption}`;
+      })
+      .join(". ");
+    carousel.appendChild(accessibleList);
+
+    return carousel;
+  }
+
+  function createCarouselImageElement(src) {
+    const element = document.createElement("img");
+    element.src = src;
+    element.alt = "";
+    element.loading = "lazy";
+    element.decoding = "async";
+    element.draggable = false;
+    element.setAttribute("aria-hidden", "true");
+    return element;
+  }
+
+  function normalizeCarouselImage(image, index, cardTitle) {
+    if (typeof image === "string" && image.trim()) {
+      return {
+        src: image.trim(),
+        alt: `${cardTitle || "Card"} image ${index + 1}`,
+        caption: ""
+      };
+    }
+
+    if (!image || typeof image.src !== "string" || !image.src.trim()) {
+      return null;
+    }
+
+    return {
+      src: image.src.trim(),
+      alt: typeof image.alt === "string" && image.alt.trim()
+        ? image.alt.trim()
+        : `${cardTitle || "Card"} image ${index + 1}`,
+      caption: typeof image.caption === "string" ? image.caption.trim() : ""
+    };
   }
 
   function appendParagraph(card, text) {
