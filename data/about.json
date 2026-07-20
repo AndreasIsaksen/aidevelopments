@@ -2,7 +2,7 @@
   {
     "title": "Who am I?",
     "image": {
-      "src": "assets/img/about/who/who.png",
+      "src": "assets/img/about/who/focused.png",
       "alt": "Illustration of work experience and education, including a graduation cap, a laptop, and a briefcase",
       "objectFit": "fit",
       "objectPosition": "center"

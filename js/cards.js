@@ -459,6 +459,6 @@
   }
 
   function getDefaultLinkText(item) {
-    return item.status ? "View Project →" : "View Documents →";
+    return item.status ? "View Project" : "View Documents";
   }
 })();
