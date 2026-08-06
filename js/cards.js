@@ -134,6 +134,13 @@
     const card = document.createElement("article");
     card.className = isFeatured(item) ? "card featured" : "card";
 
+    if (typeof item.className === "string") {
+      item.className
+        .split(/\s+/)
+        .filter(className => /^[a-z][a-z0-9_-]*$/i.test(className))
+        .forEach(className => card.classList.add(className));
+    }
+
     const header = document.createElement("div");
     header.className = "project-card-header";
 
