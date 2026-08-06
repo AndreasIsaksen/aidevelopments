@@ -32,6 +32,10 @@
     let activeTrigger = null;
     let closing = false;
 
+    function translate(value) {
+      return window.portfolioI18n?.translate(value) || value;
+    }
+
     function cancelAnimations() {
       [overlay, dialog].forEach(element => {
         element.getAnimations?.().forEach(animation => animation.cancel());
@@ -74,21 +78,24 @@
       const validName = Boolean(name)
         && Array.from(name).every(character => nameCharacterPattern.test(character));
 
-      nameInput.setCustomValidity(validName ? "" : "Enter your name using letters and spaces only.");
-      mailInput.setCustomValidity(!mail || mailPattern.test(mail) ? "" : "Enter a valid email address.");
-      topicInput.setCustomValidity(topic ? "" : "Enter a topic.");
+      nameInput.setCustomValidity(validName ? "" : translate("Enter your name using letters and spaces only."));
+      mailInput.setCustomValidity(!mail || mailPattern.test(mail) ? "" : translate("Enter a valid email address."));
+      topicInput.setCustomValidity(topic ? "" : translate("Enter a topic."));
 
       if (!message) {
-        messageInput.setCustomValidity("Enter a message.");
+        messageInput.setCustomValidity(translate("Enter a message."));
       } else if (message.length < 20) {
-        messageInput.setCustomValidity("The message must contain at least 20 characters.");
+        messageInput.setCustomValidity(translate("The message must contain at least 20 characters."));
       } else {
         messageInput.setCustomValidity("");
       }
 
-      messageCount.textContent = `${messageInput.value.length} / 500 characters`;
+      const countUnit = window.portfolioI18n?.getLanguage() === "nb" ? "tegn" : "characters";
+      messageCount.textContent = `${messageInput.value.length} / 500 ${countUnit}`;
       sendButton.disabled = !form.checkValidity();
     }
+
+    document.addEventListener("portfolio:language-changed", updateValidation);
 
     function openContactForm(trigger) {
       cancelAnimations();

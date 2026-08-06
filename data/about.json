@@ -197,12 +197,13 @@
 },
   {
     "title": "Summary of spare time activities",
+    "className": "about-summary-card",
     "image": {
       "src": "assets/img/about/summary/change.png",
       "alt": "Illustration of a person shifting from gaming, fantasy literature, and music toward programming, data analysis, and building technology solutions",
       "width": 1432,
       "height": 888,
-      "objectFit": "contain",
+      "objectFit": "cover",
       "objectPosition": "center"
     },
     "description": "In recent years, my interests have shifted from gaming, fantasy literature, and music toward developing technological solutions and reading professional literature on IT and programming. I have built a personal library of technical books that I continue to use for ongoing learning beyond my studies",

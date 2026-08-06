@@ -132,6 +132,15 @@
                     <a href="#docs">Documentation</a>
                     <a href="#contact">Contact</a>
                 </nav>
+
+                <fieldset class="language-switcher" aria-label="Language">
+                    <legend class="visually-hidden">Language</legend>
+                    <input id="language-en" type="radio" name="language" value="en" data-language="en" checked>
+                    <label for="language-en">ENG</label>
+                    <input id="language-nb" type="radio" name="language" value="nb" data-language="nb">
+                    <label for="language-nb">NOR</label>
+                    <span class="language-switch-indicator" aria-hidden="true"></span>
+                </fieldset>
             </div>
         </header>
         
@@ -345,6 +354,7 @@
             </div>
         </footer>
         
+        <script src="js/language.js"></script>
         <script src="js/main.js"></script>
         <script src="js/arcticBackground.js"></script>
         <script src="js/cards.js"></script>
