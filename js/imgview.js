@@ -27,6 +27,9 @@ const imageDocuments = {
 function createImageCard(imageItem) {
 	const card = document.createElement("article");
 	card.className = "image-card";
+	card.tabIndex = 0;
+	card.setAttribute("role", "button");
+	card.setAttribute("aria-label", `Open ${imageItem.title}`);
 
 	const preview = document.createElement("img");
 	preview.src = imageItem.thumbnail || imageItem.image;
@@ -52,13 +55,19 @@ function createImageCard(imageItem) {
 	card.appendChild(content);
 
 	card.addEventListener("click", () => {
-		openImageViewer(imageItem);
+		openImageViewer(imageItem, card);
+	});
+	card.addEventListener("keydown", event => {
+		if (event.key === "Enter" || event.key === " ") {
+			event.preventDefault();
+			openImageViewer(imageItem, card);
+		}
 	});
 
 	return card;
 }
 
-function openImageViewer(imageItem) {
+function openImageViewer(imageItem, trigger = document.activeElement) {
 	const viewerSection = document.getElementById("image-viewer-section");
 	const viewer = document.getElementById("image-viewer");
 	const viewerTitle = document.getElementById("image-viewer-title");
@@ -74,8 +83,7 @@ function openImageViewer(imageItem) {
 		viewerDescription.textContent = imageItem.description || "";
 	}
 
-	viewerSection.classList.remove("hidden");
-	viewerSection.scrollIntoView({ behavior: "smooth" });
+	window.portfolioModal?.open(viewerSection, trigger);
 }
 
 function closeImageViewer() {
@@ -86,7 +94,7 @@ function closeImageViewer() {
 	viewer.alt = "";
 	viewer.classList.remove("zoomed");
 
-	viewerSection.classList.add("hidden");
+	window.portfolioModal?.close(viewerSection);
 }
 
 function renderImageGrid() {

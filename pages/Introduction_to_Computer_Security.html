@@ -70,7 +70,17 @@
 				<span class="logo">Andreas Isaksen</span>
 			</a>
 
-			<nav class="nav" aria-label="Primary navigation">
+
+			<button
+				id="nav-toggle"
+				class="nav-toggle"
+				type="button"
+				aria-expanded="false"
+				aria-controls="nav-links"
+				aria-label="Open navigation menu">
+				<span></span><span></span><span></span>
+			</button>
+			<nav id="nav-links" class="nav" aria-label="Primary navigation">
 				<a href="../index.html#about">About</a>
 				<a href="../index.html#experience">Experience</a>
 				<a href="../index.html#skills">Skills</a>
@@ -78,6 +88,14 @@
 				<a href="../index.html#docs">Documentation</a>
 				<a href="../index.html#contact">Contact</a>
 			</nav>
+			<fieldset class="language-switcher" aria-label="Language">
+				<legend class="visually-hidden">Language</legend>
+				<input id="language-en" type="radio" name="language" value="en" data-language="en" checked>
+				<label for="language-en">ENG</label>
+				<input id="language-nb" type="radio" name="language" value="nb" data-language="nb">
+				<label for="language-nb">NOR</label>
+				<span class="language-switch-indicator" aria-hidden="true"></span>
+			</fieldset>
 		</div>
 	</header>
 
@@ -94,6 +112,8 @@
 			style="max-width: 100%; height: auto;">
 		</section>
 	</main>
+	<script src="../js/modal.js"></script>
+	<script src="../js/language.js"></script>
 	<script src="../js/main.js"></script>
 </body>
 </html>

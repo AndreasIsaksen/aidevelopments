@@ -10,15 +10,43 @@
 const navToggle = document.getElementById("nav-toggle");
 const navLinks = document.getElementById("nav-links") || document.querySelector(".nav");
 
+function getNavigationToggleLabel(open) {
+  const label = open ? "Close navigation menu" : "Open navigation menu";
+  return window.portfolioI18n?.translate(label) || label;
+}
+
 navToggle?.addEventListener("click", () => {
-  navLinks?.classList.toggle("open");
+  const open = navLinks?.classList.toggle("open") ?? false;
+  navToggle.setAttribute("aria-expanded", String(open));
+  navToggle.setAttribute("aria-label", getNavigationToggleLabel(open));
+  siteHeader?.classList.toggle("menu-open", open);
 });
 
 // Close menu when a link is clicked (mobile)
 navLinks?.querySelectorAll("a").forEach(link => {
   link.addEventListener("click", () => {
     navLinks.classList.remove("open");
+    navToggle?.setAttribute("aria-expanded", "false");
+    navToggle?.setAttribute("aria-label", getNavigationToggleLabel(false));
+    siteHeader?.classList.remove("menu-open");
   });
+});
+
+document.addEventListener("keydown", event => {
+  if (window.portfolioModal?.getActive()) return;
+  if (event.key !== "Escape" || !navLinks?.classList.contains("open")) return;
+  navLinks.classList.remove("open");
+  siteHeader?.classList.remove("menu-open");
+  navToggle?.setAttribute("aria-expanded", "false");
+  navToggle?.setAttribute("aria-label", getNavigationToggleLabel(false));
+  navToggle?.focus();
+});
+
+document.addEventListener("portfolio:language-changed", () => {
+  navToggle?.setAttribute(
+    "aria-label",
+    getNavigationToggleLabel(navLinks?.classList.contains("open") ?? false)
+  );
 });
 
 // Highlight active nav link on scroll
@@ -92,6 +120,12 @@ function updateHeaderVisibility() {
   if (!siteHeader) return;
 
   const currentScrollY = Math.max(window.scrollY, 0);
+
+  if (siteHeader.classList.contains("menu-open")) {
+    setHeaderHidden(false);
+    previousHeaderScrollY = currentScrollY;
+    return;
+  }
 
   if (!mobileHeaderQuery.matches || currentScrollY <= siteHeader.offsetHeight) {
     setHeaderHidden(false);

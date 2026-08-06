@@ -14,6 +14,8 @@
   "description": "Family life with my partner, three children, and our dog are the reasons I get up in the morning to give it all I've got. I also have a strong interest in technology and programming and regularly spend time exploring new technical topics.",
   "carousel": {
     "enabled": true,
+    "maxImagesPerLoad": 10,
+    "randomize": true,
     "curveSegments": 12,
     "images": [
       {

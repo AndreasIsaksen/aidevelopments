@@ -124,7 +124,17 @@
                     <span class="logo">Andreas Isaksen</span>
                 </a>
 
-                <nav class="nav" aria-label="Primary navigation">
+                <button
+                    id="nav-toggle"
+                    class="nav-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="nav-links"
+                    aria-label="Open navigation menu">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <nav id="nav-links" class="nav" aria-label="Primary navigation">
                     <a href="#about">About</a>
                     <a href="#experience">Experience</a>
                     <a href="#skills">Skills</a>
@@ -232,7 +242,7 @@
 
         <section
             id="pdf-viewer-section"
-            class="pdf-viewer-section reference-preview-overlay hidden"
+            class="pdf-viewer-section reference-preview-overlay portfolio-modal hidden"
             aria-hidden="true">
             <div
                 id="reference-preview-dialog"
@@ -354,6 +364,7 @@
             </div>
         </footer>
         
+        <script src="js/modal.js"></script>
         <script src="js/language.js"></script>
         <script src="js/main.js"></script>
         <script src="js/arcticBackground.js"></script>
