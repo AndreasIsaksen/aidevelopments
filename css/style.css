@@ -220,6 +220,38 @@ section[id] {
 	gap: 1.25rem;
 }
 
+.nav-toggle {
+	display: none;
+	width: 2.75rem;
+	height: 2.75rem;
+	padding: 0.65rem;
+	border: 1px solid var(--border);
+	border-radius: calc(var(--radius) * 0.6);
+	background: var(--surface);
+	cursor: pointer;
+}
+
+.nav-toggle span {
+	display: block;
+	width: 100%;
+	height: 2px;
+	margin: 0.25rem 0;
+	background: var(--text);
+	transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+	transform: translateY(6px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+	opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+	transform: translateY(-6px) rotate(-45deg);
+}
+
 /* At the two-column breakpoint, let an orphaned About card fill the row. */
 @media (min-width: 552px) and (max-width: 791px) {
 	#about-grid > .card:last-child:nth-child(odd) {
@@ -782,18 +814,41 @@ section[id] {
 	}
 
 	.header-inner {
-		flex-direction: column;
-		justify-content: center;
-		padding: 1rem 0;
-		gap: 0.75rem;
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) auto auto;
+		padding: 0.65rem 0;
+		gap: 0.65rem;
 	}
 
 	.nav {
-		display: grid;
+		display: none;
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 		grid-auto-rows: 1fr;
+		grid-column: 1 / -1;
 		width: 100%;
 		gap: 0.5rem;
+	}
+
+	.nav.open {
+		display: grid;
+		animation: mobile-nav-open 0.2s ease-out;
+	}
+
+	.nav-toggle {
+		display: block;
+		grid-column: 3;
+		grid-row: 1;
+	}
+
+	.language-switcher {
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+	.brand {
+		grid-column: 1;
+		grid-row: 1;
+		min-width: 0;
 	}
 
 	.nav a {
@@ -2008,6 +2063,11 @@ section[id] {
     line-height: 1;
 }
 
+@keyframes mobile-nav-open {
+	from { opacity: 0; transform: translateY(-0.4rem); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
 .language-switcher input {
     position: absolute;
     width: 1px;
@@ -2103,4 +2163,130 @@ section[id] {
     .reference-preview-dialog {
         transition: none;
     }
+}
+
+/* Shared modal presentation for document, image, webpage, reference and code viewers. */
+body.viewer-modal-open {
+	overflow: hidden;
+}
+
+.portfolio-modal {
+	position: fixed;
+	inset: 0;
+	z-index: 5000;
+	display: flex;
+	width: 100%;
+	max-width: none;
+	height: 100dvh;
+	max-height: none;
+	margin: 0;
+	padding: clamp(0.75rem, 3vw, 2.5rem);
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 5, 12, 0.84);
+	backdrop-filter: blur(6px) saturate(0.7);
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	animation: portfolio-modal-in 0.18s ease-out;
+}
+
+@keyframes portfolio-modal-in {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+.portfolio-modal.hidden {
+	display: none;
+}
+
+.portfolio-modal > .pdf-viewer-header,
+.portfolio-modal > .image-viewer-header,
+.portfolio-modal > .webpage-viewer-header,
+.portfolio-modal > .code-viewer-header {
+	width: min(100%, 1100px);
+	margin: 0;
+	padding: 0.85rem 1rem;
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-bottom: 0;
+	border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.portfolio-modal > .pdf-viewer,
+.portfolio-modal > .webpage-viewer,
+.portfolio-modal > .code-block,
+.portfolio-modal > .image-viewer {
+	width: min(100%, 1100px);
+	min-height: 0;
+	max-height: calc(100dvh - 8rem);
+	margin: 0;
+	flex: 1 1 auto;
+	border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.portfolio-modal > .image-viewer {
+	object-fit: contain;
+	background: var(--surface);
+}
+
+.portfolio-modal > #image-viewer-description {
+	width: min(100%, 1100px);
+	margin: 0;
+	padding: 0 1rem 0.75rem;
+	background: var(--surface);
+}
+
+.portfolio-modal [data-modal-close] {
+	min-width: 5.5rem;
+	margin-left: auto;
+	padding: 0.5rem 0.9rem;
+	border: 1px solid var(--accent);
+	border-radius: 999px;
+	background: var(--accent);
+	color: #082f49;
+	font: inherit;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.portfolio-modal [data-modal-close]:hover,
+.portfolio-modal [data-modal-close]:focus-visible {
+	background: var(--accent-dark);
+	color: white;
+}
+
+@media (max-width: 768px) {
+	.portfolio-modal {
+		padding: 0;
+		justify-content: stretch;
+	}
+
+	.portfolio-modal > .pdf-viewer-header,
+	.portfolio-modal > .image-viewer-header,
+	.portfolio-modal > .webpage-viewer-header,
+	.portfolio-modal > .code-viewer-header {
+		border-radius: 0;
+	}
+
+	.portfolio-modal > .pdf-viewer,
+	.portfolio-modal > .webpage-viewer,
+	.portfolio-modal > .code-block,
+	.portfolio-modal > .image-viewer {
+		width: 100%;
+		max-height: none;
+		border-radius: 0;
+	}
+
+	.reference-preview-overlay.portfolio-modal {
+		padding: 0.5rem;
+		justify-content: center;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.portfolio-modal {
+		animation: none;
+	}
 }

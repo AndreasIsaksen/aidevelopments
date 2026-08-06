@@ -1660,7 +1660,16 @@ function createCodeCard(codeItem) {
 	card.appendChild(content);
 
 	card.addEventListener("click", () => {
-		openCodeViewer(codeItem);
+		openCodeViewer(codeItem, card);
+	});
+	card.tabIndex = 0;
+	card.setAttribute("role", "button");
+	card.setAttribute("aria-label", `Open ${codeItem.title}`);
+	card.addEventListener("keydown", event => {
+		if (event.key === "Enter" || event.key === " ") {
+			event.preventDefault();
+			openCodeViewer(codeItem, card);
+		}
 	});
 
 	return card;
@@ -1677,7 +1686,7 @@ function getCodePreview(code) {
 	return lines.slice(0, maxLines).join("\n") + "\n...";
 }
 
-function openCodeViewer(codeItem) {
+function openCodeViewer(codeItem, trigger = document.activeElement) {
 	const viewerSection = document.getElementById("code-viewer-section");
 	const viewer = document.getElementById("code-viewer");
 	const viewerTitle = document.getElementById("code-viewer-title");
@@ -1695,8 +1704,7 @@ function openCodeViewer(codeItem) {
 		viewerLanguage.textContent = codeItem.language || "code";
 	}
 
-	viewerSection.classList.remove("hidden");
-	viewerSection.scrollIntoView({ behavior: "smooth" });
+	window.portfolioModal?.open(viewerSection, trigger);
 }
 
 function closeCodeViewer() {
@@ -1704,7 +1712,7 @@ function closeCodeViewer() {
 	const viewer = document.getElementById("code-viewer");
 
 	viewer.textContent = "";
-	viewerSection.classList.add("hidden");
+	window.portfolioModal?.close(viewerSection);
 }
 
 function renderCodeGrid() {

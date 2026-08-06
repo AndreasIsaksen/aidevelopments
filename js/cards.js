@@ -274,7 +274,8 @@
   function createCarousel(config, cardTitle) {
     if (!config || config.enabled === false) return null;
 
-    const rawImages = Array.isArray(config) ? config : config.images;
+    const configuredImages = Array.isArray(config) ? config : config.images;
+    const rawImages = selectCarouselImages(configuredImages, config);
     if (!Array.isArray(rawImages)) return null;
 
     const images = rawImages
@@ -367,6 +368,26 @@
     carousel.appendChild(accessibleList);
 
     return carousel;
+  }
+
+  function selectCarouselImages(images, config) {
+    if (!Array.isArray(images)) return images;
+
+    const requestedLimit = Array.isArray(config) ? images.length : Number(config.maxImagesPerLoad);
+    const limit = Number.isInteger(requestedLimit) && requestedLimit > 0
+      ? Math.min(requestedLimit, images.length)
+      : images.length;
+
+    if (!Array.isArray(config) && config.randomize && limit < images.length) {
+      const shuffled = [...images];
+      for (let index = shuffled.length - 1; index > 0; index -= 1) {
+        const randomIndex = Math.floor(Math.random() * (index + 1));
+        [shuffled[index], shuffled[randomIndex]] = [shuffled[randomIndex], shuffled[index]];
+      }
+      return shuffled.slice(0, limit);
+    }
+
+    return images.slice(0, limit);
   }
 
   function createCarouselImageElement(src) {

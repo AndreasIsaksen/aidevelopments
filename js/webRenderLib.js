@@ -55,6 +55,9 @@ const webpageProjects = {
 function createWebpageCard(webpageItem) {
 	const card = document.createElement("article");
 	card.className = "webpage-card";
+	card.tabIndex = 0;
+	card.setAttribute("role", "button");
+	card.setAttribute("aria-label", `Open ${webpageItem.title}`);
 
 	const preview = document.createElement("img");
 	preview.src = webpageItem.thumbnail;
@@ -86,13 +89,19 @@ function createWebpageCard(webpageItem) {
 	card.appendChild(content);
 
 	card.addEventListener("click", () => {
-		openWebpageViewer(webpageItem);
+		openWebpageViewer(webpageItem, card);
+	});
+	card.addEventListener("keydown", event => {
+		if (event.key === "Enter" || event.key === " ") {
+			event.preventDefault();
+			openWebpageViewer(webpageItem, card);
+		}
 	});
 
 	return card;
 }
 
-function openWebpageViewer(webpageItem) {
+function openWebpageViewer(webpageItem, trigger = document.activeElement) {
 	const viewerSection = document.getElementById("webpage-viewer-section");
 	const viewer = document.getElementById("webpage-viewer");
 	const viewerTitle = document.getElementById("webpage-viewer-title");
@@ -105,8 +114,7 @@ function openWebpageViewer(webpageItem) {
 		viewerDescription.textContent = webpageItem.description || "";
 	}
 
-	viewerSection.classList.remove("hidden");
-	viewerSection.scrollIntoView({ behavior: "smooth" });
+	window.portfolioModal?.open(viewerSection, trigger);
 }
 
 function closeWebpageViewer() {
@@ -114,7 +122,7 @@ function closeWebpageViewer() {
 	const viewer = document.getElementById("webpage-viewer");
 
 	viewer.src = "";
-	viewerSection.classList.add("hidden");
+	window.portfolioModal?.close(viewerSection);
 }
 
 function renderWebpageGrid() {
